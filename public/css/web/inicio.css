@@ -1,0 +1,14 @@
+/* color del navbar */
+.navbar{
+    background-color: #FFFFFF;
+}
+
+/* Color del incono del menu */
+.patyMenu{
+    color: #03a9f4;
+}
+
+/* jumbotron h2 */
+.jumbotron h2{
+    font-size: 2.5rem;
+}
