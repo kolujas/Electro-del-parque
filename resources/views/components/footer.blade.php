@@ -33,4 +33,15 @@
     <p class="col-12 text-white m-0">© EPEM. Todos los Derechos Reservados. Desarrollado por <a class="text-white" href="https://www.digitalo.com.ar">Digitalo</a></p>
 </nav> -->
 
-hola soy un footer
+
+<!-- Footer -->
+<footer class="page-footer font-small blue mt-4">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© Digitalo:
+    <a href="https://mdbootstrap.com/education/bootstrap/"> www.digitalo.com.ar</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->

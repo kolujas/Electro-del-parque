@@ -11,7 +11,7 @@
          */
         public function up(){
             Schema::table('productos', function(Blueprint $table){
-                $table->foreign('id_usuario')->references('id_usuario')->on('usuarios');
+                $table->foreign('id_usuario')->references('id_usuario')->on('users');
             });
         }
 
