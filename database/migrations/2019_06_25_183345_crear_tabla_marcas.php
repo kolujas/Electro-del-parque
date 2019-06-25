@@ -3,20 +3,19 @@
     use Illuminate\Database\Schema\Blueprint;
     use Illuminate\Database\Migrations\Migration;
 
-    class CreateUsersTable extends Migration{
+    class CrearTablaMarcas extends Migration{
         /**
          * Run the migrations.
          *
          * @return void
          */
         public function up(){
-            Schema::create('users', function (Blueprint $table){
-                $table->increments('id_usuario');
-                $table->string('nombre', 100);
-                $table->string('correo', 100)->unique();
-                $table->string('clave');
+            Schema::create('marcas', function(Blueprint $table){
+                $table->increments('id_marca');
+                $table->string('nombre', 150);
+                $table->unsignedInteger('id_tipo');
+                $table->unsignedInteger('id_usuario');
                 $table->string('slug', 255);
-                $table->rememberToken();
                 $table->timestamps();
             });
         }
@@ -27,6 +26,6 @@
          * @return void
          */
         public function down(){
-            Schema::dropIfExists('users');
+            Schema::dropIfExists('marcas');
         }
     }

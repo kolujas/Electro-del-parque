@@ -1,3 +1,7 @@
+<?php
+  /** @var Tipo[] $tipos */
+?>
+
 @extends('layout.index')
 
 @section('css')

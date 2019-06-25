@@ -1,5 +1,4 @@
 <?php
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,6 +10,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('web.inicio');
-});
+/** WebController */
+    Route::get('/', 'WebController@inicio')->name('web.inicio');
+
+/** ProductoController */
+    Route::get('/producto/{slug}', 'ProductoController@listado')->name('producto.listado');
+
+    Route::get('/producto/{slug}/{seccion}', 'ProductoController@listado')->name('producto.listado');
