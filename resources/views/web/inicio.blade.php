@@ -1,5 +1,5 @@
 <?php
-  /** @var Tipo[] $tipos */
+    /** @var Tipo[] $tipos */
 ?>
 
 @extends('layout.index')
@@ -18,12 +18,18 @@
 @endsection
 
 @section('main')
-<div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h2 class="display-4 text-center">Electro del parque</h2>
-    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, totam?</p>
-  </div>
-</div>
+    <div class="container-fluid">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h2 class="display-4 text-center">Electro del parque</h2>
+
+                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, totam?</p>
+            </div>
+        </div>
+        @foreach($tipos as $tipo)
+            <a href="/producto/{{$tipo->slug}}">{{$tipo->nombre}}</a>
+        @endforeach
+    </div>
 @endsection
 
 @section('footer')

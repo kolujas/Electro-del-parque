@@ -35,6 +35,9 @@
             <li class="nav-item">
                 <a class="nav-link light-blue-text" href="#">Contacto</a>
             </li>
+
+            {{$slot}}
+            
         </ul>
     </div>
 </nav>
