@@ -29,7 +29,7 @@
             @yield('nav')
         </header>
 
-        <main>
+        <main class="m-0 p-0">
             @yield('main')
         </main>
 

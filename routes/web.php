@@ -14,6 +14,6 @@
     Route::get('/', 'WebController@inicio')->name('web.inicio');
 
 /** ProductoController */
-    Route::get('/producto/{slug}', 'ProductoController@listado')->name('producto.listado');
+    Route::get('/{slug}/productos', 'ProductoController@listado')->name('producto.listado');
 
     Route::get('/producto/{slug}/{seccion}', 'ProductoController@listado')->name('producto.listado');
