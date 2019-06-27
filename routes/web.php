@@ -10,10 +10,17 @@
 |
 */
 
+Route::get('/pepe', function () {
+    return view('producto.intermedio');
+});
+
 /** WebController */
     Route::get('/', 'WebController@inicio')->name('web.inicio');
 
 /** ProductoController */
     Route::get('/{slug}/productos', 'ProductoController@listado')->name('producto.listado');
 
-    Route::get('/producto/{slug}/{seccion}', 'ProductoController@listado')->name('producto.listado');
+    Route::get('{pepe}/pepe/{pepe2}', 'ProductoController@listado')->name('producto.listado');
+
+
+  

@@ -15,11 +15,11 @@
         <meta http-equiv="Pragma" content="no-cache">
 
         <!-- Bootstrap core CSS -->
-        <link href="bmd/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/bmd/css/bootstrap.min.css" rel="stylesheet">
         <!-- Material Design Bootstrap -->
-        <link href="bmd/css/mdb.min.css" rel="stylesheet">
+        <link href="/bmd/css/mdb.min.css" rel="stylesheet">
         <!-- Your custom styles (optional) -->
-        <link href="css/index.css" rel="stylesheet">
+        <link href="/css/index.css" rel="stylesheet">
         @yield('css')
 
         <title>@yield('titulo')</title>
@@ -39,13 +39,13 @@
         
         <!-- SCRIPTS -->    
         <!-- JQuery -->
-        <script type="text/javascript" src="bmd/js/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="/bmd/js/jquery-3.4.1.min.js"></script>
         <!-- Bootstrap tooltips -->
-        <script type="text/javascript" src="bmd/js/popper.min.js"></script>
+        <script type="text/javascript" src="/bmd/js/popper.min.js"></script>
         <!-- Bootstrap core JavaScript -->
-        <script type="text/javascript" src="bmd/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="/bmd/js/bootstrap.min.js"></script>
         <!-- MDB core JavaScript -->
-        <script type="text/javascript" src="bmd/js/mdb.min.js"></script>
+        <script type="text/javascript" src="/bmd/js/mdb.min.js"></script>
         
         @yield('js')
     </body>
