@@ -19,13 +19,8 @@
 
         /** @var array Los atributos que se van a cargar de forma masiva. */
         protected $fillable = [
-            'nombre', 'id_tipo', 'id_usuario', 'slug'
+            'nombre', 'id_usuario', 'slug'
         ];
-        
-        /** Trae el Tipo que coincidan con el PK. */
-        public function tipo(){
-            return $this->belongsTo(Tipo::class, 'id_tipo', 'id_tipo');
-        }
         
         /** Trae el Usuario que coincidan con el PK. */
         public function usuario(){

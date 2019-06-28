@@ -12,12 +12,11 @@
         public function up(){
             Schema::create('productos', function(Blueprint $table){
                 $table->increments('id_producto');
-                $table->string('nombre', 150);
-                $table->text('modelos');
+                $table->text('modelo')->nullable();
                 $table->unsignedInteger('id_tipo');
-                $table->unsignedInteger('id_marca');
+                $table->unsignedInteger('id_marca')->nullable();
                 $table->unsignedInteger('id_usuario');
-                $table->string('slug', 255);
+                $table->string('imagen');
                 $table->timestamps();
             });
         }

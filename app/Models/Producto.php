@@ -4,13 +4,9 @@
     use App\Models\Marca;
     use App\Models\Tipo;
     use App\User;
-    use Cviebrock\EloquentSluggable\Sluggable;
-    use Cviebrock\EloquentSluggable\SluggableScopeHelpers;
     use Illuminate\Database\Eloquent\Model;
 
     class Producto extends Model{
-        use Sluggable, SluggableScopeHelpers;
-
         /** @var string El nombre de la tabla. */
         protected $table = 'productos';
         
@@ -19,7 +15,7 @@
 
         /** @var array Los atributos que se van a cargar de forma masiva. */
         protected $fillable = [
-            'nombre', 'modelos', 'id_tipo', 'id_marca', 'id_usuario', 'slug'
+            'modelo', 'id_tipo', 'id_marca', 'id_usuario', 'imagen',
         ];
         
         /** Trae el Tipo que coincidan con el PK. */
@@ -35,19 +31,5 @@
         /** Trae el Usuario que coincidan con el PK. */
         public function usuario(){
             return $this->belongsTo(User::class, 'id_usuario', 'id_usuario');
-        }
-        
-        /**
-         * Devuelve la configuracion del slug del modelo.
-         * 
-         * @return array
-         */
-        public function sluggable(){
-            return [
-                'slug' => [
-                    'source'	=> 'nombre',
-                    'onUpdate'	=> true,
-                ]
-            ];
         }
     }

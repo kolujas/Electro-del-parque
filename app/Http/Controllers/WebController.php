@@ -9,7 +9,7 @@
     class WebController extends Controller{
         /** Carga la seccion principal. */
         public function inicio(){
-            $tipos = Tipo::with('marcas')->get();
+            $tipos = Tipo::get();
 
             return view('web.inicio', [
                 'tipos' => $tipos,

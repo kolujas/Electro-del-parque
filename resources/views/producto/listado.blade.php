@@ -25,7 +25,7 @@
 @section('main')
     <div class="container-fluid">
         @foreach($productos as $producto)
-            <p>{{$producto->nombre}}</p>
+            <p>{{$producto->modelo}}</p>
         @endforeach
     </div>
 @endsection

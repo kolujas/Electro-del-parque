@@ -10,7 +10,7 @@
         /** Carga los productos que coincidan con el slug. */
         public function listado($slug){
             $tipo = Tipo::findBySlug($slug);
-            $marcas = Marca::where('id_tipo', '=', $tipo->id_tipo)->get();
+            $marcas = Marca::get();
             $productos = Producto::where('id_tipo', '=', $tipo->id_tipo)->get();
 
             return view('producto.listado', [

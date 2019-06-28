@@ -19,17 +19,12 @@
 
         /** @var array Los atributos que se van a cargar de forma masiva. */
         protected $fillable = [
-            'nombre', 'id_usuario', 'slug'
+            'nombre', 'id_usuario', 'slug', 'imagen',
         ];
         
         /** Trae el Usuario que coincidan con el PK. */
         public function usuario(){
             return $this->belongsTo(User::class, 'id_usuario', 'id_usuario');
-        }
-
-        /** Trae todas las Marcas que coincidan con el PK. */
-        public function marcas(){
-            return $this->hasMany(Marca::class, 'id_tipo', 'id_tipo');
         }
         
         /** Trae todos los Productos que coincidan con el PK. */

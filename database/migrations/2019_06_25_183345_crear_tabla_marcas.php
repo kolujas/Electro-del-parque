@@ -13,7 +13,6 @@
             Schema::create('marcas', function(Blueprint $table){
                 $table->increments('id_marca');
                 $table->string('nombre', 150);
-                $table->unsignedInteger('id_tipo');
                 $table->unsignedInteger('id_usuario');
                 $table->string('slug', 255);
                 $table->timestamps();
