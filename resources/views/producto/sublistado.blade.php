@@ -1,13 +1,11 @@
 <?php
-    /** @var Marca[] $marcas */
-    /** @var Producto[] $productos */
     /** @var Tipo $tipo */
 ?>
 
 @extends('layout.index')
 
 @section('css')
-    <link href="{{ asset('css/producto/listado.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/producto/sublistado.css') }}" rel="stylesheet">
 @endsection
 
 @section('titulo')
@@ -41,10 +39,6 @@
                             </div>
 
                             <div class="card-body text-center py-4">
-                                <div class="mb-4">
-                                    <p class="card-text">{{$producto->modelo}}</p>
-                                </div>
-
                                 <div class="consulta">
                                     <a class="btn btn-light-blue btn-md"
                                         data-toggle="modal"
@@ -126,5 +120,5 @@
 @endsection
 
 @section('js')
-    <script type="text/javascript" src="js/web/listado.js"></script>
+    <script type="text/javascript" src="js/web/sublistado.js"></script>
 @endsection

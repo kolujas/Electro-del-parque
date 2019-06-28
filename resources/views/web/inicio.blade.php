@@ -35,7 +35,7 @@
             </div>
         </div>
 
-        <div class="row justify-content-lg-center">
+        <div class="row d-flex justify-content-lg-center">
             <div class="view d-none d-lg-block">
                 <video class="video-intro"
                     poster="https://mdbootstrap.com/img/Photos/Others/background.jpg"
@@ -69,9 +69,9 @@
             <div class="productos col-12 col-md-12 col-lg-10 col-xl-8">
                 <div class="row d-flex justify-content-around">
                     @foreach($tipos as $tipo)
-                        <a href="{{$tipo->slug}}/productos" class="card text-center col-12 col-md-4 m-0 mt-4">
+                        <a href="{{$tipo->slug}}/productos" class="card text-center col-12 col-md-5 col-lg-4 m-0 mt-4">
                             <div class="pt-4 mt-md-0">
-                                <h4 class="card-title mb-4">{{$tipo->nombre}}</h4>
+                                <h4 class="h5 card-title mb-4">{{$tipo->nombre}}</h4>
 
                                 <img class="card-img-top"
                                     src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg"
@@ -83,25 +83,25 @@
             </div>
 
             <div class="informacion col-12 col-md-12 col-lg-10 col-xl-8 mt-4">
-                <div class="quienes-somos row justify-content-center">
+                <div class="quienes-somos row">
                     <div class="col-12">
                         <h2 class="h1-responsive my-4 text-center">¿Quienes somos?</h2>
                     </div>
 
                     <div class="col-12">
-                        <div class="row">
-                            <div class="img-div col-12 col-md-6 p-0 pl-md-4 pr-md-2"> 
+                        <div class="row d-flex justify-content-around mx-md-4 pb-md-4">
+                            <div class="img-div col-12 col-md-6 p-0 m-0 pr-md-5"> 
                                 <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(54).jpg"  class="img-fluid z-depth-1" alt="1">
                             </div> 
                             
-                            <div class="col-12 col-md-6 pl-md-2 pr-md-4">
-                                <p class="lead text-center text-md-left d-flex m-0 py-4 py-md-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam magni iure voluptatum soluta ut porro.</p>
+                            <div class="col-12 col-md-6 p-0 m-0 pl-md-5">
+                                <p class="lead text-center text-md-left d-flex mx-4 m-md-0 py-4 py-md-0 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam magni iure voluptatum soluta ut porro.</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="contacto row justify-content-center mt-md-4">
+                <div class="contacto row justify-content-center">
                     <div class="col-12">
                         <h2 class="h1-responsive my-4 text-center">Contacto</h2>
                     </div>

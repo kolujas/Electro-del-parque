@@ -10,17 +10,15 @@
 |
 */
 
-Route::get('/pepe', function () {
-    return view('producto.intermedio');
-});
-
 /** WebController */
     Route::get('/', 'WebController@inicio')->name('web.inicio');
 
 /** ProductoController */
-    Route::get('/{slug}/productos', 'ProductoController@listado')->name('producto.listado');
+    Route::get('/{tipo_slug}', 'ProductoController@intermedio')->name('producto.intermedio');
 
-    Route::get('{pepe}/pepe/{pepe2}', 'ProductoController@listado')->name('producto.listado');
+    Route::get('/{tipo_slug}/productos', 'ProductoController@listado')->name('producto.listado');
+
+    Route::get('/{tipo_slug}/productos/{categoria}', 'ProductoController@sublistado')->name('producto.sublistado');
 
 
   

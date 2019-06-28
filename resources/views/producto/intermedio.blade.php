@@ -1,6 +1,4 @@
 <?php
-    /** @var Marca[] $marcas */
-    /** @var Producto[] $productos */
     /** @var Tipo $tipo */
 ?>
 
@@ -11,78 +9,43 @@
 @endsection
 
 @section('titulo')
-    Electro del parque - 
+    Electro del parque - {{$tipo->nombre}}
 @endsection
 
 @section('nav')
-    @component('components.subnav')
+    @component('components.nav')
     @endcomponent
 @endsection
 
 @section('main')
     <div class="container-fluid">
-        
-    <div class="tipo">
-        <h2 class="text-center mt-4">ELG</h2>
+        <div class="row d-flex justify-content-lg-center">
+            <div class="col-12 my-4">
+                <h2 class="text-center m-0 p-0">{{$tipo->nombre}}</h2>
+            </div>
 
-        <div class="card-deck col-12 p-5">
+            <div class="productos col-12 col-md-12 col-lg-10 col-xl-8">
+                <div class="row d-flex justify-content-around">
+                    <a href="{{$tipo->slug}}/productos" class="card text-center col-12 col-md-5 col-lg-4 m-0">
+                        <div class="pt-4 mt-md-0">
+                            <h4 class="h5 card-title mb-4">Categoria 1</h4>
 
-            <!-- Card -->
-            <div class="card mb-4">
+                            <img class="card-img-top"
+                                src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg"
+                                alt="Card image cap">
+                        </div>
+                    </a>
+                    <a href="{{$tipo->slug}}/productos/pepe" class="card text-center col-12 col-md-5 col-lg-4 m-0 mt-4 mt-md-0">
+                        <div class="pt-4 mt-md-0">
+                            <h4 class="h5 card-title mb-4">Categoria 2</h4>
 
-                <!--Card image-->
-                <div class="view overlay">
-                <!--Title-->
-                <h4 class="card-title text-center">Producto #1</h4>
-                    <img
-                        class="card-img-top"
-                        src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg"
-                        alt="Card image cap">
-                        <a href="#!">
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                    </div>
-
-                    <!--Card content-->
-                    <div class="card-body text-center">
-                        <!--Text-->
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, minus?.</p>
-                        <!-- Provides extra visual weight and identifies the primary action in a set of
-                        buttons -->
-                        <a class="btn btn-light-blue btn-md"
-                            data-toggle="modal"
-                            data-target="#FormDeContacto">Acceder</a>
-                    </div>
+                            <img class="card-img-top"
+                                src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg"
+                                alt="Card image cap">
+                        </div>
+                    </a>
                 </div>
-            <div class="card mb-4">
-
-                <!--Card image-->
-                <div class="view overlay">
-                <!--Title-->
-                <h4 class="card-title text-center">Producto #2</h4>
-                    <img
-                        class="card-img-top"
-                        src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg"
-                        alt="Card image cap">
-                        <a href="#!">
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                    </div>
-
-                    <!--Card content-->
-                    <div class="card-body text-center">
-                        <!--Text-->
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, minus?.</p>
-                        <!-- Provides extra visual weight and identifies the primary action in a set of
-                        buttons -->
-                        <a class="btn btn-light-blue btn-md"
-                            data-toggle="modal"
-                            data-target="#FormDeContacto">Acceder</a>
-                    </div>
-                </div>
-               
-                    </div>
-                <!-- Card deck -->     
+            </div>
         </div>
     </div>
 @endsection
@@ -93,5 +56,5 @@
 @endsection
 
 @section('js')
-    <script type="text/javascript" src="js/web/inicio.js"></script>
+    <script type="text/javascript" src="js/web/intermedio.js"></script>
 @endsection
