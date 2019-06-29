@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg">
     <!-- Navbar brand -->
-    <a class="navbar-brand light-blue-text" href="#">Electro del parque</a>
+    <a class="navbar-brand white-text" href="#">Electro del parque</a>
 
     <!-- Collapse button -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
@@ -13,13 +13,13 @@
 
         <!-- Links -->
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link light-blue-text" href="#">Inicio
+            <li class="nav-item active white-text">
+                <a class="nav-link white-text" href="#">Inicio
                 <span class="sr-only">(current)</span>
                 </a>
             </li>
                     <!-- Dropdown -->
-            <li class="nav-item dropdown light-blue-text">
+            <li class="nav-item dropdown white-text">
                 <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">Productos</a>
                 
@@ -30,10 +30,10 @@
                 </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link light-blue-text" href="#">¿Quienes somos?</a>
+                <a class="nav-link white-text" href="#">¿Quienes somos?</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link light-blue-text" href="#">Contacto</a>
+                <a class="nav-link white-text" href="#">Contacto</a>
             </li>
         </ul>
     </div>

@@ -18,7 +18,7 @@
 @endsection
 
 @section('main')
-    <div class="container-fluid">
+    <div class="container-fluid px-0">
         <div class="jumbotron text-center d-lg-none mt-4 mb-0 py-4">
             <h2 class="card-title h2 m-0">Electro del parque Lorem ipsum.</h2>
             
@@ -34,39 +34,27 @@
                 <button type="button" class="btn btn-blue waves-effect">Contacto</button>
             </div>
         </div>
+            
 
-        <div class="row d-flex justify-content-lg-center">
-            <div class="view d-none d-lg-block">
-                <video class="video-intro"
-                    poster="https://mdbootstrap.com/img/Photos/Others/background.jpg"
-                    playsinline="playsinline"
-                    autoplay="autoplay"
-                    muted="muted"
-                    loop="loop">
-                    <source src="https://mdbootstrap.com/img/video/animation.mp4" type="video/mp4">
-                </video>
-                
-                <div class="mask rgba-gradient align-items-center">
-                    <div class="container px-lg-0">
-                        <div class="row wow fadeIn">
-                            <div class="col-md-12 mb-4 dark-text text-center wow fadeIn">
-                                <h3 class="display-3 font-weight-bold dark-text mb-0 pt-md-5 pt-5">Electro del parque</h3>
 
-                                <hr class="hr-dark my-4 w-75">
-
-                                <h4 class="subtext-header mt-2 mb-4">Lorem ipsum dolor sit amet, consecteturadipisicing elit deleniti consequuntur nihil.</h4>
-
-                                <a href="#!" class="btn btn-rounded dark-text">
-                                    <i class="fas fa-home"></i>
-                                    Visit us
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div
+        class="jumbotron card card-image px-0 d-none d-lg-block"
+        style="background-image: url(/bmd/img/bg.png);">
+        <div class="text-white text-center py-5 px-4">
+            <div>
+                <h2 class="card-title h1-responsive pt-3 mb-5 font-bold">
+                    <strong>Electro del parque</strong>
+                </h2>
+                <p class="mx-5 mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Repellat fugiat.
+                </p>
+                <a class="btn btn-outline-white btn-lg">Ver más</a>
             </div>
+        </div>
+    </div>
 
-            <div class="productos col-12 col-md-12 col-lg-10 col-xl-8">
+            <div class="productos col-12 col-md-12 col-lg-10 m-lg-auto col-xl-10 m-xl-auto">
+                <h2 class="h1-responsive my-4 text-center">Productos</h2>
                 <div class="row d-flex justify-content-around">
                     @foreach($tipos as $tipo)
                         <a href="{{$tipo->slug}}/productos" class="card text-center col-12 col-md-5 col-lg-4 m-0 mt-4">
@@ -82,7 +70,7 @@
                 </div>
             </div>
 
-            <div class="informacion col-12 col-md-12 col-lg-10 col-xl-8 mt-4">
+            <div class="informacion col-12 col-md-12 col-lg-10 m-lg-auto col-xl-8 mt-4 m-xl-auto">
                 <div class="quienes-somos row">
                     <div class="col-12">
                         <h2 class="h1-responsive my-4 text-center">¿Quienes somos?</h2>
