@@ -19,10 +19,10 @@
 
 @section('main')
     <div class="container-fluid px-0">
-        <div class="jumbotron text-center d-lg-none mt-4 mb-0 py-4">
-            <h2 class="card-title h2 m-0">Electro del parque Lorem ipsum.</h2>
+        <div class="jumbotron text-center d-lg-none m-0 py-4">
+            <h2 class="card-title h2 m-0">Electro del Parque</h2>
             
-            <p class="blue-text my-4 font-weight-bold">Lorem ipsum dolor sit amet.</p>
+            <p class="my-4 font-weight-bold">Lorem ipsum dolor sit amet.</p>
             
             <div class="row d-flex justify-content-center">
                 <div class="col-xl-7">
@@ -31,46 +31,49 @@
             </div>
 
             <div class="mt-4">
-                <button type="button" class="btn btn-blue waves-effect">Contacto</button>
+                <button type="button" class="btn waves-effect">Contacto</button>
             </div>
         </div>
-            
-
-
-            <div
-        class="jumbotron card card-image px-0 d-none d-lg-block"
+        
+        <div class="jumbotron card card-image px-0 d-none d-lg-block m-0"
         style="background-image: url(/bmd/img/bg.png);">
-        <div class="text-white text-center py-5 px-4">
-            <div>
-                <h2 class="card-title h1-responsive pt-3 mb-5 font-bold">
-                    <strong>Electro del parque</strong>
-                </h2>
-                <p class="mx-5 mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Repellat fugiat.
-                </p>
-                <a class="btn btn-outline-white btn-lg">Ver más</a>
+            <div class="text-white text-center py-5 px-4">
+                <div>
+                    <h2 class="card-title h1-responsive pt-3 mb-5 font-weight-bold text-white">
+                        <strong>Electro del parque</strong>
+                    </h2>
+                    <p class="mx-5 mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Repellat fugiat.
+                    </p>
+                    <a class="btn btn-outline-white btn-lg">Ver más</a>
+                </div>
             </div>
         </div>
-    </div>
 
-            <div class="productos col-12 col-md-12 col-lg-10 m-lg-auto col-xl-10 m-xl-auto">
-                <h2 class="h1-responsive my-4 text-center">Productos</h2>
-                <div class="row d-flex justify-content-around">
+        <div class="row m-0 p-0 d-flex justify-content-center">
+            <div class="productos col-12 col-md-12 col-lg-10 col-xl-8 p-0 mb-lg-4">
+                <h2 class="h1-responsive mt-4 mb-0 text-center">Productos</h2>
+                <div class="row d-flex justify-content-between mx-4 m-lg-0">
                     @foreach($tipos as $tipo)
-                        <a href="{{$tipo->slug}}/productos" class="card text-center col-12 col-md-5 col-lg-4 m-0 mt-4">
-                            <div class="pt-4 mt-md-0">
-                                <h4 class="h5 card-title mb-4">{{$tipo->nombre}}</h4>
+                        <a href="{{$tipo->slug}}/productos" class="card text-center col-12 col-md-5 col-lg-4 m-0 mt-4 px-0">
+                            <div class="pt-4 mt-md-0 mx-lg-2">
+                                <h4 class="h5 card-title font-weight-bold mb-4">{{$tipo->nombre}}</h4>
 
                                 <img class="card-img-top"
                                     src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg"
                                     alt="Card image cap">
+                                
+                                <span class="top-line"></span>
+                                <span class="right-line"></span>
+                                <span class="bottom-line"></span>
+                                <span class="left-line"></span>
                             </div>
                         </a>
                     @endforeach
                 </div>
             </div>
 
-            <div class="informacion col-12 col-md-12 col-lg-10 m-lg-auto col-xl-8 mt-4 m-xl-auto">
+            <div class="informacion col-12 col-md-12 col-lg-10 col-xl-8 mt-4">
                 <div class="quienes-somos row">
                     <div class="col-12">
                         <h2 class="h1-responsive my-4 text-center">¿Quienes somos?</h2>
@@ -135,11 +138,13 @@
                                     </div>
                                 </div>
                             </div>
-                        </form>
 
-                        <div class="text-center text-md-left d-flex justify-content-center my-4">
-                            <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Enviar</a>
-                        </div>
+                            <div class="text-center text-md-left d-flex justify-content-center my-4">
+                                <button onclick="document.getElementById('contact-form').submit();" class="btn">
+                                    Enviar
+                                </button>
+                            </div>
+                        </form>
 
                         <div class="status"></div>
                     </div>
