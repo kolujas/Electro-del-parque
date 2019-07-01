@@ -13,7 +13,7 @@
 @endsection
 
 @section('nav')
-    @component('components.nav')
+    @component('components.nav', ['tipos' => $tipos])
     @endcomponent
 @endsection
 
@@ -35,8 +35,7 @@
             </div>
         </div>
         
-        <div class="jumbotron card card-image px-0 d-none d-lg-block m-0"
-        style="background-image: url(/bmd/img/bg.png);">
+        <div class="jumbotron card card-image px-0 d-none d-lg-block m-0">
             <div class="text-white text-center py-5 px-4">
                 <div>
                     <h2 class="card-title h1-responsive pt-3 mb-5 font-weight-bold text-white">
@@ -45,7 +44,7 @@
                     <p class="mx-5 mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                         Repellat fugiat.
                     </p>
-                    <a class="btn btn-outline-white btn-lg">Ver más</a>
+                    <a class="btn btn-outline-white btn-lg" href="/">Ver más</a>
                 </div>
             </div>
         </div>
@@ -55,13 +54,17 @@
                 <h2 class="h1-responsive mt-4 mb-0 text-center">Productos</h2>
                 <div class="row d-flex justify-content-between mx-4 m-lg-0">
                     @foreach($tipos as $tipo)
-                        <a href="{{$tipo->slug}}/productos" class="card text-center col-12 col-md-5 col-lg-4 m-0 mt-4 px-0">
+                        @if($tipo->id_tipo != 3 && $tipo->id_tipo != 5)
+                            <a href="/{{$tipo->slug}}/productos" class="card text-center col-12 col-md-5 col-lg-4 m-0 mt-4 px-0">
+                        @else
+                            <a href="/{{$tipo->slug}}" class="card text-center col-12 col-md-5 col-lg-4 m-0 mt-4 px-0">
+                        @endif
                             <div class="pt-4 mt-md-0 mx-lg-2">
                                 <h4 class="h5 card-title font-weight-bold mb-4">{{$tipo->nombre}}</h4>
 
                                 <img class="card-img-top"
-                                    src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg"
-                                    alt="Card image cap">
+                                    src="/img/{{$tipo->imagen}}"
+                                    alt="{{$tipo->nombre}}">
                                 
                                 <span class="top-line"></span>
                                 <span class="right-line"></span>
@@ -73,8 +76,8 @@
                 </div>
             </div>
 
-            <div class="informacion col-12 col-md-12 col-lg-10 col-xl-8 mt-4">
-                <div class="quienes-somos row">
+            <div id="quienes-somos" class="quienes-somos col-12 col-md-12 col-lg-10 col-xl-8 mt-4">
+                <div class="row">
                     <div class="col-12">
                         <h2 class="h1-responsive my-4 text-center">¿Quienes somos?</h2>
                     </div>
@@ -91,14 +94,16 @@
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="contacto row justify-content-center">
+            <div id="contacto" class="contacto col-12 col-md-12 col-lg-10 col-xl-8 mt-4">
+                <div class="row d-flex justify-content-center">
                     <div class="col-12">
                         <h2 class="h1-responsive my-4 text-center">Contacto</h2>
                     </div>
 
                     <div class="col-md-10 col-lg-8 mb-md-0">
-                        <form id="contact-form" name="contact-form" action="mail.php" method="POST" class="py-0">
+                        <form id="contact-form" name="contact-form" action="/" method="POST" class="py-0">
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="md-form mb-0">
@@ -160,5 +165,5 @@
 @endsection
 
 @section('js')
-    <script type="text/javascript" src="js/web/inicio.js"></script>
+    <script type="text/javascript" src="/js/web/inicio.js"></script>
 @endsection

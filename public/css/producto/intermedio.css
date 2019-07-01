@@ -1,17 +1,97 @@
+/* Jumbotron */
+.jumbotron.card{
+    background-image: url(/bmd/img/bg.png);
+}
+
+.jumbotron.card a{
+    background-color: forestgreen;
+    color: white;
+    border-radius: .25rem;
+}
+
 /* Productos */
 .productos .card{
-    background: transparent;
+    color: #162e44;
+    position: relative;
+    overflow: hidden;
     box-shadow: none;
-    color: #222222;
+    background: transparent;
 }
 
 .productos .card > div{
     background-color: white;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
     border-radius: .25rem;
+    position: relative;
+    overflow: hidden;
 }
 
 .productos .card > div img{
     border-bottom-right-radius: .25rem;
     border-bottom-left-radius: .25rem;
+}
+
+/* LG */
+@media(min-width: 1024px){
+    /* Jumbotron */
+    .jumbotron a:hover{
+        font-weight: bold !important;
+        transition: .5s;
+        background-color: #228b22e3;
+    }
+
+    /* Productos */
+    .productos .card span{
+        position: absolute;
+        transition: .5s;
+        transform: translateX(0);
+        transform: translateY(0);
+    }
+    
+    .productos .card .top-line{
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 5px;
+        background-color: #162e44;
+    }
+    
+    .productos .card:hover .top-line{
+        transform: translateX(100%);
+    }
+    
+    .productos .card .right-line{
+        right: 0;
+        bottom: 100%;
+        width: 5px;
+        height: 100%;
+        background-color: #162e44;
+    }
+    
+    .productos .card:hover .right-line{
+        transform: translateY(100%);
+    }
+    
+    .productos .card .bottom-line{
+        bottom: 0;
+        right: -100%;
+        width: 100%;
+        height: 5px;
+        background-color: #162e44;
+    }
+    
+    .productos .card:hover .bottom-line{
+        transform: translateX(-100%);
+    }
+    
+    .productos .card .left-line{
+        left: 0;
+        top: 100%;
+        width: 5px;
+        height: 100%;
+        background-color: #162e44;
+    }
+    
+    .productos .card:hover .left-line{
+        transform: translateY(-100%);
+    }
 }

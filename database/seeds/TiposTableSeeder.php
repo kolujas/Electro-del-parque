@@ -35,17 +35,17 @@
                         
             Tipo::create( [
             'id_tipo'=>'4',
-            'nombre'=>'Presion Invasiva',
+            'nombre'=>'Presión Invasiva',
             'id_usuario'=>'1',
-            'slug'=>'presion-invasiva',
-            'imagen'=>'tipos/4.jpg'
+            'slug'=>'presión-invasiva',
+            'imagen'=>'tipos/4.png'
             ] );
                         
             Tipo::create( [
             'id_tipo'=>'5',
-            'nombre'=>'Presion no Invasiva',
+            'nombre'=>'Presión no Invasiva',
             'id_usuario'=>'1',
-            'slug'=>'presion-no-invasiva',
+            'slug'=>'presión-no-invasiva',
             'imagen'=>'tipos/5.jpg'
             ] );
                         

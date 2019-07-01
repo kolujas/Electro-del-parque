@@ -1,6 +1,10 @@
+<?php
+    /** @var Tipo[] $tipos */
+?>
+
 <nav class="navbar navbar-expand-lg">
     <!-- Navbar brand -->
-    <a class="navbar-brand white-text" href="#">Electro del parque</a>
+    <a class="navbar-brand white-text" href="/">Electro del parque</a>
 
     <!-- Collapse button -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
@@ -14,7 +18,7 @@
         <!-- Links -->
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active white-text">
-                <a class="nav-link white-text" href="#">Inicio
+                <a class="nav-link white-text" href="/">Inicio
                 <span class="sr-only">(current)</span>
                 </a>
             </li>
@@ -24,16 +28,20 @@
                 aria-haspopup="true" aria-expanded="false">Productos</a>
                 
                 <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">Pizza</a>
-                    <a class="dropdown-item" href="#">Empanadas</a>
-                    <a class="dropdown-item" href="#">Hamburguesas</a>
+                    @foreach($tipos as $tipo)
+                        @if($tipo->id_tipo != 3)
+                            <a class="dropdown-item" href="/{{$tipo->slug}}/productos">{{$tipo->nombre}}</a>
+                        @else
+                            <a class="dropdown-item" href="/{{$tipo->slug}}">{{$tipo->nombre}}</a>
+                        @endif
+                    @Endforeach
                 </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link white-text" href="#">¿Quienes somos?</a>
+                <a class="nav-link white-text" href="/#quienes-somos">¿Quienes somos?</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link white-text" href="#">Contacto</a>
+                <a class="nav-link white-text" href="/#contacto">Contacto</a>
             </li>
         </ul>
     </div>
