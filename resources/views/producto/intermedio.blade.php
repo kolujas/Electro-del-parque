@@ -21,7 +21,7 @@
 
 @section('main')
     <div class="container-fluid px-0">
-        <div class="jumbotron card card-image d-lg-block m-0 p-5 px-0">
+        <!-- <div class="jumbotron card card-image d-lg-block m-0 p-5 px-0">
             <div class="text-white text-center py-5 p-0">
                 <div class="py-md-5">
                     <h2 class="card-title h1-responsive p-0 mb-4 mt-lg-4 font-weight-bold text-white">
@@ -33,11 +33,11 @@
                     <a class="btn btn-lg mt-lg-4" href="/">Ver más</a>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <div class="row m-0 p-0 d-flex justify-content-center">
             <div class="productos col-12 col-md-12 col-lg-10 col-xl-8 p-0 mb-lg-4">
-                <h2 class="h1-responsive m-0 mt-4 my-lg-4 text-center">{{$tipo->nombre}}</h2>
+                <h2 class="h1-responsive m-0 mt-4 text-center">{{$tipo->nombre}}</h2>
                 <div class="row d-flex justify-content-around mx-4 m-lg-0">
                     @foreach($categorias as $categoria)
                         @if($categoria->id_categoria == 1)

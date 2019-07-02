@@ -1,6 +1,8 @@
 <?php
     /** @var Tipo[] $tipos */
     /** @var Tipo $tipo */
+    /** @var object $banner */
+    /** @var string $aclaracion */
 ?>
 
 @extends('layout.index')
@@ -20,20 +22,19 @@
 
 @section('main')
     <div class="container-fluid px-0">
-        <div class="jumbotron card card-image px-0 d-lg-block m-0"
-        style="background-image: url(/bmd/img/bg.png);">
-            <div class="text-white text-center py-5 px-4">
-                <div>
-                    <h2 class="card-title h1-responsive pt-3 mb-5 font-weight-bold text-white">
-                        <strong>Electro del parque</strong>
-                    </h2>
-                    <p class="mx-5 mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Repellat fugiat.
-                    </p>
-                    <a class="btn btn-outline-white btn-lg" href="/">Ver más</a>
+        @if($tipo->id_tipo == 2 || $tipo->id_tipo == 3 || $tipo->id_tipo == 4 || $tipo->id_tipo == 6)
+            <div class="jumbotron card card-image d-lg-block m-0 p-5 px-0"
+                style="background-image: url(/img/tipos/{{$banner->imagen}})">
+                <div class="text-white text-center py-5 p-0">
+                    <div class="py-md-5">
+                        <h2 class="card-title h1-responsive p-0 mb-4 mt-lg-4 font-weight-bold text-white">
+                            <strong>{{$banner->titulo}}</strong>
+                        </h2>
+                        <p class="mb-4">{{$banner->leyenda}}</p>
+                    </div>
                 </div>
             </div>
-        </div>
+        @endif
 
         <div class="row m-0 p-0 d-flex justify-content-center">
             <div class="productos col-12 col-md-12 col-lg-10 col-xl-8 p-0 mb-lg-4">
@@ -124,6 +125,16 @@
                     </div>                        
                 </div>                        
             </div>
+            
+            @if($tipo->id_tipo == 4 || $tipo->id_tipo == 5)
+                <div class="aclaracion col-12 col-md-12 col-lg-10 col-xl-8 mt-4">
+                    <div class="row p-4">
+                        <div class="col-12">
+                            <p class="lead text-center text-md-left d-flex mx-4 m-md-0 py-4 py-md-0 mb-0">{{$aclaracion}}</p>
+                        </div>
+                    </div>
+                </div>
+            @endif
         </div>
     </div>
 @endsection

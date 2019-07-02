@@ -19,38 +19,23 @@
 
 @section('main')
     <div class="container-fluid px-0">
-        <div class="jumbotron text-center d-lg-none m-0 py-4">
-            <h2 class="card-title h2 m-0">Electro del Parque</h2>
-            
-            <p class="my-4 font-weight-bold">Lorem ipsum dolor sit amet.</p>
-            
-            <div class="row d-flex justify-content-center">
-                <div class="col-xl-7">
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Fuga aliquid dolorem ea distinctio exercitationem delectus qui, quas eumarchitecto, amet quasi accusantium, fugit consequatur ducimus obcaecati numquammolestias hic itaque accusantium doloremque laudantium, totam rem aperiam.</p>
-                </div>
-            </div>
-
-            <div class="mt-4">
-                <button type="button" class="btn waves-effect">Contacto</button>
-            </div>
-        </div>
-        
-        <div class="jumbotron card card-image px-0 d-none d-lg-block m-0">
-            <div class="text-white text-center py-5 px-4">
-                <div>
-                    <h2 class="card-title h1-responsive pt-3 mb-5 font-weight-bold text-white">
+        <div class="jumbotron card card-image d-lg-block m-0 p-5 px-0"
+        style="background: url(/bmd/img/bg.png);">
+            <div class="text-white text-center py-5 p-0">
+                <div class="py-md-5">
+                    <h2 class="card-title h1-responsive p-0 mb-4 mt-lg-4 font-weight-bold text-white">
                         <strong>Electro del parque</strong>
                     </h2>
-                    <p class="mx-5 mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                         Repellat fugiat.
                     </p>
-                    <a class="btn btn-outline-white btn-lg" href="/">Ver más</a>
+                    <a class="btn btn-lg mt-lg-4" href="/#productos">Ver más</a>
                 </div>
             </div>
         </div>
 
         <div class="row m-0 p-0 d-flex justify-content-center">
-            <div class="productos col-12 col-md-12 col-lg-10 col-xl-8 p-0 mb-lg-4">
+            <div id="productos" class="productos col-12 col-md-12 col-lg-10 col-xl-8 p-0 mb-lg-4">
                 <h2 class="h1-responsive mt-4 mb-0 text-center">Productos</h2>
                 <div class="row d-flex justify-content-between mx-4 m-lg-0">
                     @foreach($tipos as $tipo)

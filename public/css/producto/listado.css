@@ -12,16 +12,14 @@
 .productos .card{
     color: #162e44;
     position: relative;
-    overflow: hidden;
-    box-shadow: none;
     background: transparent;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
 }
 
 .productos .card > div{
     background-color: white;
     border-radius: .25rem;
     position: relative;
-    overflow: hidden;
 }
 
 .productos .card > div img{
@@ -50,6 +48,15 @@
     }
 
     /* Productos */
+    .productos .card{
+        box-shadow: none;
+    }
+
+    .productos .card > div{
+        overflow: hidden;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    }
+    
     .productos .card span{
         position: absolute;
         transition: .5s;

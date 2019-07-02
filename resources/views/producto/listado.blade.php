@@ -3,6 +3,8 @@
     /** @var Producto[] $productos */
     /** @var Tipo[] $tipos */
     /** @var Tipo $tipo */
+    /** @var object $banner */
+    /** @var string $aclaracion */
 ?>
 
 @extends('layout.index')
@@ -23,13 +25,14 @@
 @section('main')
     <div class="container-fluid px-0">
         @if($tipo->id_tipo == 2 || $tipo->id_tipo == 3 || $tipo->id_tipo == 4 || $tipo->id_tipo == 6)
-            <div class="jumbotron card card-image d-block m-0 p-0" style="background-image: url(/img/tipos/{{$banner->imagen}})">
-                <div class="text-white text-center py-5 px-4">
-                    <div>
-                        <h2 class="card-title h1-responsive pt-3 mb-5 font-weight-bold text-white">
+            <div class="jumbotron card card-image d-lg-block m-0 p-5 px-0"
+                style="background-image: url(/img/tipos/{{$banner->imagen}})">
+                <div class="text-white text-center py-5 p-0">
+                    <div class="py-md-5">
+                        <h2 class="card-title h1-responsive p-0 mb-4 mt-lg-4 font-weight-bold text-white">
                             <strong>{{$banner->titulo}}</strong>
                         </h2>
-                        <p class="mx-5 mb-5">{{$banner->leyenda}}</p>
+                        <p class="mb-4">{{$banner->leyenda}}</p>
                     </div>
                 </div>
             </div>
