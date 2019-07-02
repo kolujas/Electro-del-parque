@@ -81,7 +81,7 @@
     .jumbotron a:hover{
         font-weight: bold !important;
         transition: .5s;
-        background-color: #228b22e3;
+        background-color: rgb(40, 169, 192);
     }
 
     /* Productos */
@@ -160,7 +160,7 @@
         transition: .5s;
         font-weight: bold !important;
         color: white;
-        background-color: #228b22e3;
+        background-color: rgb(40, 169, 192);
     }
 }
 

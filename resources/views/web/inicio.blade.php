@@ -90,8 +90,8 @@
 
             <div class="row">
                 <div class="col-md-8 col-lg-8 mb-md-4 m-auto">
-                    <form class="needs-validation contact-form" novalidate="novalidate">
-                        <div class="form-row">
+                    <form class="needs-validation contact-form py-0" novalidate="novalidate">
+                        <div class="form-row d-flex justify-content-center">
                             <div class="col-md-10 mb-3">
                                 <label for="nombre">First name</label>
                                 <input
@@ -126,7 +126,10 @@
                                             required="required">
                                             <div class="invalid-tooltip"></div>
                                         </div>
-                                        <button class="btn btn-primary btn-sm enviar" type="submit">Submit form</button>
+
+                                        <div class="text-center text-md-left d-flex justify-content-center my-4 col-12">
+                                            <button class="btn btn-md enviar" type="submit">Submit form</button>
+                                        </div>
                                     </form>
 
                                     <div class="status"></div>
