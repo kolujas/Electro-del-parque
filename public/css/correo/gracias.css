@@ -1,0 +1,28 @@
+/* Jumbotron */
+.jumbotron h2{
+    font-size: 2.5rem;
+}
+
+.jumbotron.card a{
+    background-color: forestgreen;
+    color: white;
+    border-radius: .25rem;
+}
+
+/* MD */
+@media(min-width: 768px){
+}
+
+/* LG */
+@media(min-width: 1024px){
+    /* Jumbotron */
+    .jumbotron a:hover{
+        font-weight: bold !important;
+        transition: .5s;
+        background-color: #228b22e3;
+    }
+}
+
+/* XL */
+@media(min-width: 1200px){
+}

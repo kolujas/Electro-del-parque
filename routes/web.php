@@ -13,12 +13,16 @@
 /** WebController */
     Route::get('/', 'WebController@inicio')->name('web.inicio');
 
+/** CorreoController */
+    Route::post('/contactar', 'CorreoController@contactar')->name('correo.contactar');
+
+    Route::post('/preguntar', 'CorreoController@preguntar')->name('correo.preguntar');
+
+    Route::get('/gracias', 'CorreoController@gracias')->name('correo.gracias');
+
 /** ProductoController */
     Route::get('/{tipo_slug}', 'ProductoController@intermedio')->name('producto.intermedio');
 
     Route::get('/{tipo_slug}/productos', 'ProductoController@listado')->name('producto.listado');
 
-    Route::get('/{tipo_slug}/productos/{categoria}', 'ProductoController@sublistado')->name('producto.sublistado');
-
-
-  
+    Route::get('/{tipo_slug}/productos/{categoria}', 'ProductoController@sublistado')->name('producto.sublistado');  

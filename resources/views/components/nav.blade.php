@@ -29,7 +29,7 @@
                 
                 <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
                     @foreach($tipos as $tipo)
-                        @if($tipo->id_tipo != 3)
+                        @if($tipo->id_tipo != 3 && $tipo->id_tipo != 5)
                             <a class="dropdown-item" href="/{{$tipo->slug}}/productos">{{$tipo->nombre}}</a>
                         @else
                             <a class="dropdown-item" href="/{{$tipo->slug}}">{{$tipo->nombre}}</a>

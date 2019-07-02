@@ -10,7 +10,12 @@
         /** Carga la seccion intermedia antes de los listados de algunos Tipos. */
         public function intermedio($slug){
             $tipos = Tipo::get();
-            $tipo = Tipo::findBySlug($slug);
+            if(Tipo::findBySlug($slug)){
+                $tipo = Tipo::findBySlug($slug);
+            }else{
+                return redirect('/');
+            }
+
             if($tipo->id_tipo != 3 && $tipo->id_tipo != 5){
                 return redirect('/' . $tipo->slug . '/productos');
             }else{
@@ -50,7 +55,13 @@
         /** Carga el listado de productos que coincidan con el slug. */
         public function listado($slug){
             $tipos = Tipo::get();
-            $tipo = Tipo::findBySlug($slug);
+
+            if(Tipo::findBySlug($slug)){
+                $tipo = Tipo::findBySlug($slug);
+            }else{
+                return redirect('/');
+            }
+
             $marcas = Marca::get();
             $productos = Producto::where('id_tipo', '=', $tipo->id_tipo)->get();
 
@@ -84,7 +95,12 @@
         /** Carga el sublistado de productos que coincidan con el slug. */
         public function sublistado($slug, $categoria){
             $tipos = Tipo::get();
-            $tipo = Tipo::findBySlug($slug);
+            
+            if(Tipo::findBySlug($slug)){
+                $tipo = Tipo::findBySlug($slug);
+            }else{
+                return redirect('/');
+            }
             
             if($tipo->id_tipo != 3 && $tipo->id_tipo != 5){
                 return redirect('/' . $tipo->slug . '/productos');

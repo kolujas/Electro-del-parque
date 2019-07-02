@@ -10,7 +10,12 @@
                 'nombre' => 'required|min:2|max:60',
                 'correo' => 'required|email|max:100',
                 'telefono' => 'required|numeric',
-                'descripcion' => 'required',
+                'mensaje' => 'required',
+            ],'preguntar' => [
+                'nombre' => 'required|min:2|max:60',
+                'correo' => 'required|email|max:100',
+                'asunto' => 'required',
+                'mensaje' => 'required',
             ],
         ];
     }
