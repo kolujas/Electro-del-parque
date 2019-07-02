@@ -34,6 +34,7 @@
             </div>
         </div>
 
+    
         <div class="row m-0 p-0 d-flex justify-content-center">
             <div id="productos" class="productos col-12 col-md-12 col-lg-10 col-xl-8 p-0 mb-lg-4">
                 <h2 class="h1-responsive mt-4 mb-0 text-center">Productos</h2>
@@ -74,7 +75,7 @@
                             </div> 
                             
                             <div class="col-12 col-md-6 p-0 m-0 pl-md-5">
-                                <p class="lead text-center text-md-left d-flex mx-4 m-md-0 py-4 py-md-0 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam magni iure voluptatum soluta ut porro.</p>
+                                <p class="lead text-center text-md-left d-flex mx-4 m-md-0 py-4 py-md-0 mb-0">Una empresa con más de 20 años en el mercado de la electromedicina, brindando sus productos y servicios con responsabilidad, profesionalidad, calidez humana en su atención y un esmerado trabajo diario: brindar la mejor calidad en todo lo que hacemos siendo nuestra meta el superarnos continuamente para estar al alcance de su exigencia y poderle brindar excelentes precios y garantía técnica.</p>
                             </div>
                         </div>
                     </div>
@@ -87,57 +88,53 @@
                         <h2 class="h1-responsive my-4 text-center">Contacto</h2>
                     </div>
 
-                    <div class="col-md-10 col-lg-8 mb-md-0">
-                        <form id="contact-form" name="contact-form" action="/" method="POST" class="py-0">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="md-form mb-0">
-                                        <input type="text" id="nombre" name="nombre" class="form-control">
-                                        
-                                        <label for="nombre" class="nombre">Nombre</label>
-                                    </div>
+            <div class="row">
+                <div class="col-md-8 col-lg-8 mb-md-4 m-auto">
+                    <form class="needs-validation contact-form py-0" novalidate="novalidate">
+                        <div class="form-row d-flex justify-content-center">
+                            <div class="col-md-10 mb-3">
+                                <label for="nombre">First name</label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="nombre"
+                                    placeholder="First name"
+                                    value="Mark"
+                                    required="required">
+                                    <div class="invalid-tooltip"></div>
                                 </div>
-                                    
-                                <div class="col-md-6">
-                                    <div class="md-form mb-0">
-                                        <input type="number" id="telefono" name="telefono" class="form-control">
-                                        
-                                        <label for="telefono" class="telefono">Teléfono</label>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="md-form mb-0">
-                                        <input type="email" id="email" name="email" class="form-control email">
-                                        
-                                        <label for="email" class="">Email</label>
-                                    </div>
-                                </div>
-                                
-                                <div class="col-md-12">
-                                    <div class="md-form mb-0">
-                                        <textarea type="text"
-                                            id="mensaje"
-                                            name="mensaje"
-                                            rows="2"
-                                            class="form-control md-textarea"></textarea>
 
-                                        <label for="mensaje">Escribe tu mensaje</label>
+                                <div class="col-md-10 mb-3">
+                                    <label for="telefono">Teléfono</label>
+                                    <input
+                                        type="number"
+                                        class="form-control"
+                                        id="telefono"
+                                        placeholder="First name"
+                                        value="Mark"
+                                        required="required">
+                                        <div class="invalid-tooltip"></div>
                                     </div>
+                                    <div class="col-md-10 mb-3">
+                                        <label for="email">Email</label>
+                                        <input
+                                            type="email"
+                                            class="form-control"
+                                            id="email"
+                                            placeholder="First name"
+                                            value="Mark"
+                                            required="required">
+                                            <div class="invalid-tooltip"></div>
+                                        </div>
+
+                                        <div class="text-center text-md-left d-flex justify-content-center my-4 col-12">
+                                            <button class="btn btn-md enviar" type="submit">Submit form</button>
+                                        </div>
+                                    </form>
+
+                                    <div class="status"></div>
                                 </div>
-                            </div>
-
-                            <div class="text-center text-md-left d-flex justify-content-center my-4">
-                                <button onclick="document.getElementById('contact-form').submit();" class="btn">
-                                    Enviar
-                                </button>
-                            </div>
-                        </form>
-
-                        <div class="status"></div>
-                    </div>
+                        </div>
                 </div>
             </div>
         </div>
@@ -151,4 +148,5 @@
 
 @section('js')
     <script type="text/javascript" src="/js/web/inicio.js"></script>
+    <script type="text/javascript" src="/js/web/contacto.js"></script>
 @endsection

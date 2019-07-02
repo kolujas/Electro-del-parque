@@ -74,7 +74,7 @@
                             </div>
                         </div>
                     @endforeach
-                </div>                 
+                </div>                     
             </div>
             
             @if($tipo->id_tipo == 4 || $tipo->id_tipo == 5)

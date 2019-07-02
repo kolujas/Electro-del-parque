@@ -1,10 +1,20 @@
+.dropdown-menu{
+    background-color: #162e44;
+    margin-top: 0.45rem !important;
+    border-top: none;
+}
+
+.navbar .dropdown-menu a{
+    color: #fff;
+}
+
 /* Jumbotron */
 .jumbotron h2{
     font-size: 2.5rem;
 }
 
 .jumbotron.card a{
-    background-color: forestgreen;
+    background-color: #01B3A7;
     color: white;
     border-radius: .25rem;
 }
@@ -46,7 +56,7 @@
 }
 
 .contacto form button{
-    background-color: forestgreen;
+    background-color: #01B3A7;
     color: white;
 }
 
@@ -56,6 +66,13 @@
     .quienes-somos, .contacto{
         border-radius: .25rem;
     }
+
+    /* productos */
+
+    .productos .card-img-top{
+        height: 12rem;
+        object-fit: cover;
+    }
 }
 
 /* LG */
@@ -64,7 +81,7 @@
     .jumbotron a:hover{
         font-weight: bold !important;
         transition: .5s;
-        background-color: #228b22e3;
+        background-color: rgb(40, 169, 192);
     }
 
     /* Productos */
@@ -132,15 +149,27 @@
         transform: translateY(-100%);
     }
 
+    .productos .card-img-top{
+        height: 14rem;
+        object-fit: cover;
+    }
+    
+
     /* Contacto */
     .contacto form button:hover{
         transition: .5s;
         font-weight: bold !important;
         color: white;
-        background-color: #228b22e3;
+        background-color: rgb(40, 169, 192);
     }
 }
 
 /* XL */
 @media(min-width: 1200px){
+    /* productos */
+
+    .productos .card-img-top{
+        height: 18rem;
+        object-fit: cover;
+    }
 }
