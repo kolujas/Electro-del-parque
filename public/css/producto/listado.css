@@ -28,7 +28,7 @@
 }
     
 .productos .card a{
-    background-color: forestgreen;
+    background-color: #01B3A7;
     color: white;
 }
 
@@ -37,6 +37,27 @@
     background-color: white;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
     border-radius: .25rem;
+}
+
+/* modal */
+
+.modal-header .close{
+    padding: 0;
+    margin: 0 0 0 0;
+    margin-right: 5rem !important;
+    outline: none;
+}
+
+.modal-body i{
+    color: #4285F4 !important;
+}
+.modal-body .md-form:last-of-type i{
+    font-size: 1.7rem;
+}
+
+.modal-footer .btn{
+    background-color: #01B3A7;
+    color: #fff;
 }
 
 /* LG */
@@ -121,6 +142,6 @@
         transition: .5s;
         font-weight: bold !important;
         color: white;
-        background-color: #228b22e3;
+        background-color: #4285F4;
     }
 }

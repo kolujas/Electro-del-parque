@@ -120,6 +120,7 @@
                                 </div>
 
                                 <div class="md-form">
+                                    <i class="fas fa-comment-alt fa-lg"></i>
                                     <i class="fas fa-pencil prefix grey-text"></i>
                                     
                                     <textarea type="text" id="form8" class="md-textarea form-control" rows="4"></textarea>
@@ -129,7 +130,7 @@
                             </div>
 
                             <div class="modal-footer d-flex justify-content-center">
-                                <button class="btn btn-primary">Enviar
+                                <button class="btn">Enviar
                                     <i class="fas fa-paper-plane-o ml-1"></i>
                                 </button>
                             </div>
