@@ -90,45 +90,48 @@
 
             <div class="row">
                 <div class="col-md-8 col-lg-8 mb-md-4 m-auto">
-                    <form class="needs-validation contact-form py-0" novalidate="novalidate">
+                    <form class="needs-validation contact-form py-0" novalidate="novalidate" action="/contactar" method="post">
+                    @csrf
                         <div class="form-row d-flex justify-content-center">
-                            <div class="col-md-10 mb-3">
+                            <div class="col-md-10 my-3">
                                 <label for="nombre">First name</label>
                                 <input
                                     type="text"
                                     class="form-control"
                                     id="nombre"
-                                    placeholder="First name"
-                                    value="Mark"
+                                    placeholder="Nombre"
                                     required="required">
-                                    <div class="invalid-tooltip"></div>
+                                    <div class="invalid-tooltip mb-4"></div>
                                 </div>
 
-                                <div class="col-md-10 mb-3">
+                                <div class="col-md-10 my-3">
                                     <label for="telefono">Teléfono</label>
                                     <input
                                         type="number"
                                         class="form-control"
                                         id="telefono"
-                                        placeholder="First name"
-                                        value="Mark"
+                                        placeholder="Teléfono"
                                         required="required">
-                                        <div class="invalid-tooltip"></div>
+                                        <div class="invalid-tooltip mb-4"></div>
                                     </div>
-                                    <div class="col-md-10 mb-3">
+                                    <div class="col-md-10 my-3">
                                         <label for="email">Email</label>
                                         <input
                                             type="email"
                                             class="form-control"
                                             id="email"
-                                            placeholder="First name"
-                                            value="Mark"
+                                            placeholder="Email"
                                             required="required">
-                                            <div class="invalid-tooltip"></div>
+                                            <div class="invalid-tooltip mb-4"></div>
+                                        </div>
+                                        <div class="md-form col-md-10">
+                                        <textarea id="mensaje" class="md-textarea form-control" rows="3"></textarea>
+                                        <label for="mensaje">Mensaje</label>
+                                        <div class="invalid-tooltip mb-4"></div>
                                         </div>
 
                                         <div class="text-center text-md-left d-flex justify-content-center my-4 col-12">
-                                            <button class="btn btn-md enviar" type="submit">Submit form</button>
+                                            <button class="btn btn-md enviar" type="submit">Enviar</button>
                                         </div>
                                     </form>
 
