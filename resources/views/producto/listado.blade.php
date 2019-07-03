@@ -24,44 +24,50 @@
 
 @section('main')
     <div class="container-fluid px-0">
-        @if($tipo->id_tipo == 2 || $tipo->id_tipo == 3 || $tipo->id_tipo == 4 || $tipo->id_tipo == 6)
-            <div class="jumbotron card card-image d-lg-block m-0 p-5 px-0"
-                style="background-image: url(/img/tipos/{{$banner->imagen}})">
-                <div class="text-white text-center py-5 p-0">
-                    <div class="py-md-5">
-                        <h2 class="card-title h1-responsive p-0 mb-4 mt-lg-4 font-weight-bold text-white">
-                            <strong>{{$banner->titulo}}</strong>
-                        </h2>
-                        <p class="mb-4">{{$banner->leyenda}}</p>
+        <div class="row m-0 p-0 d-flex justify-content-center">
+            <div class="col-12">
+                <h2 class="h1-responsive mt-4 mb-0 text-center" id="tipo">{{$tipo->nombre}}</h2>
+            </div>
+
+            @if($tipo->id_tipo == 2 || $tipo->id_tipo == 3 || $tipo->id_tipo == 4 || $tipo->id_tipo == 6)
+                <div class="jumbotron card card-image d-lg-block col-12 col-lg-8 m-0 p-0"
+                    style="background-image: url(/img/tipos/{{$banner->imagen}})">
+                    <div class="text-white text-center m-0 p-0">
+                        <!-- <div class="py-md-5">
+                            <h2 class="card-title h1-responsive m-0 p-0 font-weight-bold text-white">
+                                <strong>{{$banner->titulo}}</strong>
+                            </h2>
+                            <p class="m-0 p-0">{{$banner->leyenda}}</p>
+                        </div> -->
                     </div>
                 </div>
-            </div>
-        @endif
-    
-        <div class="row m-0 p-0 d-flex justify-content-center">
+            @endif
+
             <div class="productos col-12 col-md-12 col-lg-10 col-xl-8 p-0 mb-lg-4">
-                <h2 class="h1-responsive mt-4 mb-0 text-center">{{$tipo->nombre}}</h2>
                 <div class="row d-flex justify-content-between mx-4 m-lg-0">
                     @foreach($productos as $producto)
-                        <div class="card text-center col-12 col-md-5 col-lg-4 m-0 mt-4 px-0">
+                        <div id="producto{{$producto->id_producto}}" class="card text-center col-12 col-md-5 col-lg-4 m-0 mt-4 px-0">
                             <div class="mx-lg-2">
                                 <div class="view overlay">
                                     <img class="card-img-top"
-                                        src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg"
+                                        src="/img/{{$producto->imagen}}"
                                         alt="Card image cap">
                                 </div>
 
                                 <div class="card-body text-center py-4">
-                                    @if($producto->modelos != null)
-                                        <h4 class="card-title m-0 p-0">Modelos</h4>
+                                    @if($producto->id_marca != null)
+                                        <h4 class="card-title m-0 p-0 marca">{{$producto->marca->nombre}}</h4>
+                                    @endif
 
+                                    @if($producto->modelo != null)
                                         <div class="my-4">
-                                            <p class="card-text">{{$producto->modelo}}</p>
+                                            <p class="card-text modelo">{{$producto->modelo}}</p>
                                         </div>
                                     @endif
 
                                     <div class="consulta">
-                                        <a class="btn btn-md"
+                                        <a class="btn btn-md modalButton"
+                                            onclick="cargarModal(this)"
                                             data-toggle="modal"
                                             data-target="#FormDeContacto">Consultar</a>
                                     </div>

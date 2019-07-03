@@ -79,7 +79,6 @@ function validar(input){
         }
         
         if(valid){
-            document.querySelector('.status').innerHTML = "Sending...";
             document.querySelector('.contact-form').submit();
         }else{
             return false;

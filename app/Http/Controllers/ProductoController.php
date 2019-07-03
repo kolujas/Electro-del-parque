@@ -63,7 +63,7 @@
             }
 
             $marcas = Marca::get();
-            $productos = Producto::where('id_tipo', '=', $tipo->id_tipo)->get();
+            $productos = Producto::where('id_tipo', '=', $tipo->id_tipo)->with('marca')->get();
 
             if($tipo->id_tipo == 4){
                 $img = 'banners/' . $tipo->id_tipo . '.jpeg';
@@ -117,6 +117,25 @@
                     'imagen' => $img,
                 ];
     
+                $productos = [
+                    (object) [
+                        'id_producto' => 1,
+                        'imagen' => 'https://mdbootstrap.com/img/Photos/Others/images/16.jpg',
+                    ], (object) [
+                        'id_producto' => 2,
+                        'imagen' => 'https://mdbootstrap.com/img/Photos/Others/images/16.jpg',
+                    ], (object) [
+                        'id_producto' => 3,
+                        'imagen' => 'https://mdbootstrap.com/img/Photos/Others/images/16.jpg',
+                    ], (object) [
+                        'id_producto' => 4,
+                        'imagen' => 'https://mdbootstrap.com/img/Photos/Others/images/16.jpg',
+                    ], (object) [
+                        'id_producto' => 5,
+                        'imagen' => 'https://mdbootstrap.com/img/Photos/Others/images/16.jpg',
+                    ],
+                ];
+    
                 $aclaracion = '';
                 if($tipo->id_tipo == 4 || $tipo->id_tipo == 5){
                     $aclaracion = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam magni iure voluptatum soluta ut porro.';
@@ -125,6 +144,7 @@
                 return view('producto.sublistado', [
                     'tipos' => $tipos,
                     'tipo' => $tipo,
+                    'productos' => $productos,
                     'banner' => $banner,
                     'aclaracion' => $aclaracion,
                 ]);

@@ -4,7 +4,7 @@
 }
 
 .jumbotron.card a{
-    background-color: forestgreen;
+    background-color: #01B3A7;
     color: white;
     border-radius: .25rem;
 }
@@ -19,7 +19,7 @@
     .jumbotron a:hover{
         font-weight: bold !important;
         transition: .5s;
-        background-color: #228b22e3;
+        background-color: rgb(40, 169, 192);
     }
 }
 

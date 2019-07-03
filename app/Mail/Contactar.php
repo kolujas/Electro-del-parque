@@ -6,7 +6,7 @@
     use Illuminate\Queue\SerializesModels;
     use Illuminate\Contracts\Queue\ShouldQueue;
 
-    class ContactarMail extends Mailable{
+    class Contactar extends Mailable{
         use Queueable, SerializesModels;
 
         /** @var array Los datos que el usuario envia por el formulario. */

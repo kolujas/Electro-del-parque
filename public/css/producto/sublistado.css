@@ -29,6 +29,15 @@
     border-radius: .25rem;
 }
 
+/* MD */
+@media(min-width: 768px){
+    /* Productos */
+    .productos .card-img-top{
+        height: 12rem;
+        object-fit: contain;
+    }
+}
+
 /* LG */
 @media(min-width: 1024px){
     /* Productos */
@@ -105,6 +114,6 @@
         transition: .5s;
         font-weight: bold !important;
         color: white;
-        background-color: #228b22e3;
+        background-color: rgb(40, 169, 192);
     }
 }

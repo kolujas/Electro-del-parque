@@ -1,13 +1,3 @@
-.dropdown-menu{
-    background-color: #162e44;
-    margin-top: 0.45rem !important;
-    border-top: none;
-}
-
-.navbar .dropdown-menu a{
-    color: #fff;
-}
-
 /* Jumbotron */
 .jumbotron h2{
     font-size: 2.5rem;
@@ -62,13 +52,18 @@
 
 /* MD */
 @media(min-width: 768px){
-    /* Informacion */
+    /* Quienes Somos */
     .quienes-somos, .contacto{
         border-radius: .25rem;
     }
 
-    /* productos */
+    .quienes-somos img{
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover;
+    }
 
+    /* Productos */
     .productos .card-img-top{
         height: 12rem;
         object-fit: cover;

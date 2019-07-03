@@ -20,6 +20,7 @@
     background-color: white;
     border-radius: .25rem;
     position: relative;
+    min-height: 100%;
 }
 
 .productos .card > div img{
@@ -39,8 +40,7 @@
     border-radius: .25rem;
 }
 
-/* modal */
-
+/* Modal */
 .modal-header .close{
     padding: 0;
     margin: 0 0 0 0;
@@ -58,6 +58,15 @@
 .modal-footer .btn{
     background-color: #01B3A7;
     color: #fff;
+}
+
+/* MD */
+@media(min-width: 768px){
+    /* Productos */
+    .productos .card-img-top{
+        height: 12rem;
+        object-fit: contain;
+    }
 }
 
 /* LG */
@@ -139,9 +148,8 @@
     }
 
     .productos .card a:hover{
-        transition: .5s;
         font-weight: bold !important;
-        color: white;
-        background-color: #4285F4;
+        transition: .5s;
+        background-color: rgb(40, 169, 192);
     }
 }

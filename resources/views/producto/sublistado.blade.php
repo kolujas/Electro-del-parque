@@ -1,6 +1,7 @@
 <?php
     /** @var Tipo[] $tipos */
     /** @var Tipo $tipo */
+    /** @var array[object] $productos */
     /** @var object $banner */
     /** @var string $aclaracion */
 ?>
@@ -22,46 +23,37 @@
 
 @section('main')
     <div class="container-fluid px-0">
-        @if($tipo->id_tipo == 2 || $tipo->id_tipo == 3 || $tipo->id_tipo == 4 || $tipo->id_tipo == 6)
-            <div class="jumbotron card card-image d-lg-block m-0 p-5 px-0"
-                style="background-image: url(/img/tipos/{{$banner->imagen}})">
-                <div class="text-white text-center py-5 p-0">
-                    <div class="py-md-5">
-                        <h2 class="card-title h1-responsive p-0 mb-4 mt-lg-4 font-weight-bold text-white">
-                            <strong>{{$banner->titulo}}</strong>
-                        </h2>
-                        <p class="mb-4">{{$banner->leyenda}}</p>
-                    </div>
-                </div>
-            </div>
-        @endif
-
         <div class="row m-0 p-0 d-flex justify-content-center">
-            <div class="productos col-12 col-md-12 col-lg-10 col-xl-8 p-0 mb-lg-4">
-                <h2 class="h1-responsive mt-4 mb-0 text-center">Productos</h2>
-                <div class="row d-flex justify-content-between mx-4 m-lg-0">
-                    <div class="card text-center col-12 col-md-5 col-lg-4 m-0 mt-4 px-0">
-                        <div class="mx-lg-2">
-                            <div class="view overlay">
-                                <img class="card-img-top"
-                                    src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg"
-                                    alt="Card image cap">
-                            </div>
+            <div class="col-12">
+                <h2 class="h1-responsive mt-4 mb-0 text-center">{{$tipo->nombre}}</h2>
+            </div>
 
-                            <div class="card-body text-center pb-4">
-                                <div class="consulta">
-                                    <a class="btn btn-md"
-                                        data-toggle="modal"
-                                        data-target="#FormDeContacto">Consultar</a>
+            <div class="productos col-12 col-md-12 col-lg-10 col-xl-8 p-0 mb-lg-4">
+                <div class="row d-flex justify-content-between mx-4 m-lg-0">
+                    @foreach($productos as $producto)
+                        <div class="card text-center col-12 col-md-5 col-lg-4 m-0 mt-4 px-0">
+                            <div class="mx-lg-2">
+                                <div class="view overlay">
+                                    <img class="card-img-top"
+                                        src="{{$producto->imagen}}"
+                                        alt="Imagen del producto">
                                 </div>
+
+                                <div class="card-body text-center pb-4">
+                                    <div class="consulta">
+                                        <a class="btn btn-md"
+                                            data-toggle="modal"
+                                            data-target="#FormDeContacto">Consultar</a>
+                                    </div>
+                                </div>
+                                
+                                <span class="top-line"></span>
+                                <span class="right-line"></span>
+                                <span class="bottom-line"></span>
+                                <span class="left-line"></span>
                             </div>
-                            
-                            <span class="top-line"></span>
-                            <span class="right-line"></span>
-                            <span class="bottom-line"></span>
-                            <span class="left-line"></span>
                         </div>
-                    </div>
+                    @endforeach
                 </div>                        
             </div>
             

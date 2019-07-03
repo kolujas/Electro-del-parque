@@ -26,9 +26,7 @@
                     <h2 class="card-title h1-responsive p-0 mb-4 mt-lg-4 font-weight-bold text-white">
                         <strong>Electro del parque</strong>
                     </h2>
-                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Repellat fugiat.
-                    </p>
+                    <p class="mb-4">Fabricamos accesorios para cardiología y oximetría de pulso</p>
                     <a class="btn btn-lg mt-lg-4" href="/#productos">Ver más</a>
                 </div>
             </div>
@@ -70,11 +68,11 @@
 
                     <div class="col-12">
                         <div class="row d-flex justify-content-around mx-md-4 pb-md-4">
-                            <div class="img-div col-12 col-md-6 p-0 m-0 pr-md-5"> 
+                            <div class="img-div col-12 col-md-6 p-0 m-0 pr-md-3"> 
                                 <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(54).jpg"  class="img-fluid z-depth-1" alt="1">
                             </div> 
                             
-                            <div class="col-12 col-md-6 p-0 m-0 pl-md-5">
+                            <div class="col-12 col-md-6 p-0 m-0 pl-md-3">
                                 <p class="lead text-center text-md-left d-flex mx-4 m-md-0 py-4 py-md-0 mb-0">Una empresa con más de 20 años en el mercado de la electromedicina, brindando sus productos y servicios con responsabilidad, profesionalidad, calidez humana en su atención y un esmerado trabajo diario: brindar la mejor calidad en todo lo que hacemos siendo nuestra meta el superarnos continuamente para estar al alcance de su exigencia y poderle brindar excelentes precios y garantía técnica.</p>
                             </div>
                         </div>
@@ -88,56 +86,88 @@
                         <h2 class="h1-responsive my-4 text-center">Contacto</h2>
                     </div>
 
-            <div class="row">
-                <div class="col-md-8 col-lg-8 mb-md-4 m-auto">
-                    <form class="needs-validation contact-form py-0" novalidate="novalidate" action="/contactar" method="post">
-                    @csrf
-                        <div class="form-row d-flex justify-content-center">
-                            <div class="col-md-10 my-3">
-                                <label for="nombre">First name</label>
-                                <input
-                                    type="text"
-                                    class="form-control"
-                                    id="nombre"
-                                    placeholder="Nombre"
-                                    required="required">
-                                    <div class="invalid-tooltip mb-4"></div>
-                                </div>
-
-                                <div class="col-md-10 my-3">
-                                    <label for="telefono">Teléfono</label>
-                                    <input
-                                        type="number"
-                                        class="form-control"
-                                        id="telefono"
-                                        placeholder="Teléfono"
-                                        required="required">
-                                        <div class="invalid-tooltip mb-4"></div>
+                    <div class="row">
+                        <div class="col-md-8 col-lg-8 mb-md-4 m-auto">
+                            <form class="needs-validation contact-form py-0" novalidate="novalidate" action="/contactar" method="post">
+                                @csrf
+                                <div class="form-row d-flex justify-content-center">
+                                    <div class="col-md-10 my-3">
+                                        <label for="nombre">Nombre</label>
+                                        <input type="text"
+                                            class="form-control"
+                                            id="nombre"
+                                            placeholder="Nombre"
+                                            name="nombre"
+                                            required="required">
+                                        <div class="invalid-tooltip mb-4"
+                                            @if($errors->has('mensaje'))
+                                                style="display: block;"
+                                            @endif>
+                                            @if($errors->has('nombre'))
+                                                {{ $errors->first('nombre') }}
+                                            @endif
+                                        </div>
                                     </div>
+
+                                    <div class="col-md-10 my-3">
+                                        <label for="telefono">Teléfono</label>
+                                        <input type="number"
+                                            class="form-control"
+                                            id="telefono"
+                                            placeholder="Teléfono"
+                                            name="telefono"
+                                            required="required">
+                                        <div class="invalid-tooltip mb-4"
+                                            @if($errors->has('mensaje'))
+                                                style="display: block;"
+                                            @endif>
+                                            @if($errors->has('telefono'))
+                                                {{ $errors->first('telefono') }}
+                                            @endif
+                                        </div>
+                                    </div>
+
                                     <div class="col-md-10 my-3">
                                         <label for="email">Email</label>
-                                        <input
-                                            type="email"
+                                        <input type="email"
                                             class="form-control"
                                             id="email"
                                             placeholder="Email"
+                                            name="correo"
                                             required="required">
-                                            <div class="invalid-tooltip mb-4"></div>
+                                        <div class="invalid-tooltip mb-4"
+                                            @if($errors->has('mensaje'))
+                                                style="display: block;"
+                                            @endif>
+                                            @if($errors->has('correo'))
+                                                {{ $errors->first('correo') }}
+                                            @endif
                                         </div>
-                                        <div class="md-form col-md-10">
-                                        <textarea id="mensaje" class="md-textarea form-control" rows="3"></textarea>
+                                    </div>
+
+                                    <div class="md-form col-md-10">
+                                        <textarea id="mensaje"
+                                            class="md-textarea form-control"
+                                            rows="3"
+                                            name="mensaje"></textarea>
                                         <label for="mensaje">Mensaje</label>
-                                        <div class="invalid-tooltip mb-4"></div>
+                                        <div class="invalid-tooltip mb-4"
+                                            @if($errors->has('mensaje'))
+                                                style="display: block;"
+                                            @endif>
+                                            @if($errors->has('mensaje'))
+                                                {{ $errors->first('mensaje') }}
+                                            @endif
                                         </div>
+                                    </div>
 
-                                        <div class="text-center text-md-left d-flex justify-content-center my-4 col-12">
-                                            <button class="btn btn-md enviar" type="submit">Enviar</button>
-                                        </div>
-                                    </form>
-
-                                    <div class="status"></div>
+                                    <div class="text-center text-md-left d-flex justify-content-center my-4 col-12">
+                                        <button class="btn btn-md enviar" type="submit">Enviar</button>
+                                    </div>
                                 </div>
+                            </form>
                         </div>
+                    </div>
                 </div>
             </div>
         </div>

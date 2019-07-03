@@ -13,6 +13,20 @@ h2{
 }
 
 /* Navbar */
+.dropdown-menu{
+    background-color: #162e44;
+    margin-top: 0.45rem !important;
+    border-top: none;
+}
+
+.navbar .dropdown-menu a{
+    color: #fff;
+}
+
+.navbar .dropdown-menu a:hover{
+    background-color: #162E44;
+}
+
 .navbar{
     background-color: #162E44;
 }

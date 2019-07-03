@@ -15,7 +15,7 @@
             'id_tipo'=>'1',
             'id_marca'=>'1',
             'id_usuario'=>'1',
-            'imagen'=>'productos/1.jpg'
+            'imagen'=>'productos/1.png'
             ] );
             
             Producto::create( [
@@ -24,7 +24,7 @@
             'id_tipo'=>'1',
             'id_marca'=>'1',
             'id_usuario'=>'1',
-            'imagen'=>'productos/2.jpg'
+            'imagen'=>'productos/2.png'
             ] );
             
             Producto::create( [
@@ -33,7 +33,7 @@
             'id_tipo'=>'1',
             'id_marca'=>'1',
             'id_usuario'=>'1',
-            'imagen'=>'productos/3.jpg'
+            'imagen'=>'productos/3.png'
             ] );
             
             Producto::create( [
@@ -42,7 +42,7 @@
             'id_tipo'=>'1',
             'id_marca'=>'2',
             'id_usuario'=>'1',
-            'imagen'=>'productos/4.jpg'
+            'imagen'=>'productos/4.png'
             ] );
             
             Producto::create( [
@@ -51,7 +51,7 @@
             'id_tipo'=>'1',
             'id_marca'=>'2',
             'id_usuario'=>'1',
-            'imagen'=>'productos/5.jpg'
+            'imagen'=>'productos/5.png'
             ] );
             
             Producto::create( [
@@ -60,7 +60,7 @@
             'id_tipo'=>'2',
             'id_marca'=>'3',
             'id_usuario'=>'1',
-            'imagen'=>'productos/6.jpg'
+            'imagen'=>'productos/6.png'
             ] );
             
             Producto::create( [
@@ -69,7 +69,7 @@
             'id_tipo'=>'2',
             'id_marca'=>'3',
             'id_usuario'=>'1',
-            'imagen'=>'productos/7.jpg'
+            'imagen'=>'productos/7.png'
             ] );
             
             Producto::create( [
@@ -78,7 +78,7 @@
             'id_tipo'=>'2',
             'id_marca'=>'4',
             'id_usuario'=>'1',
-            'imagen'=>'productos/8.jpg'
+            'imagen'=>'productos/8.png'
             ] );
             
             Producto::create( [
@@ -87,7 +87,7 @@
             'id_tipo'=>'2',
             'id_marca'=>'5',
             'id_usuario'=>'1',
-            'imagen'=>'productos/9.jpg'
+            'imagen'=>'productos/9.png'
             ] );
             
             Producto::create( [
@@ -96,7 +96,7 @@
             'id_tipo'=>'2',
             'id_marca'=>'5',
             'id_usuario'=>'1',
-            'imagen'=>'productos/10.jpg'
+            'imagen'=>'productos/10.png'
             ] );
             
             Producto::create( [
@@ -105,7 +105,7 @@
             'id_tipo'=>'2',
             'id_marca'=>'5',
             'id_usuario'=>'1',
-            'imagen'=>'productos/11.jpg'
+            'imagen'=>'productos/11.png'
             ] );
             
             Producto::create( [
@@ -114,7 +114,7 @@
             'id_tipo'=>'2',
             'id_marca'=>'5',
             'id_usuario'=>'1',
-            'imagen'=>'productos/12.jpg'
+            'imagen'=>'productos/12.png'
             ] );
             
             Producto::create( [
@@ -123,7 +123,7 @@
             'id_tipo'=>'2',
             'id_marca'=>'5',
             'id_usuario'=>'1',
-            'imagen'=>'productos/13.jpg'
+            'imagen'=>'productos/13.png'
             ] );
             
             Producto::create( [
@@ -132,7 +132,7 @@
             'id_tipo'=>'3',
             'id_marca'=>'6',
             'id_usuario'=>'1',
-            'imagen'=>'productos/14.jpg'
+            'imagen'=>'productos/14.png'
             ] );
             
             Producto::create( [
@@ -141,7 +141,7 @@
             'id_tipo'=>'3',
             'id_marca'=>'6',
             'id_usuario'=>'1',
-            'imagen'=>'productos/15.jpg'
+            'imagen'=>'productos/15.png'
             ] );
             
             Producto::create( [
@@ -150,7 +150,7 @@
             'id_tipo'=>'3',
             'id_marca'=>'7',
             'id_usuario'=>'1',
-            'imagen'=>'productos/16.jpg'
+            'imagen'=>'productos/16.png'
             ] );
             
             Producto::create( [
@@ -159,7 +159,7 @@
             'id_tipo'=>'3',
             'id_marca'=>'8',
             'id_usuario'=>'1',
-            'imagen'=>'productos/17.jpg'
+            'imagen'=>'productos/17.png'
             ] );
             
             Producto::create( [
@@ -168,7 +168,7 @@
             'id_tipo'=>'3',
             'id_marca'=>'9',
             'id_usuario'=>'1',
-            'imagen'=>'productos/18.jpg'
+            'imagen'=>'productos/18.png'
             ] );
             
             Producto::create( [
@@ -177,7 +177,7 @@
             'id_tipo'=>'4',
             'id_marca'=>null,
             'id_usuario'=>'1',
-            'imagen'=>'productos/19.jpg'
+            'imagen'=>'productos/19.png'
             ] );
             
             Producto::create( [
@@ -186,7 +186,7 @@
             'id_tipo'=>'4',
             'id_marca'=>null,
             'id_usuario'=>'1',
-            'imagen'=>'productos/20.jpg'
+            'imagen'=>'productos/20.png'
             ] );
             
             Producto::create( [
@@ -195,7 +195,7 @@
             'id_tipo'=>'4',
             'id_marca'=>null,
             'id_usuario'=>'1',
-            'imagen'=>'productos/21.jpg'
+            'imagen'=>'productos/21.png'
             ] );
             
             Producto::create( [
@@ -204,7 +204,7 @@
             'id_tipo'=>'4',
             'id_marca'=>null,
             'id_usuario'=>'1',
-            'imagen'=>'productos/22.jpg'
+            'imagen'=>'productos/22.png'
             ] );
             
             Producto::create( [
@@ -213,7 +213,7 @@
             'id_tipo'=>'4',
             'id_marca'=>null,
             'id_usuario'=>'1',
-            'imagen'=>'productos/23.jpg'
+            'imagen'=>'productos/23.png'
             ] );
             
             Producto::create( [
@@ -222,7 +222,7 @@
             'id_tipo'=>'5',
             'id_marca'=>null,
             'id_usuario'=>'1',
-            'imagen'=>'productos/24.jpg'
+            'imagen'=>'productos/24.png'
             ] );
             
             Producto::create( [
@@ -231,7 +231,7 @@
             'id_tipo'=>'5',
             'id_marca'=>null,
             'id_usuario'=>'1',
-            'imagen'=>'productos/25.jpg'
+            'imagen'=>'productos/25.png'
             ] );
             
             Producto::create( [
@@ -240,7 +240,7 @@
             'id_tipo'=>'5',
             'id_marca'=>null,
             'id_usuario'=>'1',
-            'imagen'=>'productos/26.jpg'
+            'imagen'=>'productos/26.png'
             ] );
             
             Producto::create( [
@@ -249,7 +249,7 @@
             'id_tipo'=>'5',
             'id_marca'=>null,
             'id_usuario'=>'1',
-            'imagen'=>'productos/27.jpg'
+            'imagen'=>'productos/27.png'
             ] );
             
             Producto::create( [
@@ -258,7 +258,7 @@
             'id_tipo'=>'5',
             'id_marca'=>null,
             'id_usuario'=>'1',
-            'imagen'=>'productos/28.jpg'
+            'imagen'=>'productos/28.png'
             ] );
             
             Producto::create( [
@@ -267,7 +267,7 @@
             'id_tipo'=>'6',
             'id_marca'=>'10',
             'id_usuario'=>'1',
-            'imagen'=>'productos/29.jpg'
+            'imagen'=>'productos/29.png'
             ] );
             
             Producto::create( [
@@ -276,7 +276,7 @@
             'id_tipo'=>'6',
             'id_marca'=>'11',
             'id_usuario'=>'1',
-            'imagen'=>'productos/30.jpg'
+            'imagen'=>'productos/30.png'
             ] );
                         
             Producto::create( [
@@ -285,7 +285,7 @@
             'id_tipo'=>'6',
             'id_marca'=>'12',
             'id_usuario'=>'1',
-            'imagen'=>'productos/31.jpg'
+            'imagen'=>'productos/31.png'
             ] );
                         
             Producto::create( [
@@ -294,7 +294,7 @@
             'id_tipo'=>'6',
             'id_marca'=>'13',
             'id_usuario'=>'1',
-            'imagen'=>'productos/32.jpg'
+            'imagen'=>'productos/32.png'
             ] );
                         
             Producto::create( [
@@ -303,7 +303,7 @@
             'id_tipo'=>'6',
             'id_marca'=>'1',
             'id_usuario'=>'1',
-            'imagen'=>'productos/33.jpg'
+            'imagen'=>'productos/33.png'
             ] );
         }
     }
