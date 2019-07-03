@@ -50,6 +50,18 @@
     color: white;
 }
 
+.contacto textarea{
+    padding-left: 1rem !important;
+}
+
+.contacto textarea::placeholder{
+    padding-right: 0;
+}
+
+.contacto textarea:focus{
+    border-bottom: none !important;
+}
+
 /* MD */
 @media(min-width: 768px){
     /* Quienes Somos */

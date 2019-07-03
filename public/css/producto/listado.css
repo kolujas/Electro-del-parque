@@ -1,7 +1,7 @@
 .jumbotron.card{
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
+   width: 8rem;
+   height: 13.2rem;
+   object-fit: cover;
 }
 
 .jumbotron.card h2{
@@ -9,6 +9,7 @@
 }
 
 /* Productos */
+
 .productos .card{
     color: #162e44;
     position: relative;
@@ -33,6 +34,16 @@
     color: white;
 }
 
+.productos .card-footer{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border-top: none;
+    background-color: #fff;
+}
+
+
 /* Aclaracion */
 .aclaracion{
     background-color: white;
@@ -41,11 +52,11 @@
 }
 
 /* Modal */
-.modal-header .close{
-    padding: 0;
-    margin: 0 0 0 0;
-    margin-right: 5rem !important;
-    outline: none;
+.modal-header button{
+   position: absolute;
+   right: 1rem;
+   font-size: 2rem;
+   outline: none;
 }
 
 .modal-body i{
