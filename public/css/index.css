@@ -13,6 +13,11 @@ h2{
 }
 
 /* Navbar */
+
+.logo{
+    height: 4rem;
+}
+
 .dropdown-menu{
     background-color: #162e44;
     margin-top: 0.45rem !important;
@@ -42,4 +47,28 @@ footer{
     bottom: 0;
     left: 0;
     right: 0;
+}
+
+/* MD */
+
+@media(min-width: 768px){
+    .logo{
+        height: 4rem;
+    }
+}
+
+/* LG */
+
+@media(min-width: 1024px){
+    .logo{
+        height: 4rem;
+    }
+}
+
+/* XL */
+
+@media(min-width: 1200px){
+    .logo{
+        height: 4rem;
+    }
 }

@@ -24,9 +24,9 @@
             <div class="text-white text-center py-5 p-0">
                 <div class="py-md-5">
                     <h2 class="card-title h1-responsive p-0 mb-4 mt-lg-4 font-weight-bold text-white">
-                        <strong>Electro del parque</strong>
+                        <strong>Fabricamos accesorios para cardiología y oximetría de pulso</strong>
                     </h2>
-                    <p class="mb-4">Fabricamos accesorios para cardiología y oximetría de pulso</p>
+                    <p class="mb-4">Desarrollamos una extensa línea de productos compatibles con las más prestigiosas marcas. Fabricamos cables con materiales importados y nacionales, siempre manteniendo la calidad y estética del producto final.</p>
                     <a class="btn btn-lg mt-lg-4" href="/#productos">Ver más</a>
                 </div>
             </div>
@@ -145,12 +145,12 @@
                                         </div>
                                     </div>
 
-                                    <div class="md-form col-md-10">
+                                    <div class="md-form col-12 col-md-10 shadow-textarea">
+                                        <p>Mensaje</p>
                                         <textarea id="mensaje"
-                                            class="md-textarea form-control"
+                                            class="md-textarea form-control form-control z-depth-1"
                                             rows="3"
-                                            name="mensaje"></textarea>
-                                        <label for="mensaje">Mensaje</label>
+                                            name="mensaje" placeholder="Mensaje"></textarea>
                                         <div class="invalid-tooltip mb-4"
                                             @if($errors->has('mensaje'))
                                                 style="display: block;"

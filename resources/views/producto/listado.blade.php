@@ -41,13 +41,15 @@
                         </div>
                     </div>
                 </div>
-            @endif
+            @endif               
+
+                
 
             <div class="productos col-12 col-md-12 col-lg-10 col-xl-8 p-0 mb-lg-4">
                 <div class="row d-flex justify-content-between mx-4 m-lg-0">
                     @foreach($productos as $producto)
                         <div id="producto{{$producto->id_producto}}" class="card text-center col-12 col-md-5 col-lg-4 m-0 mt-4 px-0">
-                            <div class="mx-lg-2">
+                            <div class="mx-lg-2 pb-5">
                                 <div class="view overlay">
                                     <img class="card-img-top"
                                         src="/img/{{$producto->imagen}}"
@@ -58,6 +60,7 @@
                                     @if($producto->id_marca != null)
                                         <h4 class="card-title m-0 p-0 marca">{{$producto->marca->nombre}}</h4>
                                     @endif
+                                    
 
                                     @if($producto->modelo != null)
                                         <div class="my-4">
@@ -65,23 +68,29 @@
                                         </div>
                                     @endif
 
-                                    <div class="consulta">
+                                    
+                                </div>
+                                <div class="card-footer">
+
+                             <div class="consulta">
                                         <a class="btn btn-md modalButton"
                                             onclick="cargarModal(this)"
                                             data-toggle="modal"
                                             data-target="#FormDeContacto">Consultar</a>
                                     </div>
-                                </div>
-                                
+                            </div>
                                 <span class="top-line"></span>
                                 <span class="right-line"></span>
                                 <span class="bottom-line"></span>
                                 <span class="left-line"></span>
                             </div>
+                            
+                            
                         </div>
                     @endforeach
                 </div>                     
             </div>
+            
             
             @if($tipo->id_tipo == 4 || $tipo->id_tipo == 5)
                 <div class="aclaracion col-12 col-md-12 col-lg-10 col-xl-8 mt-4">
