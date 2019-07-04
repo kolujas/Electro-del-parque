@@ -71,6 +71,18 @@
     color: #fff;
 }
 
+.modal-dialog textarea{
+    padding-left: 1rem !important;
+}
+
+.modal-dialog textarea::placeholder{
+    padding-right: 0;
+}
+
+.modal-dialog textarea:focus{
+    border-bottom: none !important;
+}
+
 /* MD */
 @media(min-width: 768px){
     /* Productos */

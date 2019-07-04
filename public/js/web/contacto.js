@@ -11,6 +11,7 @@ enviar.addEventListener('click', function(e){
 function invalidar(input, msj){
     input.invalid.innerHTML = msj;
     input.invalid.style.display = 'block';
+    input.content.style.cssText = 'border-color: red !important;';
 }
 
 function validar(input){
