@@ -33,12 +33,12 @@
                 <div class="jumbotron card card-image d-lg-block col-12 col-lg-8 m-0 p-0"
                     style="background-image: url(/img/tipos/{{$banner->imagen}})">
                     <div class="text-white text-center m-0 p-0">
-                        <!-- <div class="py-md-5">
+                        <div class="py-md-5">
                             <h2 class="card-title h1-responsive m-0 p-0 font-weight-bold text-white">
-                                <strong>{{$banner->titulo}}</strong>
+                                <!-- <strong>{{$banner->titulo}}</strong> -->
                             </h2>
-                            <p class="m-0 p-0">{{$banner->leyenda}}</p>
-                        </div> -->
+                            <!-- <p class="m-0 p-0">{{$banner->leyenda}}</p> -->
+                        </div>
                     </div>
                 </div>
             @endif
