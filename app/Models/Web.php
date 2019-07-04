@@ -14,6 +14,7 @@
             ],'preguntar' => [
                 'nombre' => 'required|min:2|max:60',
                 'correo' => 'required|email|max:100',
+                'telefono' => 'required|numeric',
                 'asunto' => 'required',
                 'mensaje' => 'required',
             ],

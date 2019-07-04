@@ -30,7 +30,7 @@
 
             $objDemo = (object) $inputData;
 
-            Mail::to('ejemplo@correo.com')->send(new Contactar($objDemo));
+            Mail::to('info@electrodelparque.com')->send(new Contactar($objDemo));
 
             return redirect()->route('correo.gracias');
         }
@@ -50,12 +50,14 @@
                 'correo.required' => 'El correo es obligatorio.',
                 'correo.max' => 'El correo no puede tener más de :max caracteres.',
                 'asunto.required' => 'El asunto es obligatorio.',
+                'telefono.required' => 'El teléfono es obligatorio.',
+                'telefono.numeric' => 'El teléfono debe ser un valor numérico.',
                 'mensaje.required' => 'El mensaje no puede estar vacío.',
             ]);
 
             $objDemo = (object) $inputData;
 
-            Mail::to('ejemplo@correo.com')->send(new Preguntar($objDemo));
+            Mail::to('info@electrodelparque.com')->send(new Preguntar($objDemo));
 
             return redirect()->route('correo.gracias');
         }

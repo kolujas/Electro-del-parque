@@ -100,7 +100,7 @@
                                             name="nombre"
                                             required="required">
                                         <div class="invalid-tooltip mb-4"
-                                            @if($errors->has('mensaje'))
+                                            @if($errors->has('nombre'))
                                                 style="display: block;"
                                             @endif>
                                             @if($errors->has('nombre'))
@@ -118,7 +118,7 @@
                                             name="telefono"
                                             required="required">
                                         <div class="invalid-tooltip mb-4"
-                                            @if($errors->has('mensaje'))
+                                            @if($errors->has('telefono'))
                                                 style="display: block;"
                                             @endif>
                                             @if($errors->has('telefono'))
@@ -136,7 +136,7 @@
                                             name="correo"
                                             required="required">
                                         <div class="invalid-tooltip mb-4"
-                                            @if($errors->has('mensaje'))
+                                            @if($errors->has('correo'))
                                                 style="display: block;"
                                             @endif>
                                             @if($errors->has('correo'))
