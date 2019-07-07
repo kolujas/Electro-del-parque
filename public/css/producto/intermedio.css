@@ -24,6 +24,15 @@
     border-bottom-left-radius: .25rem;
 }
 
+/* MD */
+@media(min-width: 768px){
+    /* Productos */
+    .productos .card-img-top{
+        height: 12rem;
+        object-fit: cover;
+    }
+}
+
 /* LG */
 @media(min-width: 1024px){
     /* Jumbotron */

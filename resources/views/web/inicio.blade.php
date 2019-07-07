@@ -20,14 +20,18 @@
 @section('main')
     <div class="container-fluid px-0">
         <div class="jumbotron card card-image d-lg-block m-0 p-5 px-0"
-        style="background: url(/bmd/img/bg.png);">
-            <div class="text-white text-center py-5 p-0">
-                <div class="py-md-5">
-                    <h2 class="card-title h1-responsive p-0 mb-4 mt-lg-4 font-weight-bold text-white">
-                        <strong>Fabricamos accesorios para cardiología y oximetría de pulso</strong>
-                    </h2>
-                    <p class="mb-4">Desarrollamos una extensa línea de productos compatibles con las más prestigiosas marcas. Fabricamos cables con materiales importados y nacionales, siempre manteniendo la calidad y estética del producto final.</p>
-                    <a class="btn btn-lg mt-lg-4" href="/#productos">Ver más</a>
+        style="background: url(/img/recursos/banner.jpg) no-repeat center center; background-size: cover">
+            <div class="text-white text-center m-0 p-0">
+                <div class="row m-0 my-lg-5 p-0 d-flex justify-content-center">
+                    <div class="col-12 col-md-10 col-lg-8 m-0 mb-4 p-0">
+                        <h2 class="card-title font-weight-bold text-white m-0 p-0">Fabricamos accesorios para cardiología y oximetría de pulso</h2>
+                    </div>
+                    <div class="col-12 col-md-10 col-lg-8 m-0 mb-4 p-0">
+                        <p class="m-0 p-0">Desarrollamos una extensa línea de productos compatibles con las más prestigiosas marcas. Fabricamos cables con materiales importados y nacionales, siempre manteniendo la calidad y estética del producto final.</p>
+                    </div>
+                    <div class="col-12 m-0 p-0">
+                        <a class="btn btn-lg m-0" href="/#productos">Ver más</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -69,7 +73,7 @@
                     <div class="col-12">
                         <div class="row d-flex justify-content-around mx-md-4 pb-md-4">
                             <div class="img-div col-12 col-md-6 p-0 m-0 pr-md-3"> 
-                                <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(54).jpg"  class="img-fluid z-depth-1" alt="1">
+                                <img src="/img/recursos/equipo.jpg"  class="img-fluid z-depth-1" alt="1">
                             </div> 
                             
                             <div class="col-12 col-md-6 p-0 m-0 pl-md-3">

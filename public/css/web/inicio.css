@@ -1,12 +1,13 @@
 /* Jumbotron */
 .jumbotron h2{
-    font-size: 2.5rem;
+    font-size: 1.8rem;
 }
 
 .jumbotron.card a{
     background-color: #01B3A7;
     color: white;
     border-radius: .25rem;
+    z-index: 110;
 }
 
 /* Productos */
@@ -85,6 +86,10 @@
 /* LG */
 @media(min-width: 1024px){
     /* Jumbotron */
+    .jumbotron h2{
+        font-size: 2.5rem;
+    }
+
     .jumbotron a:hover{
         font-weight: bold !important;
         transition: .5s;

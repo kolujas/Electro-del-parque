@@ -121,14 +121,15 @@
 
 <script>
     function cargarModal(boton){
-        let padre = boton.parentNode.parentNode.parentNode.id;
+        let id_padre = boton.parentNode.parentNode.parentNode.parentNode.id;
         let tipo = document.querySelector('#tipo').innerHTML;
         let marca, modelo;
-        if(document.querySelector(padre + ' .marca')){
-            marca = document.querySelector(padre + ' .marca').innerHTML;
+        console.log(id_padre);
+        if(document.querySelector('#' + id_padre + ' .marca')){
+            marca = document.querySelector('#' + id_padre + ' .marca').innerHTML;
             document.querySelector('#asunto').value = tipo + ': ' + marca;
-        }else if(document.querySelector(padre + ' .modelo')){
-            modelo = document.querySelector(padre + ' .modelo').innerHTML;
+        }else if(document.querySelector('#' + id_padre + ' .modelo')){
+            modelo = document.querySelector('#' + id_padre + ' .modelo').innerHTML;
             document.querySelector('#asunto').value = tipo + ': ' + modelo;
         }else{
             document.querySelector('#asunto').value = tipo;

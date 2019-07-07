@@ -21,20 +21,6 @@
 
 @section('main')
     <div class="container-fluid px-0">
-        <!-- <div class="jumbotron card card-image d-lg-block m-0 p-5 px-0">
-            <div class="text-white text-center py-5 p-0">
-                <div class="py-md-5">
-                    <h2 class="card-title h1-responsive p-0 mb-4 mt-lg-4 font-weight-bold text-white">
-                        <strong>Electro del parque</strong>
-                    </h2>
-                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Repellat fugiat.
-                    </p>
-                    <a class="btn btn-lg mt-lg-4" href="/">Ver más</a>
-                </div>
-            </div>
-        </div> -->
-
         <div class="row m-0 p-0 d-flex justify-content-center">
             <div class="productos col-12 col-md-12 col-lg-10 col-xl-8 p-0 mb-lg-4">
                 <h2 class="h1-responsive m-0 mt-4 text-center">{{$tipo->nombre}}</h2>
@@ -49,7 +35,7 @@
                                 <h4 class="h5 card-title font-weight-bold mb-4">{{$categoria->nombre}}</h4>
 
                                 <img class="card-img-top"
-                                    src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg"
+                                    src="/img/{{$categoria->imagen}}"
                                     alt="Card image cap">
                                 
                                 <span class="top-line"></span>

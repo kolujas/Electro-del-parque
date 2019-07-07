@@ -20,7 +20,7 @@
 @section('main')
     <div class="container-fluid px-0">
         <div class="jumbotron card card-image d-lg-block m-0 p-5 px-0"
-        style="background: url(/img/thanks.jpg);">
+        style="background: url(/img/recursos/banner-thanks.jpg);">
             <div class="text-white text-center py-5 p-0">
                 <div class="py-md-5">
                     <h2 class="card-title h1-responsive p-0 mb-4 mt-lg-4 font-weight-bold text-white">

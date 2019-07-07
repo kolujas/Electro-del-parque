@@ -25,10 +25,12 @@
                             'id_categoria' => 1,
                             'nombre' => 'Cable Paciente',
                             'slug' => 'cable-paciente',
+                            'imagen' => 'categorias/cable-paciente.jpg',
                         ], (object) [
                             'id_categoria' => 2,
                             'nombre' => 'Pinzas y Precordiales',
                             'slug' => 'pinzas-y-precordiales',
+                            'imagen' => 'categorias/pinzas-y-precordiales.jpg',
                         ],
                     ],
                     5 => [
@@ -36,10 +38,12 @@
                             'id_categoria' => 1,
                             'nombre' => 'CUFFS / Brazal',
                             'slug' => 'cuffs-/-brazal',
+                            'imagen' => 'categorias/cuffs.jpg',
                         ], (object) [
                             'id_categoria' => 2,
                             'nombre' => 'Mangueras de PNI',
                             'slug' => 'mangueras-de-pni',
+                            'imagen' => 'categorias/mangueras-de-pni.png',
                         ],
                     ],
                 ];
@@ -77,9 +81,30 @@
                 'imagen' => $img,
             ];
 
-            $aclaracion = '';
-            if($tipo->id_tipo == 4 || $tipo->id_tipo == 5){
-                $aclaracion = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam magni iure voluptatum soluta ut porro.';
+            if($tipo->id_tipo == 4){
+                $aclaracion = (object) [
+                    'tipo' => 1,
+                    'titulo' => 'LOS MODELOS SON COMPATIBLES CON LAS SIGUIENTES MARCAS',
+                    'texto' => 'BCI, Biolight, Bruker, Creative, Biocare, CSI, Choice, Comen, New Tech, General Tech, Datex, GE, Marquette, Corometrics, Trusignal, Ivy Biomedical, Datascope, MDE, Meditronic, Edan, Goldway, Invivo, Kontron, Mek, Masimo, Mindray, Nellcor, Nihon kohden, Novametrix, Hellige, Fukuda, Bosch, Cambridge, Medlab, Minota, Customed, Innomed, RGB, Welch Allyn, Von Berg, Esaote, Fidelity, Reynolds, Zoll, Trentina, Kanz, Mortara, DEGO, Colin (Omron), Bionet, NEC, Biosys, S&W/Artema, Huntleigh Health, Dolphin, Contec, PRIMEDIC, Drager, SIMED/Baxter, PACE TECH, PALCO, Lohmeier, Kernel Medical, Critikon, Landcom, Din Holter, Criticare, CAS Medical, Unicare-med, Dima, Digicare, Corpuls, Charmcare, Cardioline, etc.',
+                ];
+            }else if($tipo->id_tipo == 5){
+                $aclaracion = (object) [
+                    'tipo' => 2,
+                    'listado' => [
+                        'MINDRAY, MEC1000, EDAN , ETC',
+                        'COMEN, ZONDAN, 3F',
+                        'PHILIPS, MINDRAY T SERIES, IPM SERIES',
+                        'GE-DINAMAP SERIES',
+                        'DATEX OHMEDA SERIES',
+                        'GE-DASH, EAGLE, SOLAR SERIES',
+                        'NIHON KOHDEN',
+                        'COLIN',
+                    ],
+                ];
+            }else{
+                $aclaracion = (object) [
+                    'tipo' => 0,
+                ];
             }
             
             return view('producto.listado', [

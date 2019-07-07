@@ -33,12 +33,7 @@
                 <div class="jumbotron card card-image d-lg-block col-12 col-lg-8 m-0 p-0"
                     style="background-image: url(/img/tipos/{{$banner->imagen}})">
                     <div class="text-white text-center m-0 p-0">
-                        <div class="py-md-5">
-                            <h2 class="card-title h1-responsive m-0 p-0 font-weight-bold text-white">
-                                <!-- <strong>{{$banner->titulo}}</strong> -->
-                            </h2>
-                            <!-- <p class="m-0 p-0">{{$banner->leyenda}}</p> -->
-                        </div>
+                        <div class="py-md-5"></div>
                     </div>
                 </div>
             @endif               
@@ -60,44 +55,50 @@
                                     @if($producto->id_marca != null)
                                         <h4 class="card-title m-0 p-0 marca">{{$producto->marca->nombre}}</h4>
                                     @endif
-                                    
 
                                     @if($producto->modelo != null)
                                         <div class="my-4">
                                             <p class="card-text modelo">{{$producto->modelo}}</p>
                                         </div>
                                     @endif
-
-                                    
                                 </div>
-                                <div class="card-footer">
 
-                             <div class="consulta">
+                                <div class="card-footer">
+                                    <div class="consulta">
                                         <a class="btn btn-md modalButton"
                                             onclick="cargarModal(this)"
                                             data-toggle="modal"
                                             data-target="#FormDeContacto">Consultar</a>
                                     </div>
-                            </div>
+                                </div>
+
                                 <span class="top-line"></span>
                                 <span class="right-line"></span>
                                 <span class="bottom-line"></span>
                                 <span class="left-line"></span>
                             </div>
-                            
-                            
                         </div>
                     @endforeach
                 </div>                     
             </div>
             
-            
-            @if($tipo->id_tipo == 4 || $tipo->id_tipo == 5)
+            @if($aclaracion->tipo)
                 <div class="aclaracion col-12 col-md-12 col-lg-10 col-xl-8 mt-4">
                     <div class="row p-4">
-                        <div class="col-12">
-                            <p class="lead text-center text-md-left d-flex mx-4 m-md-0 py-4 py-md-0 mb-0">{{$aclaracion}}</p>
-                        </div>
+                        @if($aclaracion->tipo == 1)
+                            <div class="col-12 m-0 p-0">
+                                <h3 class="h3-responsive m-0 mb-4 p-0 text-center font-weight-bold" id="tipo">{{$aclaracion->titulo}}</h3>
+                            </div>
+                            <div class="col-12 m-0 p-0">
+                                <p class="lead text-left text-md-left d-flex">{{$aclaracion->texto}}</p>
+                            </div>
+                        @else
+                            <ul class="m-0">
+                                @foreach($aclaracion->listado as $item)
+                                    <li>{{$item}}</li>
+                                @endforeach
+                            </ul>
+                        @endif
                     </div>
                 </div>
             @endif
