@@ -124,7 +124,6 @@
         let id_padre = boton.parentNode.parentNode.parentNode.parentNode.id;
         let tipo = document.querySelector('#tipo').innerHTML;
         let marca, modelo;
-        console.log(id_padre);
         if(document.querySelector('#' + id_padre + ' .marca')){
             marca = document.querySelector('#' + id_padre + ' .marca').innerHTML;
             document.querySelector('#asunto').value = tipo + ': ' + marca;
@@ -143,7 +142,6 @@
     enviar.addEventListener('click', function(e){
         e.preventDefault();
         validateForm();
-        console.log('Validando...');
     })
 
     function invalidar(input, msj){

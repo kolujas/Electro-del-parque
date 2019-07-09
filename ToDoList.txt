@@ -1,0 +1,23 @@
+﻿----------------------------------------------------------------------------------TRABAJO
+WEB: http://u307288413.hostingerapp.com/
+FTP: u307288413     - banana123
+BDD: u307288413_mc  - database2019
+
+53315557
+
+juancarmentia@gmail.com - brsxcfssxwnbhsjy - puerto 867 y tls
+info@mutualcoop.org.ar - weoxadktskjlwzbn - puerto 465 y ssl
+gjfernandez1@gmail.com - ilejovwrdlbtxunt - puerto 867 y tls
+
+favicon
+
+CRACK---------------------------------------------------
+-Preguntar
+
+-Hacer que funcionen el envio de mails online (aun no se somo sin el ssl)
+
+-Subirlo
+
+KOLO---------------------------------------------------
+-Css de los correos
+-Css de la Thank you page
