@@ -31,7 +31,10 @@
 
             @if($tipo->id_tipo == 2 || $tipo->id_tipo == 3 || $tipo->id_tipo == 4 || $tipo->id_tipo == 6)
                 <div class="jumbotron card card-image d-lg-block col-12 col-lg-8 m-0 p-0"
-                    style="background-image: url(/img/tipos/{{$banner->imagen}})">
+                    style="
+                    background: url(/img/tipos/{{$banner->imagen}}) no-repeat center center;
+                    background-size: contain;
+                    background-color: white;">
                     <div class="text-white text-center m-0 p-0">
                         <div class="py-md-5"></div>
                     </div>

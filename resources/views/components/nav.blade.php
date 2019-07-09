@@ -4,7 +4,7 @@
 
 <nav class="navbar navbar-expand-lg">
     <!-- Navbar brand -->
-    <img class="logo" src="/img/recursos/logo.png" alt="Logo de Electro del parque"><a class="navbar-brand white-text" href="/"></a>
+    <a class="navbar-brand white-text" href="/"><img class="logo" src="/img/recursos/logo.png" alt="Logo de Electro del parque"></a>
 
     <!-- Collapse button -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
