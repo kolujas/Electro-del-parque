@@ -92,13 +92,16 @@
                             <div class="col-12 m-0 p-0">
                                 <h3 class="h3-responsive m-0 mb-4 p-0 text-center font-weight-bold" id="tipo">{{$aclaracion->titulo}}</h3>
                             </div>
-                            <div class="col-12 m-0 p-0">
-                                <p class="lead text-left text-md-left d-flex">{{$aclaracion->texto}}</p>
+                            <div class="col-12 m-0 p-0 parrafoJunto">
+                                <p class="lead text-left text-md-left d-flex display-4">{{$aclaracion->texto}}</p>
                             </div>
                         @else
-                            <ul class="m-0">
+                            <div class="col-12 m-0 p-0">
+                                <h3 class="h3-responsive m-0 mb-4 p-0 text-center font-weight-bold" id="tipo">Más modelos</h3>
+                            </div>
+                            <ul class="m-0 list-group w-100">
                                 @foreach($aclaracion->listado as $item)
-                                    <li>{{$item}}</li>
+                                    <li class="list-group-item">{{$item}}</li>
                                 @endforeach
                             </ul>
                         @endif

@@ -174,4 +174,8 @@
         transition: .5s;
         background-color: rgb(40, 169, 192);
     }
+
+    .parrafoJunto p{
+        font-size: 1.8rem;
+    }
 }
