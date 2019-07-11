@@ -10,7 +10,7 @@
 	<tr>
 		<td style="background-color: #ecf0f1">
 			<div style="color: #34495e; margin: 4% 10% 2%; text-align: justify;font-family: sans-serif">
-				<h2 style="color: #e2686d;margin:0 0 7px;">{{ $data->nombre }} pregunta</h2>
+				<h2 style="color: #01B3A7;margin:0 0 7px;">{{ $data->nombre }} pregunta</h2>
 
 				<ul style="font-size: 15px;  margin: 10px 0">
 					<li><strong>Se ha contactado:</strong> {{ $data->nombre }} desde tu sitio web.</li>
@@ -22,10 +22,10 @@
         		<p style="margin:2px;font-size:15px;min-height:100px;background-color: #f8f8f8;padding: 1rem;margin-bottom: 1.5rem;">{{ $data->mensaje }}</p>
 
 				<div style="width: 100%; text-align: center">
-					<a style="text-decoration:none;border-radius:5px;padding:11px 23px;color:white;background-color: #e2686d;"target="_blank" href="http://www.mutualcoop.org.ar">Ir a la página</a>
+					<a style="text-decoration:none;border-radius:5px;padding:11px 23px;color:white;background-color: #01B3A7;"target="_blank" href="http://www.mutualcoop.org.ar">Ir a la página</a>
 				</div>
 				
-				<p style="color: #ffffff;font-size: 1.1rem;text-align:center;margin:30px 0 0;padding: 1rem;background-color: #e2686d;">© Derecho Cooperativo y Mutual. Todos los Derechos Reservados. | Desarrollado por Digitalo</p>
+				<p style="color: #ffffff;font-size: 1.1rem;text-align:center;margin:30px 0 0;padding: 1rem;background-color: #01B3A7;">© Derecho Cooperativo y Mutual. Todos los Derechos Reservados. | Desarrollado por Digitalo</p>
 			</div>
 		</td>
 	</tr>
