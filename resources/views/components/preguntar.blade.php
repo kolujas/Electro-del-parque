@@ -126,12 +126,9 @@
         let marca, modelo;
         if(document.querySelector('#' + id_padre + ' .marca')){
             marca = document.querySelector('#' + id_padre + ' .marca').innerHTML;
-            document.querySelector('#asunto').value = tipo + ': ' + marca;
-        }else if(document.querySelector('#' + id_padre + ' .modelo')){
-            modelo = document.querySelector('#' + id_padre + ' .modelo').innerHTML;
-            document.querySelector('#asunto').value = tipo + ': ' + modelo;
+            document.querySelector('#asunto').value = 'Consulta por: ' + tipo + ' - ' + marca;
         }else{
-            document.querySelector('#asunto').value = tipo;
+            document.querySelector('#asunto').value = 'Consulta por: ' + tipo;
         }
     }
 
