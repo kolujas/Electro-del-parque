@@ -130,48 +130,62 @@
             if($tipo->id_tipo != 3 && $tipo->id_tipo != 5){
                 return redirect('/' . $tipo->slug . '/productos');
             }else{
-                if($tipo->id_tipo == 4){
-                    $img = 'banners/' . $tipo->id_tipo . '.jpeg';
+                if($tipo->id_tipo == 3){
+                    $productos = [
+                        (object) [
+                            'id_producto' => 1,
+                            'imagen' => '1.png',
+                        ], (object) [
+                            'id_producto' => 2,
+                            'imagen' => '2.png',
+                        ], (object) [
+                            'id_producto' => 3,
+                            'imagen' => '3.png',
+                        ], (object) [
+                            'id_producto' => 4,
+                            'imagen' => '4.png',
+                        ], (object) [
+                            'id_producto' => 5,
+                            'imagen' => '5.png',
+                        ], (object) [
+                            'id_producto' => 6,
+                            'imagen' => '6.png',
+                        ], (object) [
+                            'id_producto' => 7,
+                            'imagen' => '7.png',
+                        ], (object) [
+                            'id_producto' => 8,
+                            'imagen' => '8.png',
+                        ],
+                    ];
                 }else{
-                    $img = 'banners/' . $tipo->id_tipo . '.png';
-                }
-    
-                $banner = (object) [
-                    'titulo' => 'Banner de ' . $tipo->nombre,
-                    'leyenda' => '',
-                    'imagen' => $img,
-                ];
-    
-                $productos = [
-                    (object) [
-                        'id_producto' => 1,
-                        'imagen' => 'https://mdbootstrap.com/img/Photos/Others/images/16.jpg',
-                    ], (object) [
-                        'id_producto' => 2,
-                        'imagen' => 'https://mdbootstrap.com/img/Photos/Others/images/16.jpg',
-                    ], (object) [
-                        'id_producto' => 3,
-                        'imagen' => 'https://mdbootstrap.com/img/Photos/Others/images/16.jpg',
-                    ], (object) [
-                        'id_producto' => 4,
-                        'imagen' => 'https://mdbootstrap.com/img/Photos/Others/images/16.jpg',
-                    ], (object) [
-                        'id_producto' => 5,
-                        'imagen' => 'https://mdbootstrap.com/img/Photos/Others/images/16.jpg',
-                    ],
-                ];
-    
-                $aclaracion = '';
-                if($tipo->id_tipo == 4 || $tipo->id_tipo == 5){
-                    $aclaracion = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam magni iure voluptatum soluta ut porro.';
+                    $productos = [
+                        (object) [
+                            'id_producto' => 1,
+                            'imagen' => '1.png',
+                        ], (object) [
+                            'id_producto' => 2,
+                            'imagen' => '2.png',
+                        ], (object) [
+                            'id_producto' => 3,
+                            'imagen' => '3.png',
+                        ], (object) [
+                            'id_producto' => 4,
+                            'imagen' => '4.png',
+                        ], (object) [
+                            'id_producto' => 5,
+                            'imagen' => '5.png',
+                        ], (object) [
+                            'id_producto' => 6,
+                            'imagen' => '6.png',
+                        ],
+                    ];
                 }
 
                 return view('producto.sublistado', [
                     'tipos' => $tipos,
                     'tipo' => $tipo,
                     'productos' => $productos,
-                    'banner' => $banner,
-                    'aclaracion' => $aclaracion,
                 ]);
             }
         }
