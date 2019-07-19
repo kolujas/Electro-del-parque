@@ -122,13 +122,19 @@
 <script>
     function cargarModal(boton){
         let id_padre = boton.parentNode.parentNode.parentNode.parentNode.id;
-        let tipo = document.querySelector('#tipo').innerHTML;
+        let tipo, slug;
+        if(document.querySelector('#slug')){
+            slug = document.querySelector('#slug').innerHTML
+            tipo = document.querySelector('#tipo span:first-child').innerHTML + slug;
+        }else{
+            tipo = document.querySelector('#tipo').innerHTML;
+        }
         let marca, modelo;
         if(document.querySelector('#' + id_padre + ' .marca')){
             marca = document.querySelector('#' + id_padre + ' .marca').innerHTML;
-            document.querySelector('#asunto').value = 'Consulta por: ' + tipo + ' - ' + marca;
+            document.querySelector('#asunto').value = 'Consulta web - ' + tipo + ' - ' + marca;
         }else{
-            document.querySelector('#asunto').value = 'Consulta por: ' + tipo;
+            document.querySelector('#asunto').value = 'Consulta web - ' + tipo;
         }
     }
 

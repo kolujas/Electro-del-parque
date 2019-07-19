@@ -81,13 +81,21 @@
                 'imagen' => $img,
             ];
 
-            if($tipo->id_tipo == 4){
+            $titulo = '';
+            $aclaracion = (object) [
+                'tipo' => 0,
+            ];
+
+            if($tipo->id_tipo == 3){
+                $titulo = 'Cable Paciente';
+            }else if($tipo->id_tipo == 4){
                 $aclaracion = (object) [
                     'tipo' => 1,
                     'titulo' => 'LOS MODELOS SON COMPATIBLES CON LAS SIGUIENTES MARCAS',
                     'texto' => 'BCI, Biolight, Bruker, Creative, Biocare, CSI, Choice, Comen, New Tech, General Tech, Datex, GE, Marquette, Corometrics, Trusignal, Ivy Biomedical, Datascope, MDE, Meditronic, Edan, Goldway, Invivo, Kontron, Mek, Masimo, Mindray, Nellcor, Nihon kohden, Novametrix, Hellige, Fukuda, Bosch, Cambridge, Medlab, Minota, Customed, Innomed, RGB, Welch Allyn, Von Berg, Esaote, Fidelity, Reynolds, Zoll, Trentina, Kanz, Mortara, DEGO, Colin (Omron), Bionet, NEC, Biosys, S&W/Artema, Huntleigh Health, Dolphin, Contec, PRIMEDIC, Drager, SIMED/Baxter, PACE TECH, PALCO, Lohmeier, Kernel Medical, Critikon, Landcom, Din Holter, Criticare, CAS Medical, Unicare-med, Dima, Digicare, Corpuls, Charmcare, Cardioline, etc.',
                 ];
             }else if($tipo->id_tipo == 5){
+                $titulo = 'CUFFS / Brazal';
                 $aclaracion = (object) [
                     'tipo' => 2,
                     'listado' => [
@@ -101,10 +109,6 @@
                         'COLIN',
                     ],
                 ];
-            }else{
-                $aclaracion = (object) [
-                    'tipo' => 0,
-                ];
             }
             
             return view('producto.listado', [
@@ -114,6 +118,7 @@
                 'tipo' => $tipo,
                 'banner' => $banner,
                 'aclaracion' => $aclaracion,
+                'titulo' => $titulo,
             ]);
         }
 
@@ -131,6 +136,7 @@
                 return redirect('/' . $tipo->slug . '/productos');
             }else{
                 if($tipo->id_tipo == 3){
+                    $titulo = 'Pinzas y Precordiales';
                     $productos = [
                         (object) [
                             'id_producto' => 1,
@@ -153,12 +159,10 @@
                         ], (object) [
                             'id_producto' => 7,
                             'imagen' => '7.png',
-                        ], (object) [
-                            'id_producto' => 8,
-                            'imagen' => '8.png',
                         ],
                     ];
                 }else{
+                    $titulo = 'Mangueras de PNI';
                     $productos = [
                         (object) [
                             'id_producto' => 1,
@@ -186,6 +190,7 @@
                     'tipos' => $tipos,
                     'tipo' => $tipo,
                     'productos' => $productos,
+                    'titulo' => $titulo,
                 ]);
             }
         }

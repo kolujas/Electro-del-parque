@@ -2,8 +2,7 @@
     /** @var Tipo[] $tipos */
     /** @var Tipo $tipo */
     /** @var array[object] $productos */
-    /** @var object $banner */
-    /** @var string $aclaracion */
+    /** @var string $titulo */
 ?>
 
 @extends('layout.index')
@@ -13,7 +12,7 @@
 @endsection
 
 @section('titulo')
-    Electro del parque - {{$tipo->nombre}}
+    Electro del parque - {{$tipo->nombre}} - {{$titulo}}
 @endsection
 
 @section('nav')
@@ -25,7 +24,7 @@
     <div class="container-fluid px-0">
         <div class="row m-0 p-0 d-flex justify-content-center">
             <div class="col-12">
-                <h2 id="tipo" class="h1-responsive mt-4 mb-0 text-center">{{$tipo->nombre}}</h2>
+                <h2 id="tipo" class="h1-responsive mt-4 mb-0 text-center"><span>{{$tipo->nombre}} - </span><span id="slug">{{$titulo}}</span></h2>
             </div>
 
             <div class="productos col-12 col-md-12 col-lg-10 col-xl-8 p-0 mb-lg-4">

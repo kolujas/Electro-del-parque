@@ -14,7 +14,11 @@
 @endsection
 
 @section('titulo')
-    Electro del parque - {{$tipo->nombre}}
+    @if($tipo->id_tipo == 3 || $tipo->id_tipo == 5)
+        Electro del parque - {{$tipo->nombre}} - {{$titulo}}
+    @else
+        Electro del parque - {{$tipo->nombre}}
+    @endif
 @endsection
 
 @section('nav')
@@ -26,7 +30,11 @@
     <div class="container-fluid px-0">
         <div class="row m-0 p-0 d-flex justify-content-center">
             <div class="col-12">
-                <h2 class="h1-responsive mt-4 mb-0 text-center" id="tipo">{{$tipo->nombre}}</h2>
+                @if($tipo->id_tipo == 3 || $tipo->id_tipo == 5)
+                    <h2 class="h1-responsive mt-4 mb-0 text-center" id="tipo"><span>{{$tipo->nombre}} - </span><span id="slug">{{$titulo}}</span></h2>
+                @else
+                    <h2 class="h1-responsive mt-4 mb-0 text-center" id="tipo">{{$tipo->nombre}}</h2>
+                @endif
             </div>
 
             @if($tipo->id_tipo == 2 || $tipo->id_tipo == 3 || $tipo->id_tipo == 4 || $tipo->id_tipo == 6)
@@ -39,9 +47,7 @@
                         <div class="py-md-5"></div>
                     </div>
                 </div>
-            @endif               
-
-                
+            @endif 
 
             <div class="productos col-12 col-md-12 col-lg-10 col-xl-8 p-0 mb-lg-4">
                 <div class="row d-flex justify-content-between mx-4 m-lg-0">
