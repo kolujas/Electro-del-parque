@@ -21,6 +21,7 @@
     <div class="container-fluid px-0">
         <div class="jumbotron card card-image d-lg-block m-0 p-5 px-0"
         style="background: url(/img/recursos/banner.jpg) no-repeat center center; background-size: cover">
+        <div class="divImagen"></div>
             <div class="text-white text-center m-0 p-0">
                 <div class="row m-0 my-lg-5 p-0 d-flex justify-content-center">
                     <div class="col-12 col-md-10 col-lg-8 m-0 mb-4 p-0">
