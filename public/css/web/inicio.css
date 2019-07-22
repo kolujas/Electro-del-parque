@@ -10,6 +10,18 @@
     z-index: 110;
 }
 
+.divImagen{
+    max-width: 100%;
+    background-color: #000;
+    filter: opacity(0.2);
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
 /* Productos */
 .productos .card{
     color: #162e44;
@@ -86,24 +98,6 @@
 /* LG */
 @media(min-width: 1024px){
     /* Jumbotron */
-
-    .divImagen{
-        max-width: 100%;
-        background-color: #000;
-        filter: opacity(0.2);
-        z-index: 0;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-
-    }
-
-    .jumbotron{
-
-    }
-
     .jumbotron h2{
         font-size: 2.5rem;
     }
@@ -197,7 +191,6 @@
 /* XL */
 @media(min-width: 1200px){
     /* productos */
-
     .productos .card-img-top{
         height: 18rem;
         object-fit: cover;
