@@ -103,6 +103,7 @@
                                             id="nombre"
                                             placeholder="Nombre"
                                             name="nombre"
+                                            value="{{old('nombre')}}"
                                             required="required">
                                         <div class="invalid-tooltip mb-4"
                                             @if($errors->has('nombre'))
@@ -121,6 +122,7 @@
                                             id="telefono"
                                             placeholder="Teléfono"
                                             name="telefono"
+                                            value="{{old('telefono')}}"
                                             required="required">
                                         <div class="invalid-tooltip mb-4"
                                             @if($errors->has('telefono'))
@@ -139,6 +141,7 @@
                                             id="email"
                                             placeholder="Email"
                                             name="correo"
+                                            value="{{old('correo')}}"
                                             required="required">
                                         <div class="invalid-tooltip mb-4"
                                             @if($errors->has('correo'))
@@ -155,7 +158,7 @@
                                         <textarea id="mensaje"
                                             class="md-textarea form-control form-control z-depth-1"
                                             rows="3"
-                                            name="mensaje" placeholder="Mensaje"></textarea>
+                                            name="mensaje" placeholder="Mensaje">{{old('mensaje')}}</textarea>
                                         <div class="invalid-tooltip mb-4"
                                             @if($errors->has('mensaje'))
                                                 style="display: block;"
