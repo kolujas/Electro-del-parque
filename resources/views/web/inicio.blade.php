@@ -93,7 +93,11 @@
 
                     <div class="row">
                         <div class="col-md-8 col-lg-8 mb-md-4 m-auto">
-                            <form class="needs-validation contact-form py-0" novalidate="novalidate" action="/contactar" method="post">
+                            <form class="maintenance needs-validation contact-form py-0" novalidate="novalidate" action="/contactar" method="post">
+                                <aside class="background">
+                                    <span>Estamos trabajando para crear una mejor experiencia de usuario.</span>
+                                    <img src="/img/recursos/maintenance.jpg" alt="imagen de mantenimiento">
+                                </aside>
                                 @csrf
                                 <div class="form-row d-flex justify-content-center">
                                     <div class="col-md-10 my-3">

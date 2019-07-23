@@ -4,7 +4,11 @@
     role="dialog"
     aria-labelledby="myModalLabel"
     aria-hidden="true">
-    <form class="modal-dialog needs-validation contact-form m-0 m-auto" role="document" novalidate="novalidate" action="/preguntar" method="post">
+    <form class="maintenance modal-dialog needs-validation contact-form m-auto" role="document" novalidate="novalidate" action="/preguntar" method="post">
+        <aside class="background">
+            <span>Estamos trabajando para crear una mejor experiencia de usuario.</span>
+            <img src="/img/recursos/maintenance.jpg" alt="imagen de mantenimiento">
+        </aside>
         @csrf
 
         <div class="modal-content">
