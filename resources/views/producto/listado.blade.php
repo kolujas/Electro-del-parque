@@ -127,5 +127,5 @@
 @endsection
 
 @section('js')
-    <script type="text/javascript" src="js/web/listado.js"></script>
+    <script type="text/javascript" src="js/producto/listado.js"></script>
 @endsection
