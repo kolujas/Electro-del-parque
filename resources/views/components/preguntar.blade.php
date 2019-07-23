@@ -4,7 +4,7 @@
     role="dialog"
     aria-labelledby="myModalLabel"
     aria-hidden="true">
-    <form class="modal-dialog needs-validation contact-form py-0" role="document" novalidate="novalidate" action="/preguntar" method="post">
+    <form class="modal-dialog needs-validation contact-form m-0 m-auto" role="document" novalidate="novalidate" action="/preguntar" method="post">
         @csrf
 
         <div class="modal-content">
@@ -19,8 +19,8 @@
             </div>
 
             <div class="modal-body mx-3">
-                <div class="form-row d-flex justify-content-center">
-                    <div class="col-md-10 my-3">
+                <div class="row form-row d-flex justify-content-center">
+                    <div class="col-md-10 col-lg-5 my-3">
                         <label for="nombre">Nombre</label>
                         <input type="text"
                             class="form-control"
@@ -38,7 +38,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-10 my-3">
+                    <div class="col-md-10 col-lg-5 my-3">
                         <label for="asunto">Asunto</label>
                         <input type="text"
                             class="form-control"
@@ -56,7 +56,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-10 my-3">
+                    <div class="col-md-10 col-lg-5 my-3">
                         <label for="telefono">Teléfono</label>
                         <input type="number"
                             class="form-control"
@@ -74,7 +74,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-10 my-3">
+                    <div class="col-md-10 col-lg-5 my-3">
                         <label for="email">Email</label>
                         <input type="email"
                             class="form-control"
