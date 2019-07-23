@@ -24,7 +24,7 @@
 					<a style="text-decoration:none;border-radius:5px;padding:11px 23px;color:white;background-color: #01B3A7;"target="_blank" href="http://www.mutualcoop.org.ar">Ir a la página</a>
 				</div>
 				
-				<p style="color: #ffffff;font-size: 1.1rem;text-align:center;margin:30px 0 0;padding: 1rem;background-color: #01B3A7;">© Digitalo: <a target="_blank" href="https://www.digitalo.com.ar/"> www.digitalo.com.ar</a></p>
+				<p style="color: #ffffff;font-size: 1.1rem;text-align:center;margin:30px 0 0;padding: 1rem;background-color: #01B3A7;">© Digitalo: <a style="color: white; text-decoration: none;" target="_blank" href="https://www.digitalo.com.ar/"> www.digitalo.com.ar</a></p>
 			</div>
 		</td>
 	</tr>
