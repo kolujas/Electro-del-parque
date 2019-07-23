@@ -111,7 +111,7 @@
             </div>
 
             <div class="modal-footer d-flex justify-content-center">
-                <button type="submit" class="btn enviar">Enviar
+                <button type="submit" class="btn enviar modalEnviar">Enviar
                     <i class="fas fa-paper-plane-o ml-1"></i>
                 </button>
             </div>

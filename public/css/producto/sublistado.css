@@ -82,6 +82,10 @@
  .modal-dialog textarea:focus{
      border-bottom: none !important;
  }
+
+ .modalEnviar{
+    margin-top: 0;
+}
  
  /* MD */
  @media(min-width: 768px){

@@ -24,6 +24,10 @@
     border-bottom-left-radius: .25rem;
 }
 
+.modalEnviar{
+    margin-top: 0;
+}
+
 /* MD */
 @media(min-width: 768px){
     /* Productos */
