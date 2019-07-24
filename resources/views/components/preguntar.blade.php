@@ -4,11 +4,7 @@
     role="dialog"
     aria-labelledby="myModalLabel"
     aria-hidden="true">
-    <form class="maintenance modal-dialog needs-validation contact-form m-auto" role="document" novalidate="novalidate" action="/preguntar" method="post">
-        <aside class="background">
-            <span>Estamos trabajando para crear una mejor experiencia de usuario.</span>
-            <img src="/img/recursos/maintenance.jpg" alt="imagen de mantenimiento">
-        </aside>
+    <form class="maintenance modal-dialog needs-validation contact-form m-auto" role="document" novalidate="novalidate" action="/preguntar" method="post" data-text="El contacto aún no funciona, Si desea contactar a alguien el correo es info@electrodelparque.com.ar">
         @csrf
 
         <div class="modal-content">
@@ -119,7 +115,7 @@
             </div>
 
             <div class="modal-footer d-flex justify-content-center">
-                <button type="submit" class="btn enviar modalEnviar">Enviar
+                <button type="submit" class="btn enviar modalEnviar submit">Enviar
                     <i class="fas fa-paper-plane-o ml-1"></i>
                 </button>
             </div>
@@ -128,6 +124,10 @@
 </div>
 
 <script>
+    document.addEventListener('DOMContentLoaded', function(){
+        maintenance.load();
+    });
+
     function cargarModal(boton){
         let id_padre = boton.parentNode.parentNode.parentNode.parentNode.id;
         let tipo, slug;

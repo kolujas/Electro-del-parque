@@ -93,11 +93,7 @@
 
                     <div class="row">
                         <div class="col-md-8 col-lg-8 mb-md-4 m-auto">
-                            <form class="maintenance needs-validation contact-form py-0" novalidate="novalidate" action="/contactar" method="post">
-                                <aside class="background">
-                                    <span>Estamos trabajando para crear una mejor experiencia de usuario.</span>
-                                    <img src="/img/recursos/maintenance.jpg" alt="imagen de mantenimiento">
-                                </aside>
+                            <form class="maintenance needs-validation contact-form py-0" novalidate="novalidate" action="/contactar" method="post" data-text="El contacto aún no funciona, Si desea contactar a alguien el correo es info@electrodelparque.com.ar">
                                 @csrf
                                 <div class="form-row d-flex justify-content-center">
                                     <div class="col-md-10 my-3">
@@ -174,7 +170,7 @@
                                     </div>
 
                                     <div class="text-center text-md-left d-flex justify-content-center my-4 col-12">
-                                        <button class="btn btn-md enviar" type="submit">Enviar</button>
+                                        <button class="btn btn-md enviar submit" type="submit">Enviar</button>
                                     </div>
                                 </div>
                             </form>

@@ -57,5 +57,5 @@
 @endsection
 
 @section('js')
-    <script type="text/javascript" src="js/producto/intermedio.js"></script>
+    <script type="text/javascript" src="/js/producto/intermedio.js"></script>
 @endsection
