@@ -74,7 +74,9 @@ function validateForm() {
     }
 
     if(valid){
-        document.querySelector('.contact-form').submit();
+        if(!document.querySelector('.maintenance.contact-form')){
+            document.querySelector('.contact-form').submit();
+        }
     }else{
         return false;
     }

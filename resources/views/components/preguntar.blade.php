@@ -4,7 +4,7 @@
     role="dialog"
     aria-labelledby="myModalLabel"
     aria-hidden="true">
-    <form class="maintenance modal-dialog needs-validation contact-form m-auto" role="document" novalidate="novalidate" action="/preguntar" method="post" data-text="El contacto aún no funciona, Si desea contactar a alguien el correo es info@electrodelparque.com.ar">
+    <form class="maintenance modal-dialog needs-validation contact-form m-auto" role="document" novalidate="novalidate" action="/preguntar" method="post" data-text="El contacto aún no funciona, Si desea enviar un mensaje personalmente hagalo a: info@electrodelparque.com.ar">
         @csrf
 
         <div class="modal-content">
@@ -235,7 +235,9 @@
         }
         
         if(valid){
-            document.querySelector('.contact-form').submit();
+            if(!document.querySelector('.maintenance.contact-form')){
+                document.querySelector('.contact-form').submit();
+            }
         }else{
             return false;
         }
