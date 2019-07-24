@@ -41,11 +41,6 @@ const notification = {
 			e.preventDefault();
 			notification.close();
 		});
-
-		setInterval(function(){
-			notification.close();
-			clearInterval(this);
-		}, 10000);
 	},close(){
 		let modal = d.querySelector('#notification');
 
