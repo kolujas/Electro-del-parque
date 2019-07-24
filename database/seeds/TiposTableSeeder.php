@@ -11,9 +11,9 @@
         public function run(){
             Tipo::create( [
             'id_tipo'=>'1',
-            'nombre'=>'Oxicensores',
+            'nombre'=>'Oxisensores',
             'id_usuario'=>'1',
-            'slug'=>'oxicensores',
+            'slug'=>'oxisensores',
             'imagen'=>'tipos/1.jpg'
             ] );
                         

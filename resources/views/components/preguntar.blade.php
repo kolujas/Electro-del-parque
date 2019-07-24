@@ -4,7 +4,7 @@
     role="dialog"
     aria-labelledby="myModalLabel"
     aria-hidden="true">
-    <form class="modal-dialog needs-validation contact-form py-0" role="document" novalidate="novalidate" action="/preguntar" method="post">
+    <form class="maintenance modal-dialog needs-validation contact-form m-auto" role="document" novalidate="novalidate" action="/preguntar" method="post" data-text="El contacto aún no funciona, Si desea enviar un mensaje personalmente hágalo a: info@electrodelparque.com.ar">
         @csrf
 
         <div class="modal-content">
@@ -19,14 +19,15 @@
             </div>
 
             <div class="modal-body mx-3">
-                <div class="form-row d-flex justify-content-center">
-                    <div class="col-md-10 my-3">
+                <div class="row form-row d-flex justify-content-center">
+                    <div class="col-md-10 col-lg-5 my-3">
                         <label for="nombre">Nombre</label>
                         <input type="text"
                             class="form-control"
                             id="nombre"
                             placeholder="Nombre"
                             name="nombre"
+                            value="{{old('nombre')}}"
                             required="required">
                         <div class="invalid-tooltip mb-4"
                             @if($errors->has('mensaje'))
@@ -38,13 +39,14 @@
                         </div>
                     </div>
 
-                    <div class="col-md-10 my-3">
+                    <div class="col-md-10 col-lg-5 my-3">
                         <label for="asunto">Asunto</label>
                         <input type="text"
                             class="form-control"
                             id="asunto"
                             placeholder="Asunto"
                             name="asunto"
+                            value="{{old('asunto')}}"
                             required="required">
                         <div class="invalid-tooltip mb-4"
                             @if($errors->has('nombre'))
@@ -56,13 +58,14 @@
                         </div>
                     </div>
 
-                    <div class="col-md-10 my-3">
+                    <div class="col-md-10 col-lg-5 my-3">
                         <label for="telefono">Teléfono</label>
                         <input type="number"
                             class="form-control"
                             id="telefono"
                             placeholder="Teléfono"
                             name="telefono"
+                            value="{{old('telefono')}}"
                             required="required">
                         <div class="invalid-tooltip mb-4"
                             @if($errors->has('telefono'))
@@ -74,13 +77,14 @@
                         </div>
                     </div>
 
-                    <div class="col-md-10 my-3">
+                    <div class="col-md-10 col-lg-5 my-3">
                         <label for="email">Email</label>
                         <input type="email"
                             class="form-control"
                             id="email"
                             placeholder="Email"
                             name="correo"
+                            value="{{old('correo')}}"
                             required="required">
                         <div class="invalid-tooltip mb-4"
                             @if($errors->has('correo'))
@@ -97,7 +101,7 @@
                         <textarea id="mensaje"
                             class="md-textarea form-control form-control z-depth-1"
                             rows="3"
-                            name="mensaje" placeholder="Mensaje"></textarea>
+                            name="mensaje" placeholder="Mensaje">{{old('mensaje')}}</textarea>
                         <div class="invalid-tooltip mb-4"
                             @if($errors->has('mensaje'))
                                 style="display: block;"
@@ -111,7 +115,7 @@
             </div>
 
             <div class="modal-footer d-flex justify-content-center">
-                <button type="submit" class="btn enviar modalEnviar">Enviar
+                <button type="submit" class="btn enviar modalEnviar submit">Enviar
                     <i class="fas fa-paper-plane-o ml-1"></i>
                 </button>
             </div>
@@ -120,6 +124,10 @@
 </div>
 
 <script>
+    document.addEventListener('DOMContentLoaded', function(){
+        maintenance.load();
+    });
+
     function cargarModal(boton){
         let id_padre = boton.parentNode.parentNode.parentNode.parentNode.id;
         let tipo, slug;
@@ -227,7 +235,9 @@
         }
         
         if(valid){
-            document.querySelector('.contact-form').submit();
+            if(!document.querySelector('.maintenance.contact-form')){
+                document.querySelector('.contact-form').submit();
+            }
         }else{
             return false;
         }

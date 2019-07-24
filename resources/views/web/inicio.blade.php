@@ -93,7 +93,7 @@
 
                     <div class="row">
                         <div class="col-md-8 col-lg-8 mb-md-4 m-auto">
-                            <form class="needs-validation contact-form py-0" novalidate="novalidate" action="/contactar" method="post">
+                            <form class="maintenance needs-validation contact-form py-0" novalidate="novalidate" action="/contactar" method="post" data-text="El contacto aún no funciona, Si desea enviar un mensaje personalmente hágalo a: info@electrodelparque.com.ar">
                                 @csrf
                                 <div class="form-row d-flex justify-content-center">
                                     <div class="col-md-10 my-3">
@@ -103,6 +103,7 @@
                                             id="nombre"
                                             placeholder="Nombre"
                                             name="nombre"
+                                            value="{{old('nombre')}}"
                                             required="required">
                                         <div class="invalid-tooltip mb-4"
                                             @if($errors->has('nombre'))
@@ -121,6 +122,7 @@
                                             id="telefono"
                                             placeholder="Teléfono"
                                             name="telefono"
+                                            value="{{old('telefono')}}"
                                             required="required">
                                         <div class="invalid-tooltip mb-4"
                                             @if($errors->has('telefono'))
@@ -139,6 +141,7 @@
                                             id="email"
                                             placeholder="Email"
                                             name="correo"
+                                            value="{{old('correo')}}"
                                             required="required">
                                         <div class="invalid-tooltip mb-4"
                                             @if($errors->has('correo'))
@@ -155,7 +158,7 @@
                                         <textarea id="mensaje"
                                             class="md-textarea form-control form-control z-depth-1"
                                             rows="3"
-                                            name="mensaje" placeholder="Mensaje"></textarea>
+                                            name="mensaje" placeholder="Mensaje">{{old('mensaje')}}</textarea>
                                         <div class="invalid-tooltip mb-4"
                                             @if($errors->has('mensaje'))
                                                 style="display: block;"
@@ -167,7 +170,7 @@
                                     </div>
 
                                     <div class="text-center text-md-left d-flex justify-content-center my-4 col-12">
-                                        <button class="btn btn-md enviar" type="submit">Enviar</button>
+                                        <button class="btn btn-md enviar submit" type="submit">Enviar</button>
                                     </div>
                                 </div>
                             </form>

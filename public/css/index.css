@@ -49,8 +49,36 @@ footer{
     right: 0;
 }
 
-/* MD */
+#notification{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: -5rem;
+    left: 15rem;
+    right: 15rem;
+    border-radius: .2rem;
+    color: white;
+    background: #162E44;
+    padding: .5rem 1.5rem;
+    font-size: 1.1rem;
+    z-index: 99;
+    transition: 500ms;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+}
 
+#notification p{
+    margin: 0;
+    padding: 0;
+}
+
+#notification i{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* MD */
 @media(min-width: 768px){
     .logo{
         height: 4rem;
@@ -58,15 +86,16 @@ footer{
 }
 
 /* LG */
-
 @media(min-width: 1024px){
+    .modal-dialog{
+        max-width: 900px;
+    }
     .logo{
         height: 4rem;
     }
 }
 
 /* XL */
-
 @media(min-width: 1200px){
     .logo{
         height: 4rem;

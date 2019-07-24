@@ -69,5 +69,5 @@
 @endsection
 
 @section('js')
-    <script type="text/javascript" src="js/web/sublistado.js"></script>
+    <script type="text/javascript" src="/js/producto/sublistado.js"></script>
 @endsection

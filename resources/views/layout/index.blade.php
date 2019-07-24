@@ -46,6 +46,8 @@
         <script type="text/javascript" src="/bmd/js/bootstrap.min.js"></script>
         <!-- MDB core JavaScript -->
         <script type="text/javascript" src="/bmd/js/mdb.min.js"></script>
+
+        <script type="text/javascript" src="/js/index.js"></script>
         
         @yield('js')
     </body>
