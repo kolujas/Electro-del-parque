@@ -11,10 +11,10 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
         
         <!-- Ignorará cache? -->
-        <meta http-equiv="Expires" content="0">
+        <!-- <meta http-equiv="Expires" content="0">
         <meta http-equiv="Last-Modified" content="0">
         <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
-        <meta http-equiv="Pragma" content="no-cache">
+        <meta http-equiv="Pragma" content="no-cache"> -->
 
         <!-- Bootstrap core CSS -->
         <link href="/bmd/css/bootstrap.min.css" rel="stylesheet">

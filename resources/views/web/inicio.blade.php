@@ -5,7 +5,7 @@
 @extends('layout.index')
 
 @section('css')
-    <link href="{{ asset('css/web/inicio.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/web/inicio.css?') }}" rel="stylesheet">
 @endsection
 
 @section('titulo')
