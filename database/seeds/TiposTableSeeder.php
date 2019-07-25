@@ -35,7 +35,7 @@
                         
             Tipo::create( [
             'id_tipo'=>'4',
-            'nombre'=>'Presión Invasiva',
+            'nombre'=>'Presión invasiva',
             'id_usuario'=>'1',
             'slug'=>'presión-invasiva',
             'imagen'=>'tipos/4.png'
@@ -43,7 +43,7 @@
                         
             Tipo::create( [
             'id_tipo'=>'5',
-            'nombre'=>'Presión no Invasiva',
+            'nombre'=>'Presión no invasiva',
             'id_usuario'=>'1',
             'slug'=>'presión-no-invasiva',
             'imagen'=>'tipos/5.jpg'
@@ -51,7 +51,7 @@
                         
             Tipo::create( [
             'id_tipo'=>'6',
-            'nombre'=>'Sensores de Temperatura',
+            'nombre'=>'Sensores de temperatura',
             'id_usuario'=>'1',
             'slug'=>'sensores-de-temperatura',
             'imagen'=>'tipos/6.jpg'
