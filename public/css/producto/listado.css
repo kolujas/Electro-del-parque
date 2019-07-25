@@ -1,3 +1,8 @@
+/* Sacar espacios del body */
+html, body { 
+    overflow-x: hidden !important;
+}
+
 .jumbotron.card{
    width: 8rem;
    height: 13.2rem;
@@ -93,6 +98,13 @@
         height: 12rem;
         object-fit: contain;
     }
+
+    .listaAclaracion{
+        position: relative;
+        left: 14vw;
+        right: 0;
+        bottom: 0
+    }
 }
 
 /* LG */
@@ -181,5 +193,11 @@
 
     .parrafoJunto p{
         font-size: 1rem;
+    }
+    .listaAclaracion{
+        position: relative;
+        left: 20vw;
+        right: 0;
+        bottom: 0
     }
 }

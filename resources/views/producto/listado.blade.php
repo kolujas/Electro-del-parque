@@ -34,16 +34,19 @@
                     <h2 class="h1-responsive mt-4 mb-0 text-center" id="tipo"><span>{{$tipo->nombre}} - </span><span id="slug">{{$titulo}}</span></h2>           
                 @else
                     <h2 class="h1-responsive mt-4 mb-0 text-center" id="tipo">{{$tipo->nombre}}</h2>
-                <div class="my-4">
-                <h2 class="h4-responsive my-4 mb-0 text-center">Los productos pueden tener las siguientes terminaciones:</h2>
-                    <ul class="m-0 list-group w-50 m-auto">
-                            <li class="list-group-item">Broche</li>
-                            <li class="list-group-item">Broche pediatrico</li>
-                            <li class="list-group-item">Cable extension</li>
-                            <li class="list-group-item">Univ "Y"/Pediatrico</li>
-                            <li class="list-group-item">Univ "Y"/Neonatal</li>
-                            <li class="list-group-item">Clip para oreja</li>
-                    </ul>
+                <div class="my-4 listaAclaracionDivPadre">
+                <h2 class="h4-responsive my-4 text-center ml-2">Los productos pueden tener las siguientes terminaciones:</h2>
+                    <div class="row listaAclaracion">
+                        <ul class="m-0 w-50 m-auto">
+                                <li>Broche</li>
+                                <li>Broche</li>
+                                <li>Broche pediatrico</li>
+                                <li>Cable extension</li>
+                                <li>Univ "Y"/Pediatrico</li>
+                                <li>Univ "Y"/Neonatal</li>
+                                <li>Clip para oreja</li>
+                        </ul>
+                    </div>
                 </div>  
                 @endif
             </div>
