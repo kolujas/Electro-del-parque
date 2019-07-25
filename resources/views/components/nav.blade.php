@@ -2,7 +2,7 @@
     /** @var Tipo[] $tipos */
 ?>
 
-<nav class="navbar navbar-expand-lg">
+<nav class="navbar navbar-expand-lg ">
     <!-- Navbar brand -->
     <a class="navbar-brand white-text" href="/"><img class="logo" src="/img/recursos/logo.png" alt="Logo de Electro del parque"></a>
 
@@ -16,7 +16,7 @@
     <div class="collapse navbar-collapse" id="basicExampleNav">
 
         <!-- Links -->
-        <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav ml-auto">
             <li class="nav-item active white-text">
                 <a class="nav-link white-text" href="/">Inicio
                 <span class="sr-only">(current)</span>

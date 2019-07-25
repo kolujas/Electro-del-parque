@@ -22,6 +22,10 @@ h2{
     height: 4rem;
 }
 
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
 .dropdown-menu{
     background-color: #162e44;
     margin-top: 0.45rem !important;

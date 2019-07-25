@@ -91,6 +91,43 @@ html, body {
     margin-top: 0;
 }
 
+.listaAclaracion{
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0
+}
+
+.listaAclaracion{
+    height: 70px;
+}
+
+.listaAclaracion ul{
+    margin: 0;
+    padding: 0; 
+    list-style: none;
+    left: 0;
+}
+
+
+.listaAclaracion ul li{
+    display: inline-flex;
+    font-family: 'Darker Grotesque', sans-serif;
+    border-bottom: 2px solid transparent;
+    color: #000;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: border-bottom-color 50ms linear 0s;
+}
+
+.listaAclaracion ul li:hover{
+    transition: 200ms;
+    border-bottom: 2px solid #162E44;
+    cursor: pointer;
+}
+
 /* MD */
 @media(min-width: 768px){
     /* Productos */
@@ -101,9 +138,39 @@ html, body {
 
     .listaAclaracion{
         position: relative;
-        left: 14vw;
+        left: 0;
         right: 0;
         bottom: 0
+    }
+
+    .listaAclaracion{
+        height: 50px;
+    }
+
+    .listaAclaracion ul{
+        margin: 0;
+        padding: 0; 
+        list-style: none;
+        left: 0;
+    }
+
+
+    .listaAclaracion ul li{
+        display: inline-flex;
+        font-family: 'Darker Grotesque', sans-serif;
+        border-bottom: 2px solid transparent;
+        color: #000;
+        font-size: 1rem;
+        font-weight: bold;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: border-bottom-color 50ms linear 0s;
+    }
+
+    .listaAclaracion ul li:hover{
+        transition: 200ms;
+        border-bottom: 2px solid #162E44;
+        cursor: pointer;
     }
 }
 
@@ -194,10 +261,5 @@ html, body {
     .parrafoJunto p{
         font-size: 1rem;
     }
-    .listaAclaracion{
-        position: relative;
-        left: 20vw;
-        right: 0;
-        bottom: 0
-    }
+    
 }
