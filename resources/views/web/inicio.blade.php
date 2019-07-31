@@ -9,7 +9,7 @@
 @endsection
 
 @section('titulo')
-    Electro del parque
+    Electromédica del Parque 
 @endsection
 
 @section('nav')

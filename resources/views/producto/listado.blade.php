@@ -38,19 +38,11 @@
                 @elseif($tipo->id_tipo == 1)
                     <h2 class="h1-responsive mt-4 mb-0 text-center" id="tipo">{{$tipo->nombre}}</h2>
 
-                    <div class="listaAclaracionDivPadre text-center">
+                    <div class="listaAclaracionDivPadre text-center mb-0">
                         <h3 class="h4-responsive my-4 text-center ml-2">Los productos pueden tener las siguientes terminaciones:</h3>
 
-                        <div class="row listaAclaracion">
-                            <ul class="m-0 w-50 m-auto text-md-center col-12 px-4 col-md-10">
-                                <li class="mx-2">Broche</li>
-                                <li class="mx-2">Broche pediatrico</li>
-                                <li class="mx-2">Cable extension</li>
-                                <li class="mx-2">Univ "Y"/Pediatrico</li>
-                                <li class="mx-2">Univ "Y"/Neonatal</li>
-                                <li class="mx-2">Clip para oreja</li>
-                            </ul>
-                        </div>
+                        <img src="/img/tipos/banners/oxisensores_banner.jpg" class="img-fluid" alt="">
+
                     </div>  
                 @else
                     <h2 class="h1-responsive mt-4 mb-0 text-center" id="tipo">{{$tipo->nombre}}</h2>
@@ -58,7 +50,7 @@
             </div>
 
             @if($tipo->id_tipo == 2 || $tipo->id_tipo == 3 || $tipo->id_tipo == 4 || $tipo->id_tipo == 6)
-                <div class="jumbotron card card-image d-lg-block col-12 col-lg-8 m-0 p-0 mt-4"
+                <!-- <div class="jumbotron card card-image d-lg-block col-12 col-lg-8 m-0 p-0 mt-4"
                     style="
                     background: url(/img/tipos/{{$banner->imagen}}) no-repeat center center;
                     background-size: contain;
@@ -66,6 +58,9 @@
                     <div class="text-white text-center m-0 p-0">
                         <div class="py-md-5"></div>
                     </div>
+                </div> -->
+                <div class="p-0 my-4 m-auto">
+                    <img class="d-none d-lg-block my-4" src="/img/tipos/{{$banner->imagen}}" alt="">
                 </div>
             @endif 
 
