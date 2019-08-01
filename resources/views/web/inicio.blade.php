@@ -93,7 +93,7 @@
 
                     <div class="row">
                         <div class="col-md-8 col-lg-8 mb-md-4 m-auto">
-                            <form class="maintenance needs-validation contact-form py-0" novalidate="novalidate" action="/contactar" method="post" data-text="El contacto aún no funciona, Si desea enviar un mensaje personalmente hágalo a: info@electrodelparque.com.ar">
+                            <form class="maintenance needs-validation contact-form py-0" novalidate="novalidate" action="/contactar" method="post" data-text="El contacto aún no funciona, Si desea enviar un mensaje personalmente hágalo a: electromedicadelparque@gmail.com">
                                 @csrf
                                 <div class="form-row d-flex justify-content-center">
                                     <div class="col-md-10 my-3">

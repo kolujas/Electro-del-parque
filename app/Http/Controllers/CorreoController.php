@@ -30,7 +30,7 @@
 
             $objDemo = (object) $inputData;
 
-            Mail::to('info@electrodelparque.com')->send(new Contactar($objDemo));
+            Mail::to('electromedicadelparque@gmail.com')->send(new Contactar($objDemo));
 
             return redirect()->route('correo.gracias');
         }
@@ -57,7 +57,7 @@
 
             $objDemo = (object) $inputData;
 
-            Mail::to('info@electrodelparque.com')->send(new Preguntar($objDemo));
+            Mail::to('electromedicadelparque@gmail.com')->send(new Preguntar($objDemo));
 
             return redirect()->route('correo.gracias');
         }
