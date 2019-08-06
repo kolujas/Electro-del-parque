@@ -1,3 +1,116 @@
+/* Accordion */
+.accordion-group{
+    background: white;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    border-radius: .25rem;
+    overflow: hidden;
+    margin: 0 !important;
+}
+
+.accordion{
+    background: white;
+}
+
+.accordion-focus{
+    border: none;
+}
+
+.accordion .accordion-title{
+    transition: 500ms;
+}
+
+.accordion-focus .accordion-title{
+    background: rgba(0,0,0,.125);
+    color: var(--bg-color);
+}
+
+.accordion .accordion-body{
+    height: 0;
+    transition: 500ms;
+    position: relative;
+    overflow: hidden;
+}
+
+.accordion-focus .accordion-body{
+    height: auto;
+    width: 100%;
+}
+
+.accordion-focus:last-of-type .accordion-body{
+    border-bottom-left-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+}
+
+.accordion .accordion-body .body-information{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 20;
+    color: transparent;
+    transition: 500ms;
+    text-shadow: 0px 0px 20px #FFFFFF;
+}
+
+.accordion-body .body-information{
+    color: var(--bg-color);
+}
+
+.accordion-body .list{
+    list-style: none;
+    padding: 0;
+}
+
+.accordion-body .list li{
+    border-bottom: 2px solid rgba(0,0,0,.125);
+    transition: 500ms;
+}
+
+.accordion-body .list .active{
+    position: relative;
+    overflow: hidden;
+}
+
+.accordion-body .list .active,
+.accordion-body .list li:hover{
+    background: rgba(0,0,0,.125);
+    border-bottom: 2px solid transparent;
+}
+
+.accordion-body .list .active:hover{
+    background: rgba(255, 0, 0, 0.125);
+}
+
+.accordion-body .list a{
+    background: transparent;
+    border: none;
+    outline: none;
+    text-align: left;
+    color: black;
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+.accordion-body .list .active i{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -20px;
+    transition: 500ms;
+    font-style: normal;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.accordion-body .list .active:hover i{
+    right: 20px;
+}
+
 /* Sacar espacios del body */
 html, body { 
     overflow-x: hidden !important;

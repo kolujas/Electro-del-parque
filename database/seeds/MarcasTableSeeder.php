@@ -9,874 +9,1442 @@
          * @return void
          */
         public function run(){
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'1',
             'nombre'=>'ARTEMA',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'artema',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'2',
             'nombre'=>'BCI',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'bci',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'3',
             'nombre'=>'ABBOTT MEDICAL',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'abbott-medical',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'4',
             'nombre'=>'ADVANCED AMR',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'advanced-amr',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'5',
             'nombre'=>'AIR SHIELDS (Narco, Vickers)',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'air-shields-(narco,-vickers)',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'6',
             'nombre'=>'BERGER',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'berger',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'7',
             'nombre'=>'BEXEN',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'bexen',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'8',
             'nombre'=>'BIOCARDIO',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'biocardio',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'9',
             'nombre'=>'BIONET',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'bionet',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'10',
             'nombre'=>'PHILIPS',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'philips',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'11',
             'nombre'=>'MINDRAY T5/T8 BLT',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'mindray-t5/t8-blt',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'12',
             'nombre'=>'GE DASH',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'ge-dash',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'13',
             'nombre'=>'SIEMENS',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'siemens',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'14',
             'nombre'=>'BAXTER',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'baxter',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'15',
             'nombre'=>'BYOSIS',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'byosis',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'16',
             'nombre'=>'BIO 80',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'bio-80',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'17',
             'nombre'=>'CARDIOTECNICA',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'cardiotecnica',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'18',
             'nombre'=>'CHOICE MED',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'choice-med',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'19',
             'nombre'=>'CONTEC MEDICAL',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'contec-medical',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'20',
             'nombre'=>'CRITICARE (CSI)',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'criticare-(csi)',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'21',
             'nombre'=>'CRITIKON',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'critikon',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'22',
             'nombre'=>'DATASCOPE',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'datascope',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'23',
             'nombre'=>'DATEX-OHMEDA',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'datex-ohmeda',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'24',
             'nombre'=>'DIGICARE',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'digicare',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'25',
             'nombre'=>'DIXTAL',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'dixtal',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'26',
             'nombre'=>'DRÄGER',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'dräger',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'27',
             'nombre'=>'EDAN',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'edan',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'28',
             'nombre'=>'E&M',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'e&m',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'29',
             'nombre'=>'FEAS',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'feas',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'30',
             'nombre'=>'FUKUDA DENSHI',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'fukuda-denshi',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'31',
             'nombre'=>'GENERAL ELECTRIC',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'general-electric',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'32',
             'nombre'=>'GOLDWAY INDUSTRIAL',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'goldway-industrial',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'33',
             'nombre'=>'INVIVO RESEARCH',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'invivo-research',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'34',
             'nombre'=>'IVY BIOMEDICAL',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'ivy-biomedical',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'35',
             'nombre'=>'KELLER',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'keller',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'36',
             'nombre'=>'KONTRON (AVCO)',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'kontron-(avco)',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'37',
             'nombre'=>'LOHMEIER',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'lohmeier',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'38',
             'nombre'=>'MARQUETTE',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'marquette',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'39',
             'nombre'=>'MASIMO',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'masimo',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'40',
             'nombre'=>'MEDIX',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'medix',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'41',
             'nombre'=>'MEDICAL SISTEM',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'medical-sistem',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'42',
             'nombre'=>'MEK',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'mek',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'43',
             'nombre'=>'MENNEN MEDICAL',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'mennen-medical',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'44',
             'nombre'=>'MICROMEDICAL',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'micromedical',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'45',
             'nombre'=>'MINDRAY MEDICAL',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'mindray-medical',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'46',
             'nombre'=>'MRL',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'mrl',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'47',
             'nombre'=>'MSA CATALIST RESEARCH',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'msa-catalist-research',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'48',
             'nombre'=>'NELLCOR',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'nellcor',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'49',
             'nombre'=>'NIHON KOHDEN',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'nihon-kohden',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'50',
             'nombre'=>'NONIN',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'nonin',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'51',
             'nombre'=>'NOVAMETRIX',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'novametrix',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'52',
             'nombre'=>'ODAM',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'odam',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'53',
             'nombre'=>'OHMEDA',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'ohmeda',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'54',
             'nombre'=>'PACE TECH',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'pace-tech',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'55',
             'nombre'=>'PALCO',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'palco',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'56',
             'nombre'=>'RHOMICRON',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'rhomicron',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'57',
             'nombre'=>'SCHILLER',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'schiller',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'58',
             'nombre'=>'SENSORS MEDICS',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'sensors-medics',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'59',
             'nombre'=>'SIMED',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'simed',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'60',
             'nombre'=>'SOLARIS',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'solaris',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'61',
             'nombre'=>'SPACELABS',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'spacelabs',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'62',
             'nombre'=>'WELCH ALLYN PROTOCOL',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'welch-allyn-protocol',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'63',
             'nombre'=>'ARTEC',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'artec',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'64',
             'nombre'=>'BECKMAN',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'beckman',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'65',
             'nombre'=>'BIRTCHER (SENSORMEDICS)',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'birtcher-(sensormedics)',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'66',
             'nombre'=>'BIOSYS',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'biosys',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'67',
             'nombre'=>'BRIOX',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'briox',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'68',
             'nombre'=>'BURDICK',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'burdick',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'69',
             'nombre'=>'CARDIO DISPLAY',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'cardio-display',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'70',
             'nombre'=>'CRITICARE',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'criticare',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'71',
             'nombre'=>'DATEX',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'datex',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'72',
             'nombre'=>'DEL MAR AVIONICS',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'del-mar-avionics',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'73',
             'nombre'=>'DIGIMED',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'digimed',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'74',
             'nombre'=>'DYNE',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'dyne',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'75',
             'nombre'=>'EKOSUR',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'ekosur',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'76',
             'nombre'=>'ESAOTE',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'esaote',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'77',
             'nombre'=>'FUKUDA',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'fukuda',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'78',
             'nombre'=>'GOLDWAY',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'goldway',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'79',
             'nombre'=>'GUOTENG',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'guoteng',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'80',
             'nombre'=>'HEWLETT PACKARD',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'hewlett-packard',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'81',
             'nombre'=>'INTERSPEC',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'interspec',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'82',
             'nombre'=>'INVIVO',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'invivo',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'83',
             'nombre'=>'IVY MEDICAL',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'ivy-medical',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'84',
             'nombre'=>'JOHNSON & JOHNSON',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'johnson-&-johnson',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'85',
             'nombre'=>'KERNS & WHITE',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'kerns-&-white',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'86',
             'nombre'=>'KONTRON',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'kontron',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'87',
             'nombre'=>'LASER (LSE)',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'laser-(lse)',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'88',
             'nombre'=>'LEXINTON',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'lexinton',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'89',
             'nombre'=>'MATRIX MEDICAL',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'matrix-medical',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'90',
             'nombre'=>'MEDICAL DATA ELECTRON (MDE)',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'medical-data-electron-(mde)',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'91',
             'nombre'=>'MEDICAL RESEARCH LABS',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'medical-research-labs',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'92',
             'nombre'=>'MEDEXEL',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'medexel',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'93',
             'nombre'=>'MEDTRONIC PHYSIO-CONTROL',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'medtronic-physio-control',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'94',
             'nombre'=>'MINDRAY',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'mindray',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'95',
             'nombre'=>'ODAM-BRUKER',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'odam-bruker',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'96',
             'nombre'=>'ON',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'on',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'97',
             'nombre'=>'PHILIPS MEDICAL',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'philips-medical',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'98',
             'nombre'=>'PICKER',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'picker',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'99',
             'nombre'=>'PIONNER (American Optical)',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'pionner-(american-optical)',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'100',
             'nombre'=>'PPG',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'ppg',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'101',
             'nombre'=>'PPG (Datamedix, BD)',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'ppg-(datamedix,-bd)',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'102',
             'nombre'=>'PPG (E for M)',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'ppg-(e-for-m)',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'103',
             'nombre'=>'PPG (Honeywell)',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'ppg-(honeywell)',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'104',
             'nombre'=>'QUINTON',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'quinton',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'105',
             'nombre'=>'S&W',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'s&w',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'106',
             'nombre'=>'SPACELABS BURDICK',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'spacelabs-burdick',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'107',
             'nombre'=>'SPACELABS MEDICAL',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'spacelabs-medical',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'108',
             'nombre'=>'SURVIVAL INSTRUMENTS',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'survival-instruments',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'109',
             'nombre'=>'TEKTRONIX (Vitatek)',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'tektronix-(vitatek)',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'110',
             'nombre'=>'UNIRAD',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'unirad',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'111',
             'nombre'=>'VIGGO-SPECT (Gould)',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'viggo-spect-(gould)',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'112',
             'nombre'=>'VIGGO-SPECTRAMED',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'viggo-spectramed',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'113',
             'nombre'=>'VINGMED SYSTEM FIVE',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'vingmed-system-five',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'114',
             'nombre'=>'WELCH ALLYN',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'welch-allyn',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'115',
             'nombre'=>'WESTINGHOUSE',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'westinghouse',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'116',
             'nombre'=>'ZOLL (ZMI)',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'zoll-(zmi)',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'117',
             'nombre'=>'CARDIOLINE',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'cardioline',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'118',
             'nombre'=>'CARDIOPRINT',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'cardioprint',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'119',
             'nombre'=>'CARDIETTE',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'cardiette',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'120',
             'nombre'=>'CARDIOMATIC (MECAMED)',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'cardiomatic-(mecamed)',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'121',
             'nombre'=>'CARDIOTÉCNICA',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'cardiotécnica',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'122',
             'nombre'=>'CARDISUNY',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'cardisuny',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'123',
             'nombre'=>'DONG JIANG',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'dong-jiang',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'124',
             'nombre'=>'EME',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'eme',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'125',
             'nombre'=>'EXXER',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'exxer',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'126',
             'nombre'=>'FUKUDA M.E.',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'fukuda-m.e.',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'127',
             'nombre'=>'HILLMED',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'hillmed',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'128',
             'nombre'=>'INNOMED',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'innomed',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'129',
             'nombre'=>'KENZ',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'kenz',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'130',
             'nombre'=>'LIFENET',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'lifenet',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'131',
             'nombre'=>'MECAMED',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'mecamed',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'132',
             'nombre'=>'MEDICAL SYSTEM',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'medical-system',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'133',
             'nombre'=>'MENNEM MEDICAL',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'mennem-medical',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'134',
             'nombre'=>'MORTARA',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'mortara',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'135',
             'nombre'=>'NORAV',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'norav',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'136',
             'nombre'=>'PPG HELLIGE',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'ppg-hellige',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'137',
             'nombre'=>'SAMSUNG',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'samsung',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'138',
             'nombre'=>'TEMIS',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'temis',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'139',
             'nombre'=>'TRISMED',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'trismed',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'140',
             'nombre'=>'VISOCARDINE',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'visocardine',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'141',
             'nombre'=>'BIOLIGHT A8',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'biolight-a8',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'142',
             'nombre'=>'GE GIRFFATE',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'ge-girffate',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'143',
             'nombre'=>'COMEN C60',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'comen-c60',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'144',
             'nombre'=>'SERIE MONO-PLUG',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'serie-mono-plug',
+            'id_usuario'=>'1'
+            ] );
+            
+            
                         
-            Marca::create([
+            Marca::create( [
             'id_marca'=>'145',
             'nombre'=>'SERIE PLUG',
-            'id_usuario'=>1,
-            ]);
+            'slug'=>'serie-plug',
+            'id_usuario'=>'1'
+            ] );
+            
+            
+                        
+            Marca::create( [
+            'id_marca'=>'146',
+            'nombre'=>'IMPERMEABLE GRIS',
+            'slug'=>'impermeable-gris',
+            'id_usuario'=>'1'
+            ] );
+            
+            
+                        
+            Marca::create( [
+            'id_marca'=>'147',
+            'nombre'=>'NYLON GRIS',
+            'slug'=>'nylon-gris',
+            'id_usuario'=>'1'
+            ] );
+            
+            
+                        
+            Marca::create( [
+            'id_marca'=>'148',
+            'nombre'=>'DESCARTABLE TPU (POLIURETANO TERMOPLÁSTICO)',
+            'slug'=>'descartable-tpu-(poliuretano-termoplástico)',
+            'id_usuario'=>'1'
+            ] );
+            
+            
+                        
+            Marca::create( [
+            'id_marca'=>'149',
+            'nombre'=>'REUTILIZABLE TPU (POLIURETANO TERMOPLÁSTICO)',
+            'slug'=>'reutilizable-tpu-(poliuretano-termoplástico)',
+            'id_usuario'=>'1'
+            ] );
+            
+            
+                        
+            Marca::create( [
+            'id_marca'=>'150',
+            'nombre'=>'DESCARTABLE TELA NO TEJIDA (VETERINARIO)',
+            'slug'=>'descartable-tela-no-tejida-(veterinario)',
+            'id_usuario'=>'1'
+            ] );
+            
+            
+                        
+            Marca::create( [
+            'id_marca'=>'151',
+            'nombre'=>'REUTILIZABLE TPU (POLIURETANO TERMOPLÁSTICO) (VETERINARIO)',
+            'slug'=>'reutilizable-tpu-(poliuretano-termoplástico)-(veterinario)',
+            'id_usuario'=>'1'
+            ] );
+            
+            
+                        
+            Marca::create( [
+            'id_marca'=>'152',
+            'nombre'=>'NYLON ANILLO METALICO (ESFIGMOMANOMETRO DINAMICO)',
+            'slug'=>'nylon-anillo-metalico-(esfigmomanometro-dinamico)',
+            'id_usuario'=>'1'
+            ] );
+            
+            
+                        
+            Marca::create( [
+            'id_marca'=>'153',
+            'nombre'=>'NYLON ANILLO METALICO Y BOLSILLO (ESFIGMOMANOMETRO)',
+            'slug'=>'nylon-anillo-metalico-y-bolsillo-(esfigmomanometro)',
+            'id_usuario'=>'1'
+            ] );
+            
+            
+                        
+            Marca::create( [
+            'id_marca'=>'154',
+            'nombre'=>'NYLOS GRIS ANILLO METALICO (ESFIGMOMANOMETRO ELECTRICO)',
+            'slug'=>'nylos-gris-anillo-metalico-(esfigmomanometro-electrico)',
+            'id_usuario'=>'1'
+            ] );
+            
+            
+                        
+            Marca::create( [
+            'id_marca'=>'155',
+            'nombre'=>'NYLON (ESFIGMOMANOMETRO) (LINEA ECONOMICA REUTILIZABLE)',
+            'slug'=>'nylon-(esfigmomanometro)-(linea-economica-reutilizable)',
+            'id_usuario'=>'1'
+            ] );
+            
+            
+                        
+            Marca::create( [
+            'id_marca'=>'156',
+            'nombre'=>'NYLON',
+            'slug'=>'nylon',
+            'id_usuario'=>'1'
+            ] );
+            
+            
+                        
+            Marca::create( [
+            'id_marca'=>'157',
+            'nombre'=>'IMPERMEABLE MARRÓN',
+            'slug'=>'impermeable-marrón',
+            'id_usuario'=>'1'
+            ] );
+            
+            
+                        
+            Marca::create( [
+            'id_marca'=>'158',
+            'nombre'=>'100% ALGODÓN',
+            'slug'=>'100%-algodón',
+            'id_usuario'=>'1'
+            ] );
+            
+            
+                        
+            Marca::create( [
+            'id_marca'=>'159',
+            'nombre'=>'NYLON  CAMARA Y BRAZAL INTEGRADOS',
+            'slug'=>'nylon--camara-y-brazal-integrados',
+            'id_usuario'=>'1'
+            ] );
+            
+            
+                        
+            Marca::create( [
+            'id_marca'=>'160',
+            'nombre'=>'DESCARTABLE PVC CAMARA Y BRAZAL INTEGRADOS',
+            'slug'=>'descartable-pvc-camara-y-brazal-integrados',
+            'id_usuario'=>'1'
+            ] );
         }
     }

@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg">
     <!-- Navbar brand -->
-    <a class="navbar-brand light-blue-text" href="#">Electro del parque</a>
+    <a class="navbar-brand light-blue-text" href="#">Electromédica del Parque</a>
 
     <!-- Collapse button -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"

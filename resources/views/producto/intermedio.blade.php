@@ -11,7 +11,7 @@
 @endsection
 
 @section('titulo')
-    Electro del parque - {{$tipo->nombre}}
+    Electromédica del Parque - {{$tipo->nombre}}
 @endsection
 
 @section('nav')
@@ -29,7 +29,7 @@
                         @if($categoria->id_categoria == 1)
                             <a href="/{{$tipo->slug}}/productos" class="card text-center col-12 col-md-5 col-lg-4 m-0 mt-4 my-lg-4 px-0">
                         @else
-                            <a href="{{$tipo->slug}}/productos/{{$categoria->slug}}" class="card text-center col-12 col-md-5 col-lg-4 m-0 mt-4 my-lg-4 px-0">
+                            <a href="{{$tipo->slug}}/{{$categoria->slug}}/productos" class="card text-center col-12 col-md-5 col-lg-4 m-0 mt-4 my-lg-4 px-0">
                         @endif
                             <div class="pt-4 mt-md-0 mx-lg-2">
                                 <h4 class="h5 card-title font-weight-bold mb-4">{{$categoria->nombre}}</h4>

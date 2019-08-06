@@ -12,7 +12,7 @@
 @endsection
 
 @section('titulo')
-    Electro del parque - {{$tipo->nombre}} - {{$titulo}}
+    Electromédica del Parque - {{$tipo->nombre}} - {{$titulo}}
 @endsection
 
 @section('nav')

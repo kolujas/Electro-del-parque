@@ -25,4 +25,6 @@
 
     Route::get('/{tipo_slug}/productos', 'ProductoController@listado')->name('producto.listado');
 
-    Route::get('/{tipo_slug}/productos/{categoria}', 'ProductoController@sublistado')->name('producto.sublistado');  
+    Route::get('/{tipo_slug}/productos/{marca_slug}', 'ProductoController@listado')->name('producto.listado');
+
+    Route::get('/{tipo_slug}/{categoria}/productos/', 'ProductoController@sublistado')->name('producto.sublistado');  

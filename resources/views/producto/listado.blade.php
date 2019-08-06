@@ -3,6 +3,7 @@
     /** @var Producto[] $productos */
     /** @var Tipo[] $tipos */
     /** @var Tipo $tipo */
+    /** @var Marca $marca_actual */
     /** @var object $banner */
     /** @var string $aclaracion */
 ?>
@@ -15,9 +16,9 @@
 
 @section('titulo')
     @if($tipo->id_tipo == 3 || $tipo->id_tipo == 5)
-        Electro del parque - {{$tipo->nombre}} - {{$titulo}}
+        Electromédica del Parque - {{$tipo->nombre}} - {{$titulo}}
     @else
-        Electro del parque - {{$tipo->nombre}}
+        Electromédica del Parque - {{$tipo->nombre}}
     @endif
 @endsection
 
@@ -50,21 +51,53 @@
             </div>
 
             @if($tipo->id_tipo == 2 || $tipo->id_tipo == 3 || $tipo->id_tipo == 4 || $tipo->id_tipo == 6)
-                <!-- <div class="jumbotron card card-image d-lg-block col-12 col-lg-8 m-0 p-0 mt-4"
-                    style="
-                    background: url(/img/tipos/{{$banner->imagen}}) no-repeat center center;
-                    background-size: contain;
-                    background-color: white;">
-                    <div class="text-white text-center m-0 p-0">
-                        <div class="py-md-5"></div>
-                    </div>
-                </div> -->
-                <div class="p-0 my-4 m-auto">
+                <div class="col-12 p-0 my-4 m-auto d-flex justify-content-center">
                     <img class="d-none d-lg-block my-4" src="/img/tipos/{{$banner->imagen}}" alt="">
                 </div>
             @endif 
 
-            <div class="productos col-12 col-md-12 col-lg-10 col-xl-8 p-0 mb-lg-4">
+            @if($tipo->id_tipo == 4)
+                <div class="productos col-12 col-lg-8 p-0 mb-lg-4">
+            @else
+                <div class="col-12 col-lg-2 p-0 mt-4 mb-lg-4 mr-lg-4">
+                    <div class="accordion-group list-group d-flex justify-content-between row">
+                        <div id="filtros" href="#!" class="accordion list-group-item list-group-item-action col-12 m-0 p-0">
+                            <div class="accordion-title d-flex justify-content-between font-weight-bold py-4 px-3">
+                                @if($tipo->id_tipo == 1 || $tipo->id_tipo == 2 || $tipo->id_tipo == 3)
+                                    <h3 class="h5 m-0">Marcas</h3>
+                                @else
+                                    <h3 class="h5 m-0">Materiales</h3>
+                                @endif
+                                <i class="fas fa-angle-down d-flex align-items-center"></i>
+                            </div>
+                            <div class="accordion-body">
+                                <ul class="list">
+                                    @foreach($marcas as $marca)
+                                        @if($marca_actual->id_marca == $marca->id_marca)
+                                            <li class="active">
+                                                <a href="/{{$tipo->slug}}/productos">{{$marca->nombre}}</a>
+                                                <i aria-label="Close">
+                                                    <span aria-hidden="true">×</span>
+                                                </i>
+                                            </li>
+                                        @else
+                                            <li>
+                                                @if($marca->id_marca > 0)
+                                                    <a href="/{{$tipo->slug}}/productos/{{$marca->slug}}">{{$marca->nombre}}</a>
+                                                @else
+                                                    <a href="/{{$tipo->slug}}/productos">{{$marca->nombre}}</a>
+                                                @endif
+                                            </li>
+                                        @endif
+                                    @endforeach
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="productos col-1 col-lg-7 p-0 mb-lg-4">
+            @endif
                 <div class="row d-flex justify-content-between mx-4 m-lg-0">
                     @foreach($productos as $producto)
                         <div id="producto{{$producto->id_producto}}" class="card text-center col-12 col-md-5 col-lg-4 m-0 mt-4 px-0">
@@ -107,7 +140,7 @@
             </div>
             
             @if($aclaracion->tipo)
-                <div class="aclaracion col-12 col-md-12 col-lg-10 col-xl-8 mt-4">
+                <div class="aclaracion col-12 col-lg-10 col-xl-8 mt-4">
                     <div class="row p-4">
                         @if($aclaracion->tipo == 1)
                             <div class="col-12 m-0 p-0">
@@ -142,5 +175,6 @@
 @endsection
 
 @section('js')
-    <script type="text/javascript" src="/js/producto/listado.js"></script>
+    <script type="text/javascript" src="{{asset('js/accordion.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/producto/listado.js')}}"></script>
 @endsection

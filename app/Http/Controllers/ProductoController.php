@@ -57,21 +57,44 @@
         }
 
         /** Carga el listado de productos que coincidan con el slug. */
-        public function listado($slug){
+        public function listado($slug, $marca_slug = null){
             $tipos = Tipo::get();
 
             if(Tipo::findBySlug($slug)){
+                $tipo = Tipo::findBySlug($slug);
                 $tipo = Tipo::findBySlug($slug);
             }else{
                 return redirect('/');
             }
 
-            $marcas = Marca::get();
+            $marcas = collect([]);
             $productos = Producto::where('id_tipo', '=', $tipo->id_tipo)->with('marca')->get();
 
             if($tipo->id_tipo == 4){
                 $img = 'banners/' . $tipo->id_tipo . '.jpeg';
             }else{
+                foreach($productos as $producto){
+                    if(!$marcas->contains($producto->marca)){
+                        $marcas->push($producto->marca);
+                    }
+                }
+
+                if($tipo->id_tipo == 5){
+                    $marcas->prepend((object)[
+                        'id_marca' => 0,
+                        'nombre' => 'Todos',
+                        'slug' => 'todos',
+                        'id_usuario' => 1,
+                    ]);
+                }else{
+                    $marcas->prepend((object)[
+                        'id_marca' => 0,
+                        'nombre' => 'Todas',
+                        'slug' => 'todas',
+                        'id_usuario' => 1,
+                    ]);
+                }
+
                 $img = 'banners/' . $tipo->id_tipo . '.png';
             }
 
@@ -96,25 +119,29 @@
                 ];
             }else if($tipo->id_tipo == 5){
                 $titulo = 'CUFFS / Brazal';
-                $aclaracion = (object) [
-                    'tipo' => 2,
-                    'listado' => [
-                        'MINDRAY, MEC1000, EDAN , ETC',
-                        'COMEN, ZONDAN, 3F',
-                        'PHILIPS, MINDRAY T SERIES, IPM SERIES',
-                        'GE-DINAMAP SERIES',
-                        'DATEX OHMEDA SERIES',
-                        'GE-DASH, EAGLE, SOLAR SERIES',
-                        'NIHON KOHDEN',
-                        'COLIN',
-                    ],
-                ];
+            }
+
+            $marca = (object)[
+                'id_marca' => 0,
+                'nombre' => 'Todos',
+                'slug' => 'todos',
+                'id_usuario' => 1,
+            ];
+
+            if($marca_slug !== null){
+                if(!Marca::findBySlug($marca_slug)){
+                    return redirect('/' . $tipo->slug);
+                }
+
+                $marca = Marca::findBySlug($marca_slug);
+                $productos = Producto::where('id_tipo', '=', $tipo->id_tipo)->where('id_marca', '=', $marca->id_marca)->with('marca')->get();
             }
             
             return view('producto.listado', [
                 'marcas' => $marcas,
                 'productos' => $productos,
                 'tipos' => $tipos,
+                'marca_actual' => $marca,
                 'tipo' => $tipo,
                 'banner' => $banner,
                 'aclaracion' => $aclaracion,
@@ -131,6 +158,10 @@
             }else{
                 return redirect('/');
             }
+            
+            $aclaracion = (object) [
+                'tipo' => 0,
+            ];
             
             if($tipo->id_tipo != 3 && $tipo->id_tipo != 5){
                 return redirect('/' . $tipo->slug . '/productos');
@@ -162,6 +193,19 @@
                         ],
                     ];
                 }else{
+                    $aclaracion = (object) [
+                        'tipo' => 2,
+                        'listado' => [
+                            'MINDRAY, MEC1000, EDAN , ETC',
+                            'COMEN, ZONDAN, 3F',
+                            'PHILIPS, MINDRAY T SERIES, IPM SERIES',
+                            'GE-DINAMAP SERIES',
+                            'DATEX OHMEDA SERIES',
+                            'GE-DASH, EAGLE, SOLAR SERIES',
+                            'NIHON KOHDEN',
+                            'COLIN',
+                        ],
+                    ];
                     $titulo = 'Mangueras de PNI';
                     $productos = [
                         (object) [
