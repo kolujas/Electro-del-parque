@@ -64,7 +64,7 @@
             ]);            
                         
             Subproducto::create([
-            'id_producto'=>'5',
+            'id_producto'=>'7',
             'modelo'=>null,
             'id_tipo'=>'3',
             'id_marca'=>null,
