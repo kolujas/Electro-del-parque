@@ -77,7 +77,7 @@
             'modelo'=>'LC-01',
             'id_tipo'=>'5',
             'id_marca'=>null,
-            'imagen'=>'productos/5/LC-01.PNG',
+            'imagen'=>'productos/5/LC-01.png',
             'id_usuario'=>'1'
             ]);            
                         
