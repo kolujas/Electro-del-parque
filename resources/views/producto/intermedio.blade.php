@@ -1,6 +1,6 @@
 <?php
     /** @var Tipo[] $tipos */
-    /** @var Tipo $tipo */
+    /** @var Tipo $tipo_actual */
     /** @var object $categoria */
 ?>
 
@@ -11,7 +11,7 @@
 @endsection
 
 @section('titulo')
-    Electromédica del Parque - {{$tipo->nombre}}
+    Electromédica del Parque - {{$tipo_actual->nombre}}
 @endsection
 
 @section('nav')
@@ -23,13 +23,13 @@
     <div class="container-fluid px-0">
         <div class="row m-0 p-0 d-flex justify-content-center">
             <div class="productos col-12 col-md-12 col-lg-10 col-xl-8 p-0 mb-lg-4">
-                <h2 class="h1-responsive m-0 mt-4 text-center">{{$tipo->nombre}}</h2>
+                <h2 class="h1-responsive m-0 mt-4 text-center">{{$tipo_actual->nombre}}</h2>
                 <div class="row d-flex justify-content-around mx-4 m-lg-0">
                     @foreach($categorias as $categoria)
                         @if($categoria->id_categoria == 1)
-                            <a href="/{{$tipo->slug}}/productos" class="card text-center col-12 col-md-5 col-lg-4 m-0 mt-4 my-lg-4 px-0">
+                            <a href="/{{$tipo_actual->slug}}/productos" class="card text-center col-12 col-md-5 col-lg-4 m-0 mt-4 my-lg-4 px-0">
                         @else
-                            <a href="{{$tipo->slug}}/{{$categoria->slug}}/productos" class="card text-center col-12 col-md-5 col-lg-4 m-0 mt-4 my-lg-4 px-0">
+                            <a href="{{$tipo_actual->slug}}/{{$categoria->slug}}/productos" class="card text-center col-12 col-md-5 col-lg-4 m-0 mt-4 my-lg-4 px-0">
                         @endif
                             <div class="pt-4 mt-md-0 mx-lg-2">
                                 <h4 class="h5 card-title font-weight-bold mb-4">{{$categoria->nombre}}</h4>

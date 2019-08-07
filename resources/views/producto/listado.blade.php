@@ -1,9 +1,9 @@
 <?php
+    /** @var Tipo $tipo_actual */
+    /** @var Marca $marca_actual */
+    /** @var Tipo[] $tipos */
     /** @var Marca[] $marcas */
     /** @var Producto[] $productos */
-    /** @var Tipo[] $tipos */
-    /** @var Tipo $tipo */
-    /** @var Marca $marca_actual */
     /** @var object $banner */
     /** @var string $aclaracion */
 ?>
@@ -15,10 +15,10 @@
 @endsection
 
 @section('titulo')
-    @if($tipo->id_tipo == 3 || $tipo->id_tipo == 5)
-        Electromédica del Parque - {{$tipo->nombre}} - {{$titulo}}
+    @if($tipo_actual->id_tipo == 3 || $tipo_actual->id_tipo == 5)
+        Electromédica del Parque - {{$tipo_actual->nombre}} - {{$titulo}}
     @else
-        Electromédica del Parque - {{$tipo->nombre}}
+        Electromédica del Parque - {{$tipo_actual->nombre}}
     @endif
 @endsection
 
@@ -31,13 +31,13 @@
     <div class="container-fluid px-0">
         <div class="row m-0 p-0 d-flex justify-content-center">
             <div class="col-12">
-                @if($tipo->id_tipo == 3 || $tipo->id_tipo == 5)
+                @if($tipo_actual->id_tipo == 3 || $tipo_actual->id_tipo == 5)
                     <h2 class="h1-responsive mt-4 mb-0 text-center" id="tipo">
-                        <span>{{$tipo->nombre}} - </span>
+                        <span>{{$tipo_actual->nombre}} - </span>
                         <span id="slug">{{$titulo}}</span>
                     </h2>           
-                @elseif($tipo->id_tipo == 1)
-                    <h2 class="h1-responsive mt-4 mb-0 text-center" id="tipo">{{$tipo->nombre}}</h2>
+                @elseif($tipo_actual->id_tipo == 1)
+                    <h2 class="h1-responsive mt-4 mb-0 text-center" id="tipo">{{$tipo_actual->nombre}}</h2>
 
                     <div class="listaAclaracionDivPadre text-center mb-0">
                         <h3 class="h4-responsive my-4 text-center ml-2">Los productos pueden tener las siguientes terminaciones:</h3>
@@ -46,24 +46,24 @@
 
                     </div>  
                 @else
-                    <h2 class="h1-responsive mt-4 mb-0 text-center" id="tipo">{{$tipo->nombre}}</h2>
+                    <h2 class="h1-responsive mt-4 mb-0 text-center" id="tipo">{{$tipo_actual->nombre}}</h2>
                 @endif
             </div>
 
-            @if($tipo->id_tipo == 2 || $tipo->id_tipo == 3 || $tipo->id_tipo == 4 || $tipo->id_tipo == 6)
+            @if($tipo_actual->id_tipo == 2 || $tipo_actual->id_tipo == 3 || $tipo_actual->id_tipo == 4 || $tipo_actual->id_tipo == 6)
                 <div class="col-12 p-0 my-4 m-auto d-flex justify-content-center">
                     <img class="d-none d-lg-block my-4" src="/img/tipos/{{$banner->imagen}}" alt="">
                 </div>
             @endif 
 
-            @if($tipo->id_tipo == 4)
+            @if($tipo_actual->id_tipo == 4)
                 <div class="productos col-12 col-lg-8 p-0 mb-lg-4">
             @else
                 <div class="col-12 col-lg-2 p-0 mt-4 mb-lg-4 mr-lg-4">
                     <div class="accordion-group list-group d-flex justify-content-between row">
                         <div id="filtros" href="#!" class="accordion list-group-item list-group-item-action col-12 m-0 p-0">
                             <div class="accordion-title d-flex justify-content-between font-weight-bold py-4 px-3">
-                                @if($tipo->id_tipo == 1 || $tipo->id_tipo == 2 || $tipo->id_tipo == 3)
+                                @if($tipo_actual->id_tipo == 1 || $tipo_actual->id_tipo == 2 || $tipo_actual->id_tipo == 3)
                                     <h3 class="h5 m-0">Marcas</h3>
                                 @else
                                     <h3 class="h5 m-0">Materiales</h3>
@@ -75,7 +75,7 @@
                                     @foreach($marcas as $marca)
                                         @if($marca_actual->id_marca == $marca->id_marca)
                                             <li class="active">
-                                                <a href="/{{$tipo->slug}}/productos">{{$marca->nombre}}</a>
+                                                <a href="/{{$tipo_actual->slug}}/productos">{{$marca->nombre}}</a>
                                                 <i aria-label="Close">
                                                     <span aria-hidden="true">×</span>
                                                 </i>
@@ -83,9 +83,9 @@
                                         @else
                                             <li>
                                                 @if($marca->id_marca > 0)
-                                                    <a href="/{{$tipo->slug}}/productos/{{$marca->slug}}">{{$marca->nombre}}</a>
+                                                    <a href="/{{$tipo_actual->slug}}/productos/{{$marca->slug}}">{{$marca->nombre}}</a>
                                                 @else
-                                                    <a href="/{{$tipo->slug}}/productos">{{$marca->nombre}}</a>
+                                                    <a href="/{{$tipo_actual->slug}}/productos">{{$marca->nombre}}</a>
                                                 @endif
                                             </li>
                                         @endif

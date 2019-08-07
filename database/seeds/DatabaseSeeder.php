@@ -12,5 +12,6 @@
             $this->call(TiposTableSeeder::class);
             $this->call(MarcasTableSeeder::class);
             $this->call(ProductosTableSeeder::class);
+            $this->call(SubproductosTableSeeder::class);
         }
     }
