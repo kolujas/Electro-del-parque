@@ -96,7 +96,7 @@
                     </div>
                 </div>
 
-                <div class="productos col-1 col-lg-7 p-0 mb-lg-4">
+                <div class="productos col-12 col-lg-7 p-0 mb-lg-4">
             @endif
                 <div class="row d-flex justify-content-between mx-4 m-lg-0">
                     @foreach($productos as $producto)
