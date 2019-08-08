@@ -241,6 +241,20 @@ html, body {
     cursor: pointer;
 }
 
+#filtros{
+    background-color: #162E44;
+    color: #fff;
+}
+
+#filtros li{
+    border: none;
+    color: #fff;
+}
+
+#filtros li a{
+    color: #fff;
+}
+
 /* MD */
 @media(min-width: 768px){
     /* Productos */

@@ -59,7 +59,7 @@
             @if($tipo_actual->id_tipo == 4)
                 <div class="productos col-12 col-lg-8 p-0 mb-lg-4">
             @else
-                <div class="col-12 col-lg-2 p-0 mt-4 mb-lg-4 mr-lg-4">
+                <div class="col-12 col-lg-2 p-0 mt-4 mb-lg-4 mr-lg-4 px-2">
                     <div class="accordion-group list-group d-flex justify-content-between row">
                         <div id="filtros" href="#!" class="accordion list-group-item list-group-item-action col-12 m-0 p-0">
                             <div class="accordion-title d-flex justify-content-between font-weight-bold py-4 px-3">
