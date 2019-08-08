@@ -3,6 +3,7 @@
     /** @var Tipo[] $tipos */
     /** @var array[object] $productos */
     /** @var string $titulo */
+    /** @var object $aclaracion */
 ?>
 
 @extends('layout.index')
@@ -56,6 +57,30 @@
                     @endforeach
                 </div>                        
             </div>
+            
+            @if($aclaracion->tipo)
+                <div class="aclaracion col-12 col-lg-10 col-xl-8 mt-4">
+                    <div class="row p-4">
+                        @if($aclaracion->tipo == 1)
+                            <div class="col-12 m-0 p-0">
+                                <h3 class="h3-responsive m-0 mb-4 p-0 text-center font-weight-bold" id="tipo">{{$aclaracion->titulo}}</h3>
+                            </div>
+                            <div class="col-12 m-0 p-0 parrafoJunto">
+                                <p class="lead text-left text-md-left d-flex display-4">{{$aclaracion->texto}}</p>
+                            </div>
+                        @else
+                            <div class="col-12 m-0 p-0">
+                                <h3 class="h3-responsive m-0 mb-4 p-0 text-center font-weight-bold" id="tipo">Más modelos</h3>
+                            </div>
+                            <ul class="m-0 list-group w-100">
+                                @foreach($aclaracion->listado as $item)
+                                    <li class="list-group-item">{{$item}}</li>
+                                @endforeach
+                            </ul>
+                        @endif
+                    </div>
+                </div>
+            @endif
         </div>
     </div>
     

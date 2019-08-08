@@ -185,6 +185,7 @@
                 'tipos' => $tipos,
                 'productos' => $productos,
                 'titulo' => $titulo,
+                'aclaracion' => $aclaracion,
             ]);
         }
     }
