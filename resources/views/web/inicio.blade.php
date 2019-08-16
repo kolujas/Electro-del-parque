@@ -25,10 +25,10 @@
             <div class="text-white text-center m-0 p-0">
                 <div class="row m-0 my-lg-5 p-0 d-flex justify-content-center">
                     <div class="col-12 col-md-10 col-lg-8 m-0 mb-4 p-0">
-                        <h2 class="card-title font-weight-bold text-white m-0 p-0">Fabricamos accesorios para cardiología y oximetría de pulso</h2>
+                        <h2 class="card-title font-weight-bold text-white m-0 p-0">Comercializamos accesorios para cardiología y oximetría de pulso</h2>
                     </div>
                     <div class="col-12 col-md-10 col-lg-8 m-0 mb-4 p-0">
-                        <p class="m-0 p-0">Desarrollamos una extensa línea de productos compatibles con las más prestigiosas marcas. Fabricamos cables con materiales importados y nacionales, siempre manteniendo la calidad y estética del producto final.</p>
+                        <p class="m-0 p-0">Desarrollamos una extensa línea de productos compatibles con las más prestigiosas marcas. Comercializamos cables con materiales importados y nacionales, siempre manteniendo la calidad y estética del producto final.</p>
                     </div>
                     <div class="col-12 m-0 p-0">
                         <a class="btn btn-lg m-0" href="/#productos">Ver más</a>
