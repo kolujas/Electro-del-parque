@@ -129,7 +129,10 @@
     });
 
     function cargarModal(boton){
-        let id_padre = boton.parentNode.parentNode.parentNode.parentNode.id;
+        let id_padre = null;
+        if(boton.parentNode.parentNode.parentNode.parentNode.id){
+            id_padre = boton.parentNode.parentNode.parentNode.parentNode.id;
+        }
         let tipo, slug;
         if(document.querySelector('#slug')){
             slug = document.querySelector('#slug').innerHTML

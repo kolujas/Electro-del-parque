@@ -31,15 +31,13 @@
             <div class="productos col-12 col-md-12 col-lg-10 col-xl-8 p-0 mb-lg-4">
                 <div class="row d-flex justify-content-between mx-4 m-lg-0">
                     @foreach($productos as $producto)
-                        
-                         @if($producto->id_tipo == 5)
-                        <div id="producto{{$producto->id_producto}}" class="card text-center col-12 col-md-5 col-lg-2 m-0 mt-4 px-0 mangueras">
-                             <div class="mx-lg-2">
+                        @if($producto->id_tipo == 5)
+                            <div id="producto{{$producto->id_producto}}" class="card text-center col-12 col-md-5 col-lg-2 m-0 mt-4 px-0 mangueras">
+                                <div class="mx-lg-2">
                         @else
-                        <div id="producto{{$producto->id_producto}}" class="card text-center col-12 col-md-5 col-lg-4 m-0 mt-4 px-0">
-                            <div class="mx-lg-2 pb-5">
+                            <div id="producto{{$producto->id_producto}}" class="card text-center col-12 col-md-5 col-lg-4 m-0 mt-4 px-0">
+                                <div class="mx-lg-2 pb-5">
                         @endif
-                            
                                 <div class="view overlay">
                                     <img class="card-img-top"
                                         src="/img/{{$producto->imagen}}"
@@ -47,21 +45,19 @@
                                 </div>
 
                                 @if($producto->id_tipo == 3)
-
-                                <div class="card-footer">
-                                    <div class="consulta">
-                                        <a class="btn btn-md modalButton"
-                                            onclick="cargarModal(this)"
-                                            data-toggle="modal"
-                                            data-target="#FormDeContacto">Consultar</a>
+                                    <div class="card-footer">
+                                        <div class="consulta">
+                                            <a class="btn btn-md modalButton"
+                                                onclick="cargarModal(this)"
+                                                data-toggle="modal"
+                                                data-target="#FormDeContacto">Consultar</a>
+                                        </div>
                                     </div>
-                                </div>
 
-                                <span class="top-line"></span>
-                                <span class="right-line"></span>
-                                <span class="bottom-line"></span>
-                                <span class="left-line"></span>
-
+                                    <span class="top-line"></span>
+                                    <span class="right-line"></span>
+                                    <span class="bottom-line"></span>
+                                    <span class="left-line"></span>
                                 @endif
                             </div>
                         </div>
@@ -72,18 +68,18 @@
             @if($producto->id_tipo == 5)
                 <div class="aclaracion col-12 col-lg-10 col-xl-8 mt-4">
                     <div class="row p-4">
-                    <div class="col-12 m-0 p-0">
-                        <h3 class="h3-responsive m-0 mb-4 p-0 text-center font-weight-bold" id="tipo">Consultar por conectores individuales</h3>
-                    </div>
-                    <div class="col-12 m-0 p-0 parrafoJunto">
-                        <p class="lead text-left text-md-left d-flex justify-content-center display-4">
-                            <a class="btn btn-md modalButton"
-                                onclick="cargarModal(this)"
-                                data-toggle="modal"
-                                data-target="#FormDeContacto">Consultar
-                            </a>
-                        </p>
-                    </div>
+                        <div class="col-12 m-0 p-0">
+                            <h3 class="h3-responsive m-0 mb-4 p-0 text-center font-weight-bold" id="tipo">Consultar por conectores individuales</h3>
+                        </div>
+                        <div class="col-12 m-0 p-0 parrafoJunto">
+                            <p class="lead text-left text-md-left d-flex justify-content-center display-4">
+                                <a class="btn btn-md modalButton"
+                                    onclick="cargarModal(this)"
+                                    data-toggle="modal"
+                                    data-target="#FormDeContacto">Consultar
+                                </a>
+                            </p>
+                        </div>
                     </div>
                 </div>
             @endif
@@ -91,71 +87,7 @@
             @if($aclaracion->tipo)
                 <div class="aclaracion col-12 col-lg-10 col-xl-8 mt-4">
                     <div class="row p-4">
-                    <div class="col-12 m-0 p-0">
-                        <h3 class="h3-responsive m-0 mb-4 p-0 text-center font-weight-bold" id="tipo">Más modelos</h3>
-                    </div>
-                    <table class="table">
-                        <thead class="fondo-tabla">
-                            <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Handle</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                            </tr>
-                            <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                            </tr>
-                            <tr>
-                            <th scope="row">3</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>@twitter</td>
-                            </tr>
-                        </tbody>
-                        </table>
-
-                        <table class="table">
-                        <thead class="grey lighten-2">
-                            <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Handle</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                            </tr>
-                            <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                            </tr>
-                            <tr>
-                            <th scope="row">3</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>@twitter</td>
-                            </tr>
-                        </tbody>
-                        </table>
-                        <!-- @if($aclaracion->tipo == 1)
+                        @if($aclaracion->tipo == 1)
                             <div class="col-12 m-0 p-0">
                                 <h3 class="h3-responsive m-0 mb-4 p-0 text-center font-weight-bold" id="tipo">{{$aclaracion->titulo}}</h3>
                             </div>
@@ -166,12 +98,25 @@
                             <div class="col-12 m-0 p-0">
                                 <h3 class="h3-responsive m-0 mb-4 p-0 text-center font-weight-bold" id="tipo">Más modelos</h3>
                             </div>
-                            <ul class="m-0 list-group w-100">
-                                @foreach($aclaracion->listado as $item)
-                                    <li class="list-group-item">{{$item}}</li>
-                                @endforeach
-                            </ul>
-                        @endif -->
+                            <table class="table">
+                                <thead class="fondo-tabla">
+                                    <tr>
+                                        <th scope="col">Modelos</th>
+                                        <th scope="col" class="text-center">Tubo</th>
+                                        <th scope="col" class="text-center">Tipo</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach($aclaracion->tabla as $fila)
+                                        <tr>
+                                            <td>{{$fila->modelos}}</td>
+                                            <td class="text-center">{{$fila->tubo}}</td>
+                                            <td class="text-center">{{$fila->tipo}}</td>
+                                        </tr>
+                                    @endforeach
+                                </tbody>
+                            </table>
+                        @endif
                     </div>
                 </div>
             @endif

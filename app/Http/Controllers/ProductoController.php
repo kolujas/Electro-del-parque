@@ -166,16 +166,45 @@
                 $titulo = 'Mangueras de PNI';
                 $aclaracion = (object) [
                     'tipo' => 2,
-                    'listado' => [
-                        'MINDRAY, MEC1000, EDAN , ETC',
-                        'COMEN, ZONDAN, 3F',
-                        'PHILIPS, MINDRAY T SERIES, IPM SERIES',
-                        'GE-DINAMAP SERIES',
-                        'DATEX OHMEDA SERIES',
-                        'GE-DASH, EAGLE, SOLAR SERIES',
-                        'NIHON KOHDEN',
-                        'COLIN',
-                ], ];
+                    'tabla' => [
+                        (object) [
+                            'modelos' => 'MINDRAY, MEC1000, EDAN , ETC',
+                            'tubo' => '1',
+                            'tipo' => 'Adulto',
+                        ], (object) [
+                            'modelos' => 'MINDRAY, MEC1000, EDAN , ETC',
+                            'tubo' => '1',
+                            'tipo' => 'Neonatal',
+                        ], (object) [
+                            'modelos' => 'COMEN, ZONDAN, 3F',
+                            'tubo' => '1',
+                            'tipo' => 'Adulto',
+                        ], (object) [
+                            'modelos' => 'PHILIPS, MINDRAY T SERIES, IPM SERIES',
+                            'tubo' => '1',
+                            'tipo' => 'Adulto',
+                        ], (object) [
+                            'modelos' => 'GE-DINAMAP SERIES',
+                            'tubo' => '2',
+                            'tipo' => 'Adulto',
+                        ], (object) [
+                            'modelos' => 'DATEX OHMEDA SERIES',
+                            'tubo' => '2',
+                            'tipo' => 'Adulto',
+                        ], (object) [
+                            'modelos' => 'GE-DASH, EAGLE, SOLAR SERIES',
+                            'tubo' => '2',
+                            'tipo' => 'Adulto',
+                        ], (object) [
+                            'modelos' => 'NIHON KOHDEN',
+                            'tubo' => '2',
+                            'tipo' => 'Adulto',
+                        ], (object) [
+                            'modelos' => 'COLIN',
+                            'tubo' => '1',
+                            'tipo' => 'Adulto',
+                    ], ],
+                ];
             }
 
             $productos = Subproducto::where('id_tipo', '=', $tipo_actual->id_tipo)->get();
