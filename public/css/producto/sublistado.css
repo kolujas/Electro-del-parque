@@ -33,6 +33,11 @@
      background-color: #01B3A7;
      color: white;
  }
+
+ .modalButton{
+     background-color: #01B3A7;
+     color: white;
+ }
  
  .productos .card-footer{
      position: absolute;
@@ -42,6 +47,15 @@
      border-top: none;
      background-color: #fff;
  }
+
+ .mangueras .view{
+    height: 100%;
+}
+
+.mangueras .view img{
+   height: 100%;
+   object-fit: cover;
+}
  
  
  /* Aclaracion */
@@ -49,6 +63,11 @@
      background-color: white;
      box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
      border-radius: .25rem;
+ }
+
+ .fondo-tabla{
+    background-color: #162e44;
+    color: #fff; 
  }
  
  /* Modal */
@@ -86,6 +105,8 @@
  .modalEnviar{
     margin-top: 0;
 }
+
+
  
  /* MD */
  @media(min-width: 768px){
