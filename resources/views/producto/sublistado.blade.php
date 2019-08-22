@@ -101,9 +101,12 @@
                             <table class="table">
                                 <thead class="fondo-tabla">
                                     <tr>
-                                        <th scope="col">Modelos</th>
+                                        <th scope="col">Mangueras de PNI</th>
                                         <th scope="col" class="text-center">Tubo</th>
                                         <th scope="col" class="text-center">Tipo</th>
+                                        <th scope="col" class="text-center">Conector 1</th>
+                                        <th scope="col" class="text-center">Conector 2</th>
+                                        <th scope="col" class="text-center">Catalogo</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -112,6 +115,9 @@
                                             <td>{{$fila->modelos}}</td>
                                             <td class="text-center">{{$fila->tubo}}</td>
                                             <td class="text-center">{{$fila->tipo}}</td>
+                                            <td class="text-center">{{$fila->conector1}}</td>
+                                            <td class="text-center">{{$fila->conector2}}</td>
+                                            <td class="text-center">{{$fila->catalogo}}</td>
                                         </tr>
                                     @endforeach
                                 </tbody>
